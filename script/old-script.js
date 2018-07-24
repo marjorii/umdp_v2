@@ -8,6 +8,7 @@ var speed = 0;
 
 
 /* load images from JSON -- JS */
+
 function loadJSON(url, callback) { // ligne 1
     var request = new XMLHttpRequest();
     request.open('GET', url, true);
@@ -25,7 +26,6 @@ function loadJSON(url, callback) { // ligne 1
     };
     request.send();
 }
-
 
 /* loop to read images + animation -- JS */
 
@@ -56,7 +56,8 @@ function addVideoTag(url) {
     var videoTag = document.createElement("video");
     videoTag.setAttribute("src", url);
     videoTag.className = 'video';
-    document.getElementsByTagName("body")[0].prepend(videoTag);
+    document.getElementById("videotable").append(videoTag);
+    // document.getElementsByTagName("body")[0].prepend(videoTag);
     //lancer lecture video (on load ?)
 }
 
@@ -104,7 +105,7 @@ function imageAnim(imgTag) {
 loadJSON("sources.json", addImageTag); // function(url, callback); (cf. line 1)
 
 
-/* allow randomFromTo */
+/* allow randomFromTo -- JS */
 
 function randomFromTo(from, to, decimal){
   if (decimal) {
@@ -159,11 +160,22 @@ function changeAnimSpeed() {
 }
 
 
-// suppress image from DOM on click -- jQuery
+/* suppress image from DOM on click -- jQuery */
 
 $('#container').click(function(e){
     $(e.target).not($('#container')).fadeOut(2000);
 });
 
+
+/* show caption when image:hover -- JS */
+//how to apply effect on images only (not #container) ? which selector to get them ?
+
+var e = document.getElementById('container');
+e.onmouseover = function() {
+  document.getElementById('image-caption').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('image-caption').style.display = 'none';
+}
 
 });
