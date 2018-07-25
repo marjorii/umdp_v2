@@ -116,9 +116,7 @@
               }
             }
           ]
-        }
-      ],
-      "subChapters": [
+        },
         {
           "medias": [
             {
@@ -203,9 +201,7 @@
               }
             }
           ]
-        }
-      ],
-      "subChapters": [
+        },
         {
           "medias": [
             {
@@ -301,9 +297,7 @@
               }
             }
           ]
-        }
-      ],
-      "subChapters": [
+        },
         {
           "medias": [
             {
@@ -473,9 +467,7 @@
               }
             }
           ]
-        }
-      ],
-      "subChapters": [
+        },
         {
           "medias": [
             {
@@ -562,9 +554,7 @@
               }
             }
           ]
-        }
-      ],
-      "subChapters": [
+        },
         {
           "medias": [
             {
@@ -734,9 +724,7 @@
               }
             ]
           ]
-        }
-      ],
-      "subChapters": [
+        },
         {
           "medias": [
             {
@@ -814,9 +802,7 @@
               }
             }
           ]
-        }
-      ],
-      "subChapters": [
+        },
         {
           "medias": [
             {
@@ -954,9 +940,7 @@
           ]
         }
       ]
-    }
-  ],
-  "chapters": [
+    },
     {
       "urn": "2-grece",
       "title": "Chapitre 2 : Grèce",
@@ -1286,9 +1270,7 @@
               }
             ]
           ]
-        }
-      ],
-      "subChapters": [
+        },
         {
           "medias": [
             [
@@ -1359,9 +1341,7 @@
               }
             ]
           ]
-        }
-      ],
-      "subChapters": [
+        },
         {
           "medias": [
             {
@@ -1467,7 +1447,7 @@
                   "weight": "",
                   "date": ""
                 }
-              },
+              }
             ],
             {
               "type": "img",
@@ -1595,9 +1575,7 @@
               }
             }
           ]
-        }
-      ],
-      "subChapters": [
+        },
         {
           "medias": [
             {
@@ -1746,9 +1724,7 @@
           ]
         }
       ]
-    }
-  ],
-  "chapters": [
+    },
     {
       "urn": "3-maroc",
       "title": "Chapitre 3 : Maroc",
@@ -1999,9 +1975,7 @@
               }
             }
           ]
-        }
-      ],
-      "subChapters": [
+        },
         {
           "medias": [
             [
@@ -2319,214 +2293,212 @@
                 }
               }
             ]
-          ],
-          "subChapters": [
+          ]
+        },
+        {
+          "medias": [
             {
-              "medias": [
-                {
-                  "type": "img",
-                  "title": "interieur-modeste.jpg",
-                  "infos": {
-                    "location": "",
-                    "weight": "",
-                    "date": ""
-                  }
-                },
-                [
-                  {
-                    "type": "img",
-                    "title": "paniers-pneus.jpg",
-                    "infos": {
-                      "location": "",
-                      "weight": "",
-                      "date": ""
-                    }
-                  },
-                  {
-                    "type": "video",
-                    "title": "pierre-souffre.ogg",
-                    "infos": {
-                      "location": "",
-                      "weight": "",
-                      "date": ""
-                    }
-                  }
-                ],
-                {
-                  "type": "img",
-                  "title": "tas-pierre.jpg",
-                  "infos": {
-                    "location": "",
-                    "weight": "",
-                    "date": ""
-                  }
-                },
-                {
-                  "type": "img",
-                  "title": "filet-palmiers.jpg",
-                  "infos": {
-                    "location": "",
-                    "weight": "",
-                    "date": ""
-                  }
-                },
-                {
-                  "type": "img",
-                  "title": "moisson-champs.jpg",
-                  "infos": {
-                    "location": "",
-                    "weight": "",
-                    "date": ""
-                  }
-                },
-                [
-                  {
-                    "type": "img",
-                    "title": "ruelle.jpg",
-                    "infos": {
-                      "location": "",
-                      "weight": "",
-                      "date": ""
-                    }
-                  },
-                  {
-                    "type": "video",
-                    "title": "ruelle1.ogg",
-                    "infos": {
-                      "location": "",
-                      "weight": "",
-                      "date": ""
-                    }
-                  },
-                  {
-                    "type": "video",
-                    "title": "ruelle2.ogg",
-                    "infos": {
-                      "location": "",
-                      "weight": "",
-                      "date": ""
-                    }
-                  }
-                ]
-              ]
-            }
-          ],
-          "subChapters": [
+              "type": "img",
+              "title": "interieur-modeste.jpg",
+              "infos": {
+                "location": "",
+                "weight": "",
+                "date": ""
+              }
+            },
+            [
+              {
+                "type": "img",
+                "title": "paniers-pneus.jpg",
+                "infos": {
+                  "location": "",
+                  "weight": "",
+                  "date": ""
+                }
+              },
+              {
+                "type": "video",
+                "title": "pierre-souffre.ogg",
+                "infos": {
+                  "location": "",
+                  "weight": "",
+                  "date": ""
+                }
+              }
+            ],
             {
-              "medias": [
-                {
-                  "type": "img",
-                  "title": "ruelle-topographe.jpg",
-                  "infos": {
-                    "location": "",
-                    "weight": "",
-                    "date": ""
-                  }
-                },
-                {
-                  "type": "img",
-                  "title": "couronne-montagne.jpg",
-                  "infos": {
-                    "location": "",
-                    "weight": "",
-                    "date": ""
-                  }
-                },
-                {
-                  "type": "img",
-                  "title": "texte-arbre.jpg",
-                  "infos": {
-                    "location": "",
-                    "weight": "",
-                    "date": ""
-                  }
-                },
-                {
-                  "type": "img",
-                  "title": "texte-dune.jpg",
-                  "infos": {
-                    "location": "",
-                    "weight": "",
-                    "date": ""
-                  }
-                },
-                {
-                  "type": "img",
-                  "title": "texte-desert.jpg",
-                  "infos": {
-                    "location": "",
-                    "weight": "",
-                    "date": ""
-                  }
-                },
-                {
-                  "type": "img",
-                  "title": "couronne-texte.jpg",
-                  "infos": {
-                    "location": "",
-                    "weight": "",
-                    "date": ""
-                  }
-                },
-                {
-                  "type": "img",
-                  "title": "couronne-texte2.jpg",
-                  "infos": {
-                    "location": "",
-                    "weight": "",
-                    "date": ""
-                  }
-                },
-                {
-                  "type": "img",
-                  "title": "texte-roches.jpg",
-                  "infos": {
-                    "location": "",
-                    "weight": "",
-                    "date": ""
-                  }
-                },
-                {
-                  "type": "img",
-                  "title": "texte-cop22.jpg",
-                  "infos": {
-                    "location": "",
-                    "weight": "",
-                    "date": ""
-                  }
-                },
-                {
-                  "type": "img",
-                  "title": "texte-village.jpg",
-                  "infos": {
-                    "location": "",
-                    "weight": "",
-                    "date": ""
-                  }
-                },
-                [
-                  {
-                    "type": "img",
-                    "title": "texte-nuit.jpg",
-                    "infos": {
-                      "location": "",
-                      "weight": "",
-                      "date": ""
-                    }
-                  },
-                  {
-                    "type": "video",
-                    "title": "palmiers-typo.ogg",
-                    "infos": {
-                      "location": "",
-                      "weight": "",
-                      "date": ""
-                    }
-                  }
-                ]
-              ]
-            }
+              "type": "img",
+              "title": "tas-pierre.jpg",
+              "infos": {
+                "location": "",
+                "weight": "",
+                "date": ""
+              }
+            },
+            {
+              "type": "img",
+              "title": "filet-palmiers.jpg",
+              "infos": {
+                "location": "",
+                "weight": "",
+                "date": ""
+              }
+            },
+            {
+              "type": "img",
+              "title": "moisson-champs.jpg",
+              "infos": {
+                "location": "",
+                "weight": "",
+                "date": ""
+              }
+            },
+            [
+              {
+                "type": "img",
+                "title": "ruelle.jpg",
+                "infos": {
+                  "location": "",
+                  "weight": "",
+                  "date": ""
+                }
+              },
+              {
+                "type": "video",
+                "title": "ruelle1.ogg",
+                "infos": {
+                  "location": "",
+                  "weight": "",
+                  "date": ""
+                }
+              },
+              {
+                "type": "video",
+                "title": "ruelle2.ogg",
+                "infos": {
+                  "location": "",
+                  "weight": "",
+                  "date": ""
+                }
+              }
+            ]
+          ]
+        },
+        {
+          "medias": [
+            {
+              "type": "img",
+              "title": "ruelle-topographe.jpg",
+              "infos": {
+                "location": "",
+                "weight": "",
+                "date": ""
+              }
+            },
+            {
+              "type": "img",
+              "title": "couronne-montagne.jpg",
+              "infos": {
+                "location": "",
+                "weight": "",
+                "date": ""
+              }
+            },
+            {
+              "type": "img",
+              "title": "texte-arbre.jpg",
+              "infos": {
+                "location": "",
+                "weight": "",
+                "date": ""
+              }
+            },
+            {
+              "type": "img",
+              "title": "texte-dune.jpg",
+              "infos": {
+                "location": "",
+                "weight": "",
+                "date": ""
+              }
+            },
+            {
+              "type": "img",
+              "title": "texte-desert.jpg",
+              "infos": {
+                "location": "",
+                "weight": "",
+                "date": ""
+              }
+            },
+            {
+              "type": "img",
+              "title": "couronne-texte.jpg",
+              "infos": {
+                "location": "",
+                "weight": "",
+                "date": ""
+              }
+            },
+            {
+              "type": "img",
+              "title": "couronne-texte2.jpg",
+              "infos": {
+                "location": "",
+                "weight": "",
+                "date": ""
+              }
+            },
+            {
+              "type": "img",
+              "title": "texte-roches.jpg",
+              "infos": {
+                "location": "",
+                "weight": "",
+                "date": ""
+              }
+            },
+            {
+              "type": "img",
+              "title": "texte-cop22.jpg",
+              "infos": {
+                "location": "",
+                "weight": "",
+                "date": ""
+              }
+            },
+            {
+              "type": "img",
+              "title": "texte-village.jpg",
+              "infos": {
+                "location": "",
+                "weight": "",
+                "date": ""
+              }
+            },
+            [
+              {
+                "type": "img",
+                "title": "texte-nuit.jpg",
+                "infos": {
+                  "location": "",
+                  "weight": "",
+                  "date": ""
+                }
+              },
+              {
+                "type": "video",
+                "title": "palmiers-typo.ogg",
+                "infos": {
+                  "location": "",
+                  "weight": "",
+                  "date": ""
+                }
+              }
+            ]
           ]
         }
       ]
     }
+  ]
+}
