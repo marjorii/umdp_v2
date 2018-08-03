@@ -69,7 +69,7 @@ async function initProject() {
     var json = await readJSONFile("script/sources.json");
     var imgs = json.chapters[0].subChapters[0].medias;
     console.log(imgs);
-    // method map = array method, cf. forEach() but with return
+    // method map = array method (return a new array), cf. forEach() but with return
     imgs = imgs.map( (img) => {
         if(Array.isArray(img))  {
             img = img[0];
@@ -77,11 +77,16 @@ async function initProject() {
         return new Img(img);
     });
 
+    // Promise.all waits for every promises [in an array]
+    await Promise.all(imgs.map((img) => {
+        return img.load();
+    }));
+
     console.log(imgs);
-    // cf. for loop
-    imgs.forEach(async (img) => {
-        await img.init();
-    });
+    for(var i=0; i<imgs.length; i++) {
+        await imgs[i].init();
+        await delay(3000);
+    }
     console.log("Done !");
 }
 
