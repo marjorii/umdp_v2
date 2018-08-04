@@ -17,18 +17,18 @@ color:black;
 }
 
 #container {
-	position: absolute;
+	/* position: absolute;
 	margin: auto;
 	top: 0; left: 0; bottom: 0; right: 0;
 	width: 30%;
-	height: 30%;
+	height: 30%; */
 }
  #container img {
 	position: absolute;
-	margin: auto;
+	/* margin: auto;
 	top: 0; left: 0; bottom: 0; right: 0;
 	max-width: 100%;
-	height: auto;
+	height: auto; */
 }
 
 #videotable {

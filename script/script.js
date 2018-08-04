@@ -21,6 +21,16 @@ function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
 
+function randomFromTo(from, to, decimal){
+    if (decimal) {
+        //return decimal value if (..,..,true)
+        return Math.random() * (to - from + 1) + from;
+    }
+    else {
+        //return integar
+        return Math.floor(Math.random() * (to - from + 1) + from);
+    }
+}
 
 //OBJECTS
 
@@ -33,6 +43,8 @@ function Img(options) {
 }
 
 /* prototypes */
+
+/* load */
 Img.prototype.load = function() {
     return new Promise ((resolve, reject) => {
         this.elem = new Image();
@@ -47,6 +59,8 @@ Img.prototype.load = function() {
         this.elem.src = this.uri;
     });
 };
+
+/* init */
 Img.prototype.init = function() {
     return new Promise (async (resolve, reject) => {
         // if this.loaded isn't true
@@ -56,12 +70,49 @@ Img.prototype.init = function() {
         }
         document.getElementById('container').prepend(this.elem);
         console.log("Image added to DOM !");
+        // hide on click
+        this.elem.addEventListener("click", () => this.elem.style.display = "none");
+        // this.elem.onclick = function() {
+        //     this.style.display = "none";
+        // };
         resolve();
     });
-}
-Img.prototype.animate = function() {
+};
 
+/* animate */
+Img.prototype._animate = function() {
+    var width = this.elem.width;
+    var height = this.elem.height;
+    var maxX = window.innerWidth;
+    var maxY = window.innerHeight;
+    var pos = {
+        startX: (maxX - width) / 2,
+        startY: (maxY - height) /2,
+        endX: randomFromTo(-width * 1.5, maxY + width / 2),
+        endY: randomFromTo(-height * 1.5, maxY + height / 2)
+    };
+    var keyframes = [
+        {
+            transform: "translate(" + pos.startX + "px, " + pos.startY + "px) scale(0)",
+            offset: 0
+        },
+        {
+            transform: "translate(" + pos.endX + "px, " + pos.endY + "px) scale(2)",
+            offset: 1
+        }
+    ];
+
+    var options = {
+        duration: 10000,
+        iterations: 1,
+        fill: "forwards"
+    };
+    this.anim = this.elem.animate(keyframes, options);
+    this.anim.onfinish = () => {
+        console.log("Animation finished !");
+    };
 }
+
 
 //CORE
 
@@ -84,8 +135,9 @@ async function initProject() {
 
     console.log(imgs);
     for(var i=0; i<imgs.length; i++) {
+        imgs[i]._animate();
         await imgs[i].init();
-        await delay(3000);
+        await delay(2000);
     }
     console.log("Done !");
 }
