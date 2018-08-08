@@ -40,7 +40,25 @@ function randomFromTo(from, to, decimal){
 
 //OBJECTS
 
+/* Subchapter */
+
+function SubChapter(jsonOBJ) {
+    //constructor (first letter = maj)
+    this.medias = jsonOBJ.medias.map( media => {
+        if(Array.isArray(media)) media = media[0];
+        return new Img(media);
+    });
+}
+
+SubChapter.prototype.load = function() {
+    return Promise.all(this.medias.map(media => {
+        return media.load();
+    }));
+};
+
+
 /* Img */
+
 function Img(options) {
     //constructor
     this.title = options.title;
@@ -128,31 +146,26 @@ Img.prototype._animate = function() {
 
 async function initProject() {
     var json = await readJSONFile("script/sources.json");
-    imgs = json.chapters[0].subChapters[0].medias;
+    var imgs = json.chapters[0].subChapters[0];//.medias;
+
+    subChapter = new SubChapter(imgs);
+    await subChapter.load();
+
     window.addEventListener("wheel", scrollHandler, false);
     window.addEventListener("keydown", scrollHandler, false);
-    
-    imgs = imgs.map( (img) => {
-        if(Array.isArray(img))  {
-            img = img[0];
-        }
-        return new Img(img);
-    });
-    await Promise.all(imgs.map((media) => {
-        return media.load();
-    }));
 
-    for(var i=0; i<imgs.length; i++) {
-        await imgs[i].init();
+    for (const media of subChapter.medias) {
+        await media.init();
         await delay(2000);
     }
+
     console.log("Done !");
 }
 
 
 function scrollHandler(e) {
     function changeDirection() {
-        for (const img of imgs) {
+        for (const img of subChapter.medias) {
             if (img.playState === "running") {
                 img.anim.reverse();
             }
@@ -183,7 +196,7 @@ function scrollHandler(e) {
 
 //GLOBALS
 
-var imgs;
+var subChapter;
 var direction = 1;
 
 
