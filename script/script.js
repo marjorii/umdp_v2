@@ -17,9 +17,14 @@ function readJSONFile(url) {
     });
 }
 
+/* delay */
+
+// (time in milliseconds)
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
+
+/* allow random from to */
 
 function randomFromTo(from, to, decimal){
     if (decimal) {
@@ -32,19 +37,21 @@ function randomFromTo(from, to, decimal){
     }
 }
 
+
 //OBJECTS
 
-/* constructeur */
+/* Img */
 function Img(options) {
+    //constructor
     this.title = options.title;
     this.elem = undefined;
     this.uri = "medias/img/medium/1-norvege/" + this.title;
     this.loaded = false;
+    this.playState = undefined;
+    this.anim = undefined;
+    this.ready = false;
 }
 
-/* prototypes */
-
-/* load */
 Img.prototype.load = function() {
     return new Promise ((resolve, reject) => {
         this.elem = new Image();
@@ -60,26 +67,24 @@ Img.prototype.load = function() {
     });
 };
 
-/* init */
 Img.prototype.init = function() {
-    return new Promise (async (resolve, reject) => {
-        // if this.loaded isn't true
-        if(!this.loaded) {
-            console.log("Image loading !");
-            await this.load();
-        }
-        document.getElementById('container').prepend(this.elem);
-        console.log("Image added to DOM !");
-        // hide on click
-        this.elem.addEventListener("click", () => this.elem.style.display = "none");
-        // this.elem.onclick = function() {
-        //     this.style.display = "none";
-        // };
-        resolve();
-    });
+    // create animation
+    this._animate();
+    //Add elem to DOM
+    document.getElementById('container').prepend(this.elem);
+    console.log("Image added to DOM !");
+    // hide on click
+    this.elem.addEventListener("click", () => this.elem.style.display = "none");
+    this.ready = "true";
+    // this.elem.onclick = function() {
+    //     this.style.display = "none";
+    // };
+    //     resolve();
+    // });
 };
 
-/* animate */
+// the underscore before animate is used to distinguish the name of the function from the function itself
+// (_animate ≠ animate();)
 Img.prototype._animate = function() {
     var width = this.elem.width;
     var height = this.elem.height;
@@ -104,12 +109,17 @@ Img.prototype._animate = function() {
 
     var options = {
         duration: 10000,
+        //easing: "",
         iterations: 1,
+        direction: "normal",
         fill: "forwards"
+        // fill: "both"
     };
     this.anim = this.elem.animate(keyframes, options);
+    this.playState = "running";
     this.anim.onfinish = () => {
         console.log("Animation finished !");
+        this.playState = "finished";
     };
 }
 
@@ -118,28 +128,65 @@ Img.prototype._animate = function() {
 
 async function initProject() {
     var json = await readJSONFile("script/sources.json");
-    var imgs = json.chapters[0].subChapters[0].medias;
-    console.log(imgs);
-    // method map = array method (return a new array), cf. forEach() but with return
+    imgs = json.chapters[0].subChapters[0].medias;
+    window.addEventListener("wheel", scrollHandler, false);
+    window.addEventListener("keydown", scrollHandler, false);
+    
     imgs = imgs.map( (img) => {
         if(Array.isArray(img))  {
             img = img[0];
         }
         return new Img(img);
     });
-
-    // Promise.all waits for every promises [in an array]
-    await Promise.all(imgs.map((img) => {
-        return img.load();
+    await Promise.all(imgs.map((media) => {
+        return media.load();
     }));
 
-    console.log(imgs);
     for(var i=0; i<imgs.length; i++) {
-        imgs[i]._animate();
         await imgs[i].init();
         await delay(2000);
     }
     console.log("Done !");
 }
+
+
+function scrollHandler(e) {
+    function changeDirection() {
+        for (const img of imgs) {
+            if (img.playState === "running") {
+                img.anim.reverse();
+            }
+        }
+    }
+    if (e.deltaY > 0 || e.keyCode == "40") {
+        if (direction === -1) {
+            direction = 1;
+            changeDirection();
+        }
+    }
+    else if (e.deltaY < 0 || e.keyCode == "38") {
+        if (direction === 1) {
+            direction = -1;
+            changeDirection();
+        }
+    }
+    else if (e.keyCode == "32") {
+        console.log("pause");
+    }
+    else {
+        console.log("no effect");
+        return;
+    }
+    e.preventDefault();
+    console.log(direction);
+}
+
+//GLOBALS
+
+var imgs;
+var direction = 1;
+
+
+// ACTION
 
 initProject();
