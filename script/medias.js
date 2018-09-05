@@ -30,7 +30,7 @@ Img.prototype.load = function() {
 
 Img.prototype.init = function() {
     // create animation
-    this.animate();
+    this.createAnimation();
     //Add elem to DOM
     document.getElementById('container').prepend(this.elem);
     console.log("Image added to DOM !");
@@ -44,7 +44,15 @@ Img.prototype.init = function() {
     // });
 };
 
-Img.prototype.animate = function() {
+Img.prototype.play = function() {
+    if(!this.ready) {
+        this.init();
+    }
+    this.anim.play();
+    this.playState = "running";
+};
+
+Img.prototype.createAnimation = function() {
     var width = this.elem.width;
     var height = this.elem.height;
     var maxX = window.innerWidth;
@@ -75,7 +83,8 @@ Img.prototype.animate = function() {
         // fill: "both"
     };
     this.anim = this.elem.animate(keyframes, options);
-    this.playState = "running";
+    this.anim.pause();
+    this.playState = "paused";
     this.anim.onfinish = () => {
         console.log("Animation finished !");
         this.playState = "finished";
