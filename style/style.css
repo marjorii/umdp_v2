@@ -24,15 +24,18 @@ color:black;
 #videotable {
 	position:absolute;
 	margin: 0;
-	width: 66%;
-	height:auto;
+	width: 75%;
+	height: 90%;
 	pointer-events: none;
-	/* tablette paysage : 72%; */
-	/* tablette portrait : 50%; */
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	/* tablette paysage (max-width: 1024px ? issue with 1280x980 ~square format) = height: 75%; */
+	/* tablette portrait = width: 50%; */
 }
-.video {
-	display:block;
-	width:50%;
+video {
+	display: block;
+	width: 50%;
 	/* tablette portrait : 100%; */
 }
 
