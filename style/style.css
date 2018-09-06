@@ -21,6 +21,10 @@ color:black;
 	position: absolute;
 }
 
+.hide {
+	display: none;
+}
+
 #videotable {
 	position:absolute;
 	margin: 0;

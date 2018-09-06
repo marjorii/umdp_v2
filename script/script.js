@@ -10,11 +10,7 @@ async function initProject() {
     window.addEventListener("wheel", scrollHandler, false);
     window.addEventListener("keydown", scrollHandler, false);
 
-    for (const media of subChapter.medias) {
-        await media.init();
-        await delay(2000);
-    }
-
+    await subChapter.play();
     console.log("Done !");
 }
 
@@ -24,8 +20,10 @@ function scrollHandler(e) {
         for (const img of subChapter.medias) {
             if (img.playState === "running") {
                 img.anim.reverse();
+                img.elem.classList.remove("hide");
             }
         }
+        window.dispatchEvent(new Event("reverse"));
     }
     if (e.deltaY > 0 || e.keyCode == "40") {
         if (direction === -1) {
