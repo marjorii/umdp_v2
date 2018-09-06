@@ -4,7 +4,9 @@ function SubChapter(jsonOBJ) {
     //constructor (first letter = maj)
     this.index = 0;
     this.medias = jsonOBJ.medias.map( media => {
-        if(Array.isArray(media)) media = media[0];
+        if(Array.isArray(media)) {
+            return new Video(media[1]);
+        }
         return new Img(media);
     });
 }

@@ -13,13 +13,13 @@ function Img(options) {
     this.ready = false;
 }
 
-Object.defineProperties(Img.prototype, {
-    playstate: {
-        get: function() {
-            return this.anim.playState;
-        }
-    }
-})
+// Object.defineProperties(Img.prototype, {
+//     playState: {
+//         get: function() {
+//             return this.anim.playState;
+//         }
+//     }
+// })
 
 Img.prototype.load = function() {
     return new Promise ((resolve, reject) => {
@@ -95,3 +95,50 @@ Img.prototype.createAnimation = function() {
     this.anim = this.elem.animate(keyframes, options);
     this.anim.pause();
 }
+
+
+/* Video */
+
+function Video(options) {
+    this.title = options.title;
+    this.elem = undefined;
+    this.uri = "medias/video/1-norvege/" + this.title;
+    this.loaded = false;
+    // this.playState = undefined;
+    this.ready = false;
+}
+
+// Object.defineProperties(Video.prototype, {
+//     playState: {
+//         get: function() {
+//             return this.anim.playState;
+//         }
+//     }
+// });
+
+Video.prototype.load = function() {
+    return new Promise ((resolve, reject) => {
+        this.elem = document.createElement("video");
+        this.elem.oncanplaythrough = () => {
+            resolve();
+            this.loaded = true;
+            console.log("Video loaded !");
+        };
+        this.elem.onerror = () => {
+            reject(new Error("Couldn't find " + this.uri));
+        };
+        this.elem.src = this.uri;
+    });
+};
+
+Video.prototype.init = function() {
+    document.getElementById("videotable").append(this.elem);
+    this.ready = true;
+};
+
+Video.prototype.play = function() {
+    if(!this.ready) {
+        this.init();
+    }
+    this.elem.play();
+};
