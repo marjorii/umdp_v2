@@ -13,13 +13,20 @@ function Img(options) {
     this.ready = false;
 }
 
+Object.defineProperties(Img.prototype, {
+    playstate: {
+        get: function() {
+            return this.anim.playState;
+        }
+    }
+})
+
 Img.prototype.load = function() {
     return new Promise ((resolve, reject) => {
         this.elem = new Image();
         this.elem.onload = () => {
             resolve();
             this.loaded = true;
-            console.log("Image loaded !");
         };
         this.elem.onerror = () => {
             reject(new Error("Couldn't find" + this.uri));
@@ -33,9 +40,8 @@ Img.prototype.init = function() {
     this.createAnimation();
     //Add elem to DOM
     document.getElementById('container').prepend(this.elem);
-    console.log("Image added to DOM !");
     // hide on click
-    this.elem.addEventListener("click", () => this.elem.style.display = "none");
+    this.elem.addEventListener("click", () => this.elem.classList.add("hide"));
     this.ready = "true";
     // this.elem.onclick = function() {
     //     this.style.display = "none";
@@ -48,8 +54,13 @@ Img.prototype.play = function() {
     if(!this.ready) {
         this.init();
     }
-    this.anim.play();
-    this.playState = "running";
+    if(direction === this.anim.playbackRate) {
+        this.anim.play();
+    }
+    else {
+        this.anim.reverse();
+    }
+    this.elem.classList.remove("hide");
 };
 
 Img.prototype.createAnimation = function() {
@@ -79,14 +90,8 @@ Img.prototype.createAnimation = function() {
         //easing: "",
         iterations: 1,
         direction: "normal",
-        fill: "forwards"
-        // fill: "both"
+        fill: "both"
     };
     this.anim = this.elem.animate(keyframes, options);
     this.anim.pause();
-    this.playState = "paused";
-    this.anim.onfinish = () => {
-        console.log("Animation finished !");
-        this.playState = "finished";
-    };
 }
