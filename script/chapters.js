@@ -24,7 +24,7 @@ SubChapter.prototype.play = function() {
             var media = _this.medias[_this.index];
             if(media !== undefined) {
                 media.play();
-                await reversableSleep(2000);
+                await reversableSleep(3000);
                 //ternary condition (if smthg === smthg ?(do) this :(else do) this;)
                 _this.index = _this.findLastStopped(direction === -1);
                 playMedia();
@@ -34,9 +34,16 @@ SubChapter.prototype.play = function() {
                 resolve();
             }
         }
-
         playMedia();
     });
+};
+
+SubChapter.prototype.reverse = function() {
+    this.medias.forEach(media => {
+        if(media.playState === "running") {
+            media.reverse();
+        }
+    })
 };
 
 SubChapter.prototype.findLastStopped = function (reversed) {

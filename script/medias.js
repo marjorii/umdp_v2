@@ -13,13 +13,16 @@ function Img(options) {
     this.ready = false;
 }
 
-// Object.defineProperties(Img.prototype, {
-//     playState: {
-//         get: function() {
-//             return this.anim.playState;
-//         }
-//     }
-// })
+Object.defineProperties(Img.prototype, {
+    playState: {
+        get: function() {
+            if(!this.anim) {
+                return null;
+            }
+            return this.anim.playState;
+        }
+    }
+});
 
 Img.prototype.load = function() {
     return new Promise ((resolve, reject) => {
@@ -43,11 +46,6 @@ Img.prototype.init = function() {
     // hide on click
     this.elem.addEventListener("click", () => this.elem.classList.add("hide"));
     this.ready = "true";
-    // this.elem.onclick = function() {
-    //     this.style.display = "none";
-    // };
-    //     resolve();
-    // });
 };
 
 Img.prototype.play = function() {
@@ -60,6 +58,11 @@ Img.prototype.play = function() {
     else {
         this.anim.reverse();
     }
+    this.elem.classList.remove("hide");
+};
+
+Img.prototype.reverse = function() {
+    this.anim.reverse();
     this.elem.classList.remove("hide");
 };
 
@@ -108,13 +111,13 @@ function Video(options) {
     this.ready = false;
 }
 
-// Object.defineProperties(Video.prototype, {
-//     playState: {
-//         get: function() {
-//             return this.anim.playState;
-//         }
-//     }
-// });
+Object.defineProperties(Video.prototype, {
+    playState: {
+        get: function() {
+            return this.elem.playState;
+        }
+    }
+});
 
 Video.prototype.load = function() {
     return new Promise ((resolve, reject) => {
@@ -142,3 +145,7 @@ Video.prototype.play = function() {
     }
     this.elem.play();
 };
+
+Video.prototype.reverse = function() {
+    this.elem.reverse();
+}

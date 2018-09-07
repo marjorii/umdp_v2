@@ -17,12 +17,7 @@ async function initProject() {
 
 function scrollHandler(e) {
     function changeDirection() {
-        for (const img of subChapter.medias) {
-            if (img.playState === "running") {
-                img.anim.reverse();
-                img.elem.classList.remove("hide");
-            }
-        }
+        subChapter.reverse();
         window.dispatchEvent(new Event("reverse"));
     }
     if (e.deltaY > 0 || e.keyCode == "40") {
