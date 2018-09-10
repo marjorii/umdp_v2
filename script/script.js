@@ -14,6 +14,23 @@ async function initProject() {
     console.log("Done !");
 }
 
+function createMedia(media) {
+    if(Array.isArray(media)) {
+        return new MultiMedia(media);
+    }
+
+    const type = media.type;
+    if (type === "img") {
+        return new Img(media);
+    }
+    else if (type === "video") {
+        return new Video(media);
+    }
+    else {
+        throw(new Error("Wrong or unspecified media type for '" + media.title + "'"));
+    }
+}
+
 
 function scrollHandler(e) {
     function changeDirection() {
@@ -21,19 +38,30 @@ function scrollHandler(e) {
         window.dispatchEvent(new Event("reverse"));
     }
     if (e.deltaY > 0 || e.keyCode == "40") {
-        if (direction === -1) {
+        if (!paused && direction === -1) {
             direction = 1;
             changeDirection();
         }
     }
     else if (e.deltaY < 0 || e.keyCode == "38") {
-        if (direction === 1) {
+        if (!paused && direction === 1) {
             direction = -1;
             changeDirection();
         }
     }
     else if (e.keyCode == "32") {
-        console.log("pause");
+        if (!paused) {
+            paused = true;
+            console.log("pause");
+            subChapter.pause();
+            window.dispatchEvent(new Event("pause"));
+        }
+        else {
+            paused = false;
+            console.log("play");
+            subChapter.resume();
+            window.dispatchEvent(new Event("resume"));
+        }
     }
     else {
         console.log("no effect");
@@ -47,6 +75,7 @@ function scrollHandler(e) {
 
 var subChapter;
 var direction = 1;
+var paused = false;
 
 
 // ACTION

@@ -60,10 +60,21 @@ Img.prototype.play = function() {
     }
     this.elem.classList.remove("hide");
 };
-
 Img.prototype.reverse = function() {
-    this.anim.reverse();
-    this.elem.classList.remove("hide");
+    if (this.playState === "running") {
+        this.anim.reverse();
+        this.elem.classList.remove("hide");
+    }
+};
+Img.prototype.pause = function() {
+    if (this.playState === "running") {
+    this.anim.pause();
+    }
+};
+Img.prototype.resume = function() {
+    if (this.playState === "paused") {
+        this.anim.play();
+    }
 };
 
 Img.prototype.createAnimation = function() {
@@ -107,7 +118,7 @@ function Video(options) {
     this.elem = undefined;
     this.uri = "medias/video/1-norvege/" + this.title;
     this.loaded = false;
-    // this.playState = undefined;
+    this.playState = undefined;
     this.ready = false;
 }
 
@@ -125,7 +136,6 @@ Video.prototype.load = function() {
         this.elem.oncanplaythrough = () => {
             resolve();
             this.loaded = true;
-            console.log("Video loaded !");
         };
         this.elem.onerror = () => {
             reject(new Error("Couldn't find " + this.uri));
@@ -145,7 +155,75 @@ Video.prototype.play = function() {
     }
     this.elem.play();
 };
-
 Video.prototype.reverse = function() {
-    this.elem.reverse();
+    if (this.playState === "running") {
+        this.elem.reverse();
+    }
+};
+Video.prototype.pause = function() {
+    if (this.playState === "running") {
+        this.elem.pause();
+    }
+};
+Video.prototype.resume = function() {
+    if (this.playState === "paused") {
+        this.elem.play();
+    }
+};
+
+
+/* Multimedia */
+
+function MultiMedia(medias) {
+    var [img, ...others] = medias;
+    this.img = createMedia(img);
+    this.medias = others.map(media => createMedia(media));
+    this.loaded = false;
+    this.ready = false;
 }
+
+MultiMedia.prototype.load = function() {
+    return new Promise ((resolve, reject) => {
+        Promise.all([...this.medias.map(media => media.load()), this.img.load()])
+        .then(() => {
+            this.loaded = true;
+            resolve();
+            console.log("multimedia loaded !");
+        }).catch(err => reject(err));
+    });
+    // return Promise.all([this.img.load(), ...this.medias.map(media => media.load())]);
+};
+
+MultiMedia.prototype.init = function() {
+    this.medias.forEach(media => media.init());
+    this.img.init();
+    this.ready = true;
+    console.log("multimedia ready !");
+};
+
+MultiMedia.prototype.play = function() {
+    if (!this.ready) this.init();
+    this.medias.forEach(other => {
+        other.elem.classList.remove("hide");
+    });
+    this.medias.forEach(media => media.play());
+    this.img.play();
+    this.img.anim.onfinish = () => {
+        this.medias.forEach(other => {
+            other.elem.pause();
+            other.elem.classList.add("hide");
+        });
+    };
+};
+MultiMedia.prototype.reverse = function() {
+    this.img.reverse();
+    this.medias.forEach(media => media.reverse());
+};
+MultiMedia.prototype.pause = function() {
+    this.img.pause();
+    this.medias.forEach(media => media.pause());
+};
+MultiMedia.prototype.resume = function() {
+    this.img.resume();
+    this.medias.forEach(media => media.resume());
+};

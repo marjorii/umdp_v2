@@ -3,12 +3,13 @@
 function SubChapter(jsonOBJ) {
     //constructor (first letter = maj)
     this.index = 0;
-    this.medias = jsonOBJ.medias.map( media => {
-        if(Array.isArray(media)) {
-            return new Video(media[1]);
-        }
-        return new Img(media);
-    });
+    this.medias = jsonOBJ.medias.map( media => createMedia(media));
+    // this.medias = jsonOBJ.medias.map( media => {
+    //     if(Array.isArray(media)) {
+    //         return new MultiMedia(media[1]);
+    //     }
+    //     return new Img(media);
+    // });
 }
 
 SubChapter.prototype.load = function() {
@@ -25,7 +26,6 @@ SubChapter.prototype.play = function() {
             if(media !== undefined) {
                 media.play();
                 await reversableSleep(3000);
-                //ternary condition (if smthg === smthg ?(do) this :(else do) this;)
                 _this.index = _this.findLastStopped(direction === -1);
                 playMedia();
                 console.log("index", _this.index);
@@ -39,11 +39,15 @@ SubChapter.prototype.play = function() {
 };
 
 SubChapter.prototype.reverse = function() {
-    this.medias.forEach(media => {
-        if(media.playState === "running") {
-            media.reverse();
-        }
-    })
+    this.medias.forEach(media => media.reverse());
+};
+
+SubChapter.prototype.pause = function() {
+    this.medias.forEach(media => media.pause());
+};
+
+SubChapter.prototype.resume = function() {
+    this.medias.forEach(media => media.play());
 };
 
 SubChapter.prototype.findLastStopped = function (reversed) {

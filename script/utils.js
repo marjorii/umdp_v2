@@ -46,8 +46,9 @@ function reversableSleep(duration) {
         function reverse() {
             clearTimeout(timeOut);
             saveState();
-            direction = direction === 1 ? -1 : 1;
-            timeOut = setTimeout(resolver, direction === 1 ? duration - totalSpent : totalSpent);
+            //ternary condition (if smthg === smthg ?(do) this :(else do) this;)
+            selfDirection = selfDirection === 1 ? -1 : 1;
+            timeOut = setTimeout(resolver, selfDirection === 1 ? duration - totalSpent : totalSpent);
         }
 
         function pause() {
@@ -65,14 +66,14 @@ function reversableSleep(duration) {
             window.removeEventListener("resume", resume);
             window.addEventListener("reverse", reverse);
             window.addEventListener("pause", pause);
-            timeOut = setTimeout(resolver, direction === 1 ? duration - totalSpent : totalSpent);
+            timeOut = setTimeout(resolver, selfDirection === 1 ? duration - totalSpent : totalSpent);
         }
 
         function saveState() {
             var now = performance.now();
             var timeSpent = now - start;
             start = now;
-            totalSpent += direction === 1 ? timeSpent : -timeSpent;
+            totalSpent += selfDirection === 1 ? timeSpent : -timeSpent;
         }
 
         function resolver() {
@@ -82,7 +83,7 @@ function reversableSleep(duration) {
         }
 
         var totalSpent = 0;
-        var direction = 1;
+        var selfDirection = 1;
         var start = performance.now();
         var paused = false;
         var timeOut = setTimeout(resolver, duration);
