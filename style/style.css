@@ -93,26 +93,15 @@ nav a {
 
 #actions-buttons {
 	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 400px;
+	left: 0; bottom: 25px; right: 0;
 	margin: auto;
-	left: 0; bottom: 20px; right: 0;
-	text-align: center;
 }
-#about {
-	margin-right: 15px;
-	padding-bottom: 7px;
-	vertical-align: middle;
-	font-size: 45px;
-	pointer-events: auto;
-}
-#actions-buttons span {
-	vertical-align: middle;
-	border-right: 1px solid black;
-}
-#refresh {
-	margin-left: 18px;
-	width: 25px;
-	vertical-align: middle;
-	pointer-events: auto;
+#actions-buttons a img {
+height: 25px;
 }
 
 #image-caption {
