@@ -145,7 +145,7 @@ Video.prototype.load = function() {
 };
 
 Video.prototype.init = function() {
-    document.getElementById("videotable").append(this.elem);
+    document.getElementById("mediatable").append(this.elem);
     this.ready = true;
 };
 
@@ -166,6 +166,67 @@ Video.prototype.pause = function() {
     }
 };
 Video.prototype.resume = function() {
+    if (this.playState === "paused") {
+        this.elem.play();
+    }
+};
+
+
+/* Audio */
+
+function Audio(options) {
+    this.title = options.title;
+    this.elem = undefined;
+    this.uri = "medias/sons/1-norvege/" + this.title;
+    this.loaded = false;
+    this.playState = undefined;
+    this.ready = false;
+}
+
+Object.defineProperties(Audio.prototype, {
+    playState: {
+        get: function() {
+            return this.elem.playState;
+        }
+    }
+});
+
+Audio.prototype.load = function() {
+    return new Promise ((resolve, reject) => {
+        this.elem = document.createElement("audio");
+        this.elem.oncanplaythrough = () => {
+            resolve();
+            this.loaded = true;
+        };
+        this.elem.onerror = () => {
+            reject(new Error("Couldn't find " + this.uri));
+        };
+        this.elem.src = this.uri;
+    });
+};
+
+Audio.prototype.init = function() {
+    document.getElementById("mediatable").append(this.elem);
+    this.ready = true;
+};
+
+Audio.prototype.play = function() {
+    if(!this.ready) {
+        this.init();
+    }
+    this.elem.play();
+};
+Audio.prototype.reverse = function() {
+    if (this.playState === "running") {
+        this.elem.reverse();
+    }
+};
+Audio.prototype.pause = function() {
+    if (this.playState === "running") {
+        this.elem.pause();
+    }
+};
+Audio.prototype.resume = function() {
     if (this.playState === "paused") {
         this.elem.play();
     }

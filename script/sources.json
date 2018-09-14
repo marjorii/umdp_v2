@@ -50,6 +50,15 @@
                   "weight": "",
                   "date": ""
                 }
+              },
+              {
+                "type": "sound",
+                "title": "alarme.WAV",
+                "infos": {
+                  "location": "",
+                  "weight": "",
+                  "date": ""
+                }
               }
             ],
             {

@@ -26,6 +26,9 @@ function createMedia(media) {
     else if (type === "video") {
         return new Video(media);
     }
+    else if (type === "sound") {
+        return new Audio(media);
+    }
     else {
         throw(new Error("Wrong or unspecified media type for '" + media.title + "'"));
     }
