@@ -232,7 +232,6 @@ Audio.prototype.resume = function() {
     }
 };
 
-
 /* Multimedia */
 
 function MultiMedia(medias) {

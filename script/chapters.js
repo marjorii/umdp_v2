@@ -25,7 +25,7 @@ SubChapter.prototype.play = function() {
             var media = _this.medias[_this.index];
             if(media !== undefined) {
                 media.play();
-                await reversableSleep(3000);
+                await reversableSleep(5000);
                 _this.index = _this.findLastStopped(direction === -1);
                 playMedia();
                 console.log("index", _this.index);
@@ -49,6 +49,7 @@ SubChapter.prototype.pause = function() {
 SubChapter.prototype.resume = function() {
     this.medias.forEach(media => media.play());
 };
+
 
 SubChapter.prototype.findLastStopped = function (reversed) {
     var medias = reversed ? this.medias.slice(0).reverse() : this.medias;

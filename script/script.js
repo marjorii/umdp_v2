@@ -7,11 +7,14 @@ async function initProject() {
     subChapter = new SubChapter(imgs);
     await subChapter.load();
 
-    window.addEventListener("wheel", scrollHandler, false);
-    window.addEventListener("keydown", scrollHandler, false);
-
     await subChapter.play();
     console.log("Done !");
+}
+
+function initEvent() {
+    window.addEventListener("wheel", scrollHandler, false);
+    window.addEventListener("keydown", scrollHandler, false);
+    document.getElementById("actions-buttons").addEventListener("click", playerOnClick);
 }
 
 function createMedia(media) {
@@ -34,23 +37,20 @@ function createMedia(media) {
     }
 }
 
-
-function scrollHandler(e) {
-    function changeDirection() {
+function changeDirection(dir) {
+    if (!paused && direction !== dir) {
         subChapter.reverse();
         window.dispatchEvent(new Event("reverse"));
+        direction = dir;
     }
+}
+
+function scrollHandler(e) {
     if (e.deltaY > 0 || e.keyCode == "40") {
-        if (!paused && direction === -1) {
-            direction = 1;
-            changeDirection();
-        }
+        changeDirection(1);
     }
     else if (e.deltaY < 0 || e.keyCode == "38") {
-        if (!paused && direction === 1) {
-            direction = -1;
-            changeDirection();
-        }
+        changeDirection(-1);
     }
     else if (e.keyCode == "32") {
         if (!paused) {
@@ -58,12 +58,16 @@ function scrollHandler(e) {
             console.log("pause");
             subChapter.pause();
             window.dispatchEvent(new Event("pause"));
+            document.getElementById("pause").src = "medias/ui/play.png";
+            document.getElementById("pause").id = "play";
         }
         else {
             paused = false;
             console.log("play");
             subChapter.resume();
             window.dispatchEvent(new Event("resume"));
+            document.getElementById("play").src = "medias/ui/pause.png";
+            document.getElementById("play").id = "pause";
         }
     }
     else {
@@ -72,6 +76,44 @@ function scrollHandler(e) {
     }
     e.preventDefault();
     console.log(direction);
+}
+
+function playerOnClick(e) {
+    var button = e.target.id;
+    if (button == "forward") {
+        changeDirection(1);
+    }
+    else if (button == "backward") {
+        changeDirection(-1);
+    }
+    else if (!paused && button == "pause") {
+        paused = true;
+        subChapter.pause();
+        window.dispatchEvent(new Event("pause"));
+        document.getElementById("pause").src = "medias/ui/play.png";
+        document.getElementById("pause").id = "play";
+        console.log("pause");
+    }
+    else if (paused && button == "play") {
+        paused = false;
+        subChapter.resume();
+        window.dispatchEvent(new Event("resume"));
+        document.getElementById("play").src = "medias/ui/pause.png";
+        document.getElementById("play").id = "pause";
+        console.log("play");
+    }
+    else if (button == "mute") {
+        document.querySelectorAll("audio").forEach(audio => audio.muted = true);
+        document.getElementById("mute").src = "medias/ui/notmute.png";
+        document.getElementById("mute").id = "unmute";
+        console.log("mute");
+    }
+    else if (button == "unmute") {
+        document.querySelectorAll("audio").forEach(audio => audio.muted = false);
+        document.getElementById("unmute").src = "medias/ui/mute.png";
+        document.getElementById("unmute").id = "mute";
+        console.log("unmute");
+    }
 }
 
 //GLOBALS
@@ -83,4 +125,5 @@ var paused = false;
 
 // ACTION
 
+initEvent();
 initProject();
