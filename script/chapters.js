@@ -39,16 +39,27 @@ SubChapter.prototype.play = function() {
 };
 
 SubChapter.prototype.reverse = function() {
-    this.medias.forEach(media => media.reverse());
+    this.medias.forEach(media => {
+        if (media.playState === "running") {
+            media.reverse();
+        }
+    });
 };
 
 SubChapter.prototype.pause = function() {
-    this.medias.forEach(media => media.pause());
+    this.medias.forEach(media => {
+        if (media.playState === "running") {
+            media.pause();
+        }
+    });
 };
 
 SubChapter.prototype.resume = function() {
-    this.medias.forEach(media => media.play());
-};
+    this.medias.forEach(media => {
+        if (media.playState === "paused") {
+            media.resume();
+        }
+    });};
 
 
 SubChapter.prototype.findLastStopped = function (reversed) {

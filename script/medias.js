@@ -16,10 +16,13 @@ function Img(options) {
 Object.defineProperties(Img.prototype, {
     playState: {
         get: function() {
-            if(!this.anim) {
-                return null;
+            if (this.anim) {
+                if (this.anim.currentTime === 0 && ["paused", "pending"].includes(this.anim.playState)) {
+                    return "waiting";
+                }
+                return this.anim.playState;
             }
-            return this.anim.playState;
+            return undefined;
         }
     }
 });
@@ -52,29 +55,29 @@ Img.prototype.play = function() {
     if(!this.ready) {
         this.init();
     }
-    if(direction === this.anim.playbackRate) {
-        this.anim.play();
-    }
-    else {
+    if (this.playState === "finished" || this.playState === "waiting") {
+        if (direction === this.anim.playbackRate) {
+            this.anim.play();
+        } else {
         this.anim.reverse();
+        }
     }
     this.elem.classList.remove("hide");
 };
+
 Img.prototype.reverse = function() {
     if (this.playState === "running") {
-        this.anim.reverse();
-        this.elem.classList.remove("hide");
+        if (this.anim.playbackRate === direction) {
+            this.anim.reverse();
+            this.elem.classList.remove("hide");
+        }
     }
 };
 Img.prototype.pause = function() {
-    if (this.playState === "running") {
     this.anim.pause();
-    }
 };
 Img.prototype.resume = function() {
-    if (this.playState === "paused") {
-        this.anim.play();
-    }
+    this.anim.play();
 };
 
 Img.prototype.createAnimation = function() {
@@ -155,21 +158,15 @@ Video.prototype.play = function() {
     }
     this.elem.play();
 };
-Video.prototype.reverse = function() {
-    if (this.playState === "running") {
-        this.elem.reverse();
-    }
-};
+// Video.prototype.reverse = function() {
+//     this.elem.reverse();
+// };
 Video.prototype.pause = function() {
-    if (this.playState === "running") {
-        this.elem.pause();
-    }
+    this.elem.pause();
 };
-Video.prototype.resume = function() {
-    if (this.playState === "paused") {
-        this.elem.play();
-    }
-};
+// Video.prototype.resume = function() {
+//     this.elem.play();
+// };
 
 
 /* Audio */
@@ -216,21 +213,15 @@ Audio.prototype.play = function() {
     }
     this.elem.play();
 };
-Audio.prototype.reverse = function() {
-    if (this.playState === "running") {
-        this.elem.reverse();
-    }
-};
+// Audio.prototype.reverse = function() {
+//     this.elem.reverse();
+// };
 Audio.prototype.pause = function() {
-    if (this.playState === "running") {
-        this.elem.pause();
-    }
+    this.elem.pause();
 };
-Audio.prototype.resume = function() {
-    if (this.playState === "paused") {
-        this.elem.play();
-    }
-};
+// Audio.prototype.resume = function() {
+//     this.elem.play();
+// };
 
 /* Multimedia */
 
@@ -241,6 +232,14 @@ function MultiMedia(medias) {
     this.loaded = false;
     this.ready = false;
 }
+
+Object.defineProperties(MultiMedia.prototype, {
+    playState: {
+        get: function() {
+            return this.img.playState;
+        }
+    }
+});
 
 MultiMedia.prototype.load = function() {
     return new Promise ((resolve, reject) => {
@@ -277,7 +276,7 @@ MultiMedia.prototype.play = function() {
 };
 MultiMedia.prototype.reverse = function() {
     this.img.reverse();
-    this.medias.forEach(media => media.reverse());
+    // this.medias.forEach(media => media.reverse());
 };
 MultiMedia.prototype.pause = function() {
     this.img.pause();
@@ -285,5 +284,5 @@ MultiMedia.prototype.pause = function() {
 };
 MultiMedia.prototype.resume = function() {
     this.img.resume();
-    this.medias.forEach(media => media.resume());
+    // this.medias.forEach(media => media.resume());
 };
