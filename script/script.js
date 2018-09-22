@@ -2,12 +2,12 @@
 
 async function initProject() {
     var json = await readJSONFile("script/sources.json");
-    var imgs = json.chapters[0].subChapters[0];//.medias;
+    var imgs = json.chapters[0];//.subChapters[0].medias;
 
-    subChapter = new SubChapter(imgs);
-    await subChapter.load();
+    chapter = new Chapter(imgs);
+    await chapter.load();
 
-    await subChapter.play();
+    await chapter.play();
     console.log("Done !");
 }
 
@@ -39,7 +39,7 @@ function createMedia(media) {
 
 function changeDirection(dir) {
     if (!paused && direction !== dir) {
-        subChapter.reverse();
+        chapter.reverse();
         window.dispatchEvent(new Event("reverse"));
         direction = dir;
     }
@@ -56,7 +56,7 @@ function scrollHandler(e) {
         if (!paused) {
             paused = true;
             console.log("pause");
-            subChapter.pause();
+            chapter.pause();
             window.dispatchEvent(new Event("pause"));
             document.getElementById("pause").src = "medias/ui/play.png";
             document.getElementById("pause").id = "play";
@@ -64,7 +64,7 @@ function scrollHandler(e) {
         else {
             paused = false;
             console.log("play");
-            subChapter.resume();
+            chapter.resume();
             window.dispatchEvent(new Event("resume"));
             document.getElementById("play").src = "medias/ui/pause.png";
             document.getElementById("play").id = "pause";
@@ -88,7 +88,7 @@ function playerOnClick(e) {
     }
     else if (!paused && button == "pause") {
         paused = true;
-        subChapter.pause();
+        chapter.pause();
         window.dispatchEvent(new Event("pause"));
         document.getElementById("pause").src = "medias/ui/play.png";
         document.getElementById("pause").id = "play";
@@ -96,7 +96,7 @@ function playerOnClick(e) {
     }
     else if (paused && button == "play") {
         paused = false;
-        subChapter.resume();
+        chapter.resume();
         window.dispatchEvent(new Event("resume"));
         document.getElementById("play").src = "medias/ui/pause.png";
         document.getElementById("play").id = "pause";
@@ -119,6 +119,7 @@ function playerOnClick(e) {
 //GLOBALS
 
 var subChapter;
+var chapter;
 var direction = 1;
 var paused = false;
 

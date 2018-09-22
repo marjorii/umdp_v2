@@ -4,6 +4,7 @@ function SubChapter(jsonOBJ) {
     //constructor (first letter = maj)
     this.index = 0;
     this.medias = jsonOBJ.medias.map( media => createMedia(media));
+    this.playState = undefined;
     // this.medias = jsonOBJ.medias.map( media => {
     //     if(Array.isArray(media)) {
     //         return new MultiMedia(media[1]);
@@ -11,6 +12,26 @@ function SubChapter(jsonOBJ) {
     //     return new Img(media);
     // });
 }
+
+Object.defineProperties(SubChapter.prototype, {
+    playState: {
+        get: function() {
+            var running = this.medias.some(media => {
+                return media.playState === "running";
+            });
+            var paused = this.medias.some(media => {
+                return media.playState === "paused";
+            });
+            if (running) {
+                return "running";
+            }
+            else if (paused) {
+                return "paused";
+            }
+            return undefined;
+        }
+    }
+});
 
 SubChapter.prototype.load = function() {
     return Promise.all(this.medias.map(media => {
@@ -21,20 +42,23 @@ SubChapter.prototype.load = function() {
 SubChapter.prototype.play = function() {
     return new Promise ((resolve, reject) => {
         var _this = this;
-        async function playMedia() {
+        async function playMedia(orientation) {
+            if (orientation) {
+                _this.index = orientation === 1 ? 0 : _this.medias.length -1;
+            }
             var media = _this.medias[_this.index];
-            if(media !== undefined) {
+            if (media) {
+                console.log("medias index", _this.index);
                 media.play();
-                await reversableSleep(5000);
+                await reversableSleep(3000);
                 _this.index = _this.findLastStopped(direction === -1);
                 playMedia();
-                console.log("index", _this.index);
             }
             else {
                 resolve();
             }
         }
-        playMedia();
+        playMedia(direction);
     });
 };
 
@@ -59,7 +83,8 @@ SubChapter.prototype.resume = function() {
         if (media.playState === "paused") {
             media.resume();
         }
-    });};
+    });
+};
 
 
 SubChapter.prototype.findLastStopped = function (reversed) {
@@ -69,4 +94,74 @@ SubChapter.prototype.findLastStopped = function (reversed) {
         return index > startIndex && media.playState !== "running";
     });
     return reversed ? medias.length - 1 - newIndex : newIndex;
+};
+
+
+function Chapter(jsonOBJ) {
+    this.index = 0;
+    this.subChapters = jsonOBJ.subChapters.map(subChapter => {
+        return new SubChapter(subChapter);
+    });
+    this.direction = 1;
+}
+
+Chapter.prototype.load = function() {
+    return Promise.all(this.subChapters.map(subChapter => {
+        return subChapter.load();
+    }));
+};
+
+Chapter.prototype.play = function() {
+    return new Promise((resolve, reject) => {
+        var _this = this;
+        async function playSubChapter(orientation) {
+            if (orientation) {
+                _this.index = orientation === 1 ? 0 : _this.subChapters.length -1;
+            }
+            var subChapter = _this.subChapters[_this.index];
+            if (subChapter) {
+                await subChapter.play();
+                await reversableSleep(3000);
+                _this.index = _this.findLastStopped(direction === -1);
+                // _this.index += direction;
+                playSubChapter();
+                console.log("sub index", _this.index);
+            }
+            else {
+                resolve();
+            }
+        }
+        playSubChapter(direction);
+    });
+};
+
+Chapter.prototype.reverse = function() {
+    this.subChapters.forEach(subChapter => {
+        if (subChapter.playState === "running") {
+            subChapter.reverse();
+        }
+    });
+};
+Chapter.prototype.pause = function() {
+    this.subChapters.forEach(subChapter => {
+        if (subChapter.playState === "running") {
+            subChapter.pause();
+        }
+    });
+};
+Chapter.prototype.resume = function() {
+    this.subChapters.forEach(subChapter => {
+        if (subChapter.playState === "paused") {
+            subChapter.resume();
+        }
+    });
+};
+
+Chapter.prototype.findLastStopped = function (reversed) {
+    var subChapters = reversed ? this.subChapters.slice(0).reverse() : this.subChapters;
+    var startIndex = reversed ? subChapters.length - 1 - this.index : this.index;
+    var newIndex =  subChapters.findIndex((subChapter, index) => {
+        return index > startIndex && subChapter.playState !== "running";
+    });
+    return reversed ? subChapters.length - 1 - newIndex : newIndex;
 };

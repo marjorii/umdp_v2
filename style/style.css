@@ -31,6 +31,9 @@ a {
 #container, #container img {
 	position: absolute;
 }
+/* #container img{
+	opacity: 0.2;
+} */
 
 #mediatable {
 	position: absolute;

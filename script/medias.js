@@ -103,7 +103,7 @@ Img.prototype.createAnimation = function() {
     ];
 
     var options = {
-        duration: 10000,
+        duration: 5000,
         //easing: "",
         iterations: 1,
         direction: "normal",
@@ -247,7 +247,6 @@ MultiMedia.prototype.load = function() {
         .then(() => {
             this.loaded = true;
             resolve();
-            console.log("multimedia loaded !");
         }).catch(err => reject(err));
     });
     // return Promise.all([this.img.load(), ...this.medias.map(media => media.load())]);
@@ -257,7 +256,6 @@ MultiMedia.prototype.init = function() {
     this.medias.forEach(media => media.init());
     this.img.init();
     this.ready = true;
-    console.log("multimedia ready !");
 };
 
 MultiMedia.prototype.play = function() {
