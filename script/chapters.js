@@ -86,7 +86,6 @@ SubChapter.prototype.resume = function() {
     });
 };
 
-
 SubChapter.prototype.findLastStopped = function (reversed) {
     var medias = reversed ? this.medias.slice(0).reverse() : this.medias;
     var startIndex = reversed ? medias.length - 1 - this.index : this.index;
@@ -97,6 +96,8 @@ SubChapter.prototype.findLastStopped = function (reversed) {
 };
 
 
+/* Chapter */
+
 function Chapter(jsonOBJ) {
     this.index = 0;
     this.subChapters = jsonOBJ.subChapters.map(subChapter => {
@@ -104,6 +105,26 @@ function Chapter(jsonOBJ) {
     });
     this.direction = 1;
 }
+
+Object.defineProperties(Chapter.prototype, {
+    playState: {
+        get: function() {
+            var running = this.subChapters.some(subChapter => {
+                return subChapter.playState === "running";
+            });
+            var paused = this.subChapters.some(subChapter => {
+                return subChapter.playState === "paused";
+            });
+            if (running) {
+                return "running";
+            }
+            else if (paused) {
+                return "paused";
+            }
+            return undefined;
+        }
+    }
+});
 
 Chapter.prototype.load = function() {
     return Promise.all(this.subChapters.map(subChapter => {
@@ -164,4 +185,75 @@ Chapter.prototype.findLastStopped = function (reversed) {
         return index > startIndex && subChapter.playState !== "running";
     });
     return reversed ? subChapters.length - 1 - newIndex : newIndex;
+};
+
+
+/* AllChapter */
+
+function AllChapter(jsonOBJ) {
+    console.log(jsonOBJ);
+    this.index = 0;
+    this.chapters = jsonOBJ.chapters.map(chapter => {
+        return new Chapter(chapter, jsonOBJ.chapters.urn);
+    });
+    this.direction = 1;
+}
+
+AllChapter.prototype.load = function() {
+    return Promise.all(this.chapters.map(chapter => {
+        console.log("Chapter loaded !");
+        return chapter.load();
+    }));
+};
+
+AllChapter.prototype.play = function() {
+    return new Promise((resolve, reject) => {
+        var _this = this;
+        async function playChapter(orientation) {
+            if (orientation) {
+                _this.index = orientation === 1 ? 0 : _this.chapters.length -1;
+            }
+            var chapter = _this.chapters[_this.index];
+            if (chapter) {
+                await chapter.play();
+                await reversableSleep(3000);
+                _this.index = _this.findLastStopped(direction === -1);
+                playChapter();
+            } else {
+                resolve();
+            }
+        }
+        playChapter(direction);
+    });
+};
+
+AllChapter.prototype.reverse = function() {
+    this.chapters.forEach(chapter => {
+        if (chapter.playState === "running") {
+                chapter.reverse();
+        }
+    });
+};
+AllChapter.prototype.pause = function() {
+    this.chapters.forEach(chapter => {
+        if (chapter.playState === "running") {
+            chapter.pause();
+        }
+    });
+};
+AllChapter.prototype.resume = function() {
+    this.chapters.forEach(chapter => {
+        if (chapter.playState === "paused") {
+            chapter.resume();
+        }
+    });
+};
+
+AllChapter.prototype.findLastStopped = function (reversed) {
+    var chapters = reversed ? this.chapters.slice(0).reverse() : this.chapters;
+    var startIndex = reversed ? chapters.length - 1 - this.index : this.index;
+    var newIndex = chapters.findIndex((chapter, index) => {
+        return index > startIndex && chapter.playState !== "running";
+    });
+    return reversed ? chapters.length - 1 - newIndex : newIndex;
 };
