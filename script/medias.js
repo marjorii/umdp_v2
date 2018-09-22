@@ -2,11 +2,11 @@
 
 /* Img */
 
-function Img(options) {
+function Img(options, urn) {
     //constructor
     this.title = options.title;
     this.elem = undefined;
-    this.uri = "medias/img/medium/1-norvege/" + this.title;
+    this.uri = "medias/img/medium/" + urn + "/" + this.title;
     this.loaded = false;
     this.playState = undefined;
     this.anim = undefined;
@@ -116,10 +116,10 @@ Img.prototype.createAnimation = function() {
 
 /* Video */
 
-function Video(options) {
+function Video(options, urn) {
     this.title = options.title;
     this.elem = undefined;
-    this.uri = "medias/video/1-norvege/" + this.title;
+    this.uri = "medias/video/" + urn + "/" + this.title;
     this.loaded = false;
     this.playState = undefined;
     this.ready = false;
@@ -171,10 +171,10 @@ Video.prototype.pause = function() {
 
 /* Audio */
 
-function Audio(options) {
+function Audio(options, urn) {
     this.title = options.title;
     this.elem = undefined;
-    this.uri = "medias/sons/1-norvege/" + this.title;
+    this.uri = "medias/sons/" + urn + "/" + this.title;
     this.loaded = false;
     this.playState = undefined;
     this.ready = false;
@@ -225,10 +225,10 @@ Audio.prototype.pause = function() {
 
 /* Multimedia */
 
-function MultiMedia(medias) {
+function MultiMedia(medias, urn) {
     var [img, ...others] = medias;
-    this.img = createMedia(img);
-    this.medias = others.map(media => createMedia(media));
+    this.img = new Img(img, urn);
+    this.medias = others.map(media => createMedia(media, urn));
     this.loaded = false;
     this.ready = false;
 }

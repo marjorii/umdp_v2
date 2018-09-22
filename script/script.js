@@ -2,7 +2,7 @@
 
 async function initProject() {
     var json = await readJSONFile("script/sources.json");
-    var imgs = json.chapters[0];//.subChapters[0].medias;
+    var imgs = json.chapters[2];//.subChapters[0].medias;
 
     chapter = new Chapter(imgs);
     await chapter.load();
@@ -17,20 +17,20 @@ function initEvent() {
     document.getElementById("actions-buttons").addEventListener("click", playerOnClick);
 }
 
-function createMedia(media) {
+function createMedia(media, urn) {
     if(Array.isArray(media)) {
-        return new MultiMedia(media);
+        return new MultiMedia(media, urn);
     }
 
     const type = media.type;
     if (type === "img") {
-        return new Img(media);
+        return new Img(media, urn);
     }
     else if (type === "video") {
-        return new Video(media);
+        return new Video(media, urn);
     }
     else if (type === "sound") {
-        return new Audio(media);
+        return new Audio(media, urn);
     }
     else {
         throw(new Error("Wrong or unspecified media type for '" + media.title + "'"));
