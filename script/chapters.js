@@ -1,9 +1,9 @@
 /* Subchapter */
 
-function SubChapter(jsonOBJ, urn) {
+function SubChapter(jsonOBJ) {
     //constructor (first letter = maj)
     this.index = 0;
-    this.medias = jsonOBJ.medias.map( media => createMedia(media, urn));
+    this.medias = jsonOBJ.map( media => createMedia(media));
     this.playState = undefined;
     // this.medias = jsonOBJ.medias.map( media => {
     //     if(Array.isArray(media)) {
@@ -193,8 +193,8 @@ Chapter.prototype.findLastStopped = function (reversed) {
 function AllChapter(jsonOBJ) {
     console.log(jsonOBJ);
     this.index = 0;
-    this.chapters = jsonOBJ.chapters.map(chapter => {
-        return new Chapter(chapter, jsonOBJ.chapters.urn);
+    this.chapters = jsonOBJ.map(chapter => {
+        return new Chapter(chapter, jsonOBJ.urn);
     });
     this.direction = 1;
 }

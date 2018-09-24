@@ -2,11 +2,11 @@
 
 /* Img */
 
-function Img(options, urn) {
+function Img(options) {
     //constructor
     this.title = options.title;
     this.elem = undefined;
-    this.uri = "medias/img/medium/" + urn + "/" + this.title;
+    this.uri = options.uri;
     this.loaded = false;
     this.playState = undefined;
     this.anim = undefined;
@@ -116,10 +116,10 @@ Img.prototype.createAnimation = function() {
 
 /* Video */
 
-function Video(options, urn) {
+function Video(options) {
     this.title = options.title;
     this.elem = undefined;
-    this.uri = "medias/video/" + urn + "/" + this.title;
+    this.uri = options.uri;
     this.loaded = false;
     this.playState = undefined;
     this.ready = false;
@@ -171,10 +171,10 @@ Video.prototype.pause = function() {
 
 /* Audio */
 
-function Audio(options, urn) {
+function Audio(options) {
     this.title = options.title;
     this.elem = undefined;
-    this.uri = "medias/sons/" + urn + "/" + this.title;
+    this.uri = options.uri;
     this.loaded = false;
     this.playState = undefined;
     this.ready = false;
@@ -225,10 +225,10 @@ Audio.prototype.pause = function() {
 
 /* Multimedia */
 
-function MultiMedia(medias, urn) {
+function MultiMedia(medias) {
     var [img, ...others] = medias;
-    this.img = new Img(img, urn);
-    this.medias = others.map(media => createMedia(media, urn));
+    this.img = new Img(img);
+    this.medias = others.map(media => createMedia(media));
     this.loaded = false;
     this.ready = false;
 }

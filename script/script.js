@@ -2,10 +2,12 @@
 
 async function initProject() {
     var json = await readJSONFile("script/sources.json");
+    json = createUrls(json);
 
     // chapter = new Chapter(imgs);
     allChapter = new AllChapter(json);
     await allChapter.load();
+    
     await allChapter.play();
     console.log("Done !");
 }
@@ -28,7 +30,7 @@ function createMedia(media, urn) {
     else if (type === "video") {
         return new Video(media, urn);
     }
-    else if (type === "sound") {
+    else if (type === "son") {
         return new Audio(media, urn);
     }
     else {
@@ -113,6 +115,31 @@ function playerOnClick(e) {
         document.getElementById("unmute").id = "mute";
         console.log("unmute");
     }
+}
+
+function createUrls(data) {
+    function buildUrl(media, chapter) {
+        if (media.type === "img") {
+            media.uri = ["http://marjorieober.com/medias/medias", media.type, "medium", chapter, media.title].join("/");
+        }
+        else {
+            media.uri = ["http://marjorieober.com/medias/medias", media.type, chapter, media.title].join("/");
+        }
+        return media;
+    }
+    return data.chapters.map(chapter => {
+        chapter.subChapters = chapter.subChapters.map(subChapter => {
+            return subChapter.medias.map(media => {
+                if (Array.isArray(media)) {
+                    return media.map(med => {
+                        return buildUrl(med, chapter.urn);
+                    });
+                }
+                return buildUrl(media, chapter.urn);
+            });
+        });
+        return chapter;
+    });
 }
 
 //GLOBALS
