@@ -191,19 +191,28 @@ Chapter.prototype.findLastStopped = function (reversed) {
 /* AllChapter */
 
 function AllChapter(jsonOBJ) {
-    console.log(jsonOBJ);
     this.index = 0;
     this.chapters = jsonOBJ.map(chapter => {
-        return new Chapter(chapter, jsonOBJ.urn);
+        return new Chapter(chapter);
     });
     this.direction = 1;
 }
 
 AllChapter.prototype.load = function() {
-    return Promise.all(this.chapters.map(chapter => {
-        console.log("Chapter loaded !");
-        return chapter.load();
-    }));
+    // return Promise.all(this.chapters.map(chapter => {
+    //     console.log("Chapter loaded !");
+    //     return chapter.load();
+    // }));
+    return new Promise(async (resolve, reject) => {
+        for (let i = 0; i < this.chapters.length; i++) {
+            for (let j = 0; j < this.chapters[i].subChapters.length; j++) {
+                await this.chapters[i].subChapters[j].load();
+                if (i === 0 && j === 1) {
+                    resolve();
+                }
+            }
+        }
+    });
 };
 
 AllChapter.prototype.play = function() {

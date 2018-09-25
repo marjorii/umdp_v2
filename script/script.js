@@ -7,7 +7,7 @@ async function initProject() {
     // chapter = new Chapter(imgs);
     allChapter = new AllChapter(json);
     await allChapter.load();
-    
+    console.log("Medias loaded !");
     await allChapter.play();
     console.log("Done !");
 }
