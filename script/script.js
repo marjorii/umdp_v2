@@ -120,10 +120,10 @@ function playerOnClick(e) {
 function createUrls(data) {
     function buildUrl(media, chapter) {
         if (media.type === "img") {
-            media.uri = ["http://marjorieober.com/medias/medias", media.type, "medium", chapter, media.title].join("/");
+            media.uri = ["medias", media.type, "medium", chapter, media.title].join("/");
         }
         else {
-            media.uri = ["http://marjorieober.com/medias/medias", media.type, chapter, media.title].join("/");
+            media.uri = ["medias", media.type, chapter, media.title].join("/");
         }
         return media;
     }
@@ -151,5 +151,7 @@ var paused = false;
 
 // ACTION
 
-initEvent();
-initProject();
+window.onload = () => {
+    initEvent();
+    initProject();
+};

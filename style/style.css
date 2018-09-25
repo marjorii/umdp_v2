@@ -1,7 +1,12 @@
 @charset "utf-8";
 
+@font-face {
+	font-family: "Garcia";
+	src: url("../fonts/garcia.woff2");
+}
+
 :root {
-	font-family: 'GarciaRegular';
+	font-family: "Garcia";
 	font-size: 1.5em;
 }
 
@@ -112,23 +117,4 @@ nav a {
 }
 #actions-buttons a img {
 height: 25px;
-}
-
-#image-caption {
-	position: absolute;
-	display: none;
-	bottom: 40px;
-	left: 40px;
-	/* tablette paysage, portrait : 30px; (bottom + left) */
-	width: 400px;
-	/* tablette paysage : 310px; */
-	/* tablette portrait : 300px; */
-}
-#image-caption p {
-	margin: 0;
-	font-family: 'AnkaCoderRegular';
-	font-size: 0.6rem;
-	/* tablette paysage, portrait : 0.5rem; */
-	line-height: 0.75rem;
-	/* tablette paysage, portrait : 0.65rem; */
 }

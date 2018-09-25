@@ -97,13 +97,13 @@ Img.prototype.createAnimation = function() {
             offset: 0
         },
         {
-            transform: "translate(" + pos.endX + "px, " + pos.endY + "px) scale(2)",
+            transform: "translate(" + pos.endX + "px, " + pos.endY + "px) scale(1.75)",
             offset: 1
         }
     ];
 
     var options = {
-        duration: 5000,
+        duration: 10000,
         //easing: "",
         iterations: 1,
         direction: "normal",

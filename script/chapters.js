@@ -50,7 +50,7 @@ SubChapter.prototype.play = function() {
             if (media) {
                 console.log("medias index", _this.index);
                 media.play();
-                await reversableSleep(3000);
+                await reversableSleep(2000);
                 _this.index = _this.findLastStopped(direction === -1);
                 playMedia();
             }
@@ -142,7 +142,7 @@ Chapter.prototype.play = function() {
             var subChapter = _this.subChapters[_this.index];
             if (subChapter) {
                 await subChapter.play();
-                await reversableSleep(3000);
+                await reversableSleep(2000);
                 _this.index = _this.findLastStopped(direction === -1);
                 // _this.index += direction;
                 playSubChapter();
@@ -225,7 +225,7 @@ AllChapter.prototype.play = function() {
             var chapter = _this.chapters[_this.index];
             if (chapter) {
                 await chapter.play();
-                await reversableSleep(3000);
+                await reversableSleep(2000);
                 _this.index = _this.findLastStopped(direction === -1);
                 playChapter();
             } else {
