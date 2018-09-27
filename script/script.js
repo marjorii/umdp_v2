@@ -119,8 +119,11 @@ function playerOnClick(e) {
 
 function createUrls(data) {
     function buildUrl(media, chapter) {
-        if (media.type === "img") {
+        if (media.type === "img" && media.title.match(/.(jpg|jpeg|png)$/i)) {
             media.uri = ["medias", media.type, "medium", chapter, media.title].join("/");
+        }
+        else if (media.type === "img" && media.title.match(/.(gif)$/i)) {
+            media.uri = ["medias", media.type, "gif", media.title].join("/");
         }
         else {
             media.uri = ["medias", media.type, chapter, media.title].join("/");

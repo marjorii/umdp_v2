@@ -48,7 +48,7 @@ Img.prototype.init = function() {
     document.getElementById('container').prepend(this.elem);
     // hide on click
     this.elem.addEventListener("click", () => this.elem.classList.add("hide"));
-    this.ready = "true";
+    this.ready = true;
 };
 
 Img.prototype.play = function() {
