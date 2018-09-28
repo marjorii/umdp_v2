@@ -4,7 +4,6 @@ async function initProject() {
     var json = await readJSONFile("script/sources.json");
     json = createUrls(json);
 
-    // chapter = new Chapter(imgs);
     allChapter = new AllChapter(json);
     await allChapter.load();
     console.log("Medias loaded !");
@@ -130,8 +129,36 @@ function createUrls(data) {
         }
         return media;
     }
+    var occur = {};
     return data.chapters.map(chapter => {
+        var sMix = shuffle(chapter.sons);
+        // if (chapter.index === 1) {
+        //     pickedNumber = randomFromTo(10, 14);
+        // } else {
+        //     pickedNumber = randomFromTo(4, 7);
+        // }
         chapter.subChapters = chapter.subChapters.map(subChapter => {
+            var pickedNumber = randomFromTo(1, 4);
+            for (var g = 0; g < pickedNumber; g++) {
+                var pick = randomPick(data.gifs);
+                var pickedRange = randomFromTo(0, subChapter.medias.length);
+                subChapter.medias.splice(pickedRange, 0, pick);
+                // if (!occur.hasOwnProperty(pick.title)) {
+                //     occur[pick.title] = 1;
+                // }
+                // else {
+                //     occur[pick.title] += 1;
+                // }
+            }
+
+            pickedNumber = randomFromTo(0, 2);
+            for (var s = 0; s < pickedNumber; s++) {
+                var pick = chapter.sons.shift();
+                var pickedRange = randomFromTo(0, subChapter.medias.length);
+                subChapter.medias.splice(pickedRange, 0, pick);
+            }
+            console.log(subChapter.medias);
+            console.log(pickedNumber);
             return subChapter.medias.map(media => {
                 if (Array.isArray(media)) {
                     return media.map(med => {
@@ -143,6 +170,7 @@ function createUrls(data) {
         });
         return chapter;
     });
+    console.log(occur);
 }
 
 //GLOBALS

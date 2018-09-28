@@ -37,6 +37,25 @@ function randomFromTo(from, to, decimal){
     }
 }
 
+/* random pick function */
+
+function randomPick(array) {
+    return array[Math.floor(Math.random() * array.length)];
+}
+
+/* shuffle function */
+
+function shuffle(array) {
+    let remaining = array.length;
+    while (remaining > 0) {
+        let index = Math.floor(Math.random() * remaining--);
+        let temp = array[remaining];
+        array[remaining] = array[index]
+        array[index] = temp;
+    }
+    return array;
+}
+
 /* reverse sleep */
 
 function reversableSleep(duration) {
