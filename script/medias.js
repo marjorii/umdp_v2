@@ -35,7 +35,7 @@ Img.prototype.load = function() {
             this.loaded = true;
         };
         this.elem.onerror = () => {
-            reject(new Error("Couldn't find" + this.uri));
+            reject(new Error("Couldn't find " + this.uri));
         };
         this.elem.src = this.uri;
     });
@@ -161,9 +161,9 @@ Video.prototype.play = function() {
 // Video.prototype.reverse = function() {
 //     this.elem.reverse();
 // };
-Video.prototype.pause = function() {
-    this.elem.pause();
-};
+// Video.prototype.pause = function() {
+//     this.elem.pause();
+// };
 // Video.prototype.resume = function() {
 //     this.elem.play();
 // };
@@ -216,9 +216,9 @@ Audio.prototype.play = function() {
 // Audio.prototype.reverse = function() {
 //     this.elem.reverse();
 // };
-Audio.prototype.pause = function() {
-    this.elem.pause();
-};
+// Audio.prototype.pause = function() {
+//     this.elem.pause();
+// };
 // Audio.prototype.resume = function() {
 //     this.elem.play();
 // };
@@ -278,7 +278,7 @@ MultiMedia.prototype.reverse = function() {
 };
 MultiMedia.prototype.pause = function() {
     this.img.pause();
-    this.medias.forEach(media => media.pause());
+    // this.medias.forEach(media => media.pause());
 };
 MultiMedia.prototype.resume = function() {
     this.img.resume();

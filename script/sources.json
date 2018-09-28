@@ -6,132 +6,343 @@
       "max": 10000
     }
   },
+  "gifs": [
+    {
+      "type": "img",
+      "title": "abeille1.gif"
+    },
+    {
+      "type": "img",
+      "title": "abeille2.gif"
+    },
+    {
+      "type": "img",
+      "title": "abeille3.gif"
+    },
+    {
+      "type": "img",
+      "title": "ambre1.gif"
+    },
+    {
+      "type": "img",
+      "title": "ambre2.gif"
+    },
+    {
+      "type": "img",
+      "title": "atlas1.gif"
+    },
+    {
+      "type": "img",
+      "title": "atlas2.gif"
+    },
+    {
+      "type": "img",
+      "title": "atlas3.gif"
+    },
+    {
+      "type": "img",
+      "title": "caillou1.gif"
+    },
+    {
+      "type": "img",
+      "title": "caillou2.gif"
+    },
+    {
+      "type": "img",
+      "title": "caisse.gif"
+    },
+    {
+      "type": "img",
+      "title": "cartouche1.gif"
+    },
+    {
+      "type": "img",
+      "title": "cartouche2.gif"
+    },
+    {
+      "type": "img",
+      "title": "cartouche3.gif"
+    },
+    {
+      "type": "img",
+      "title": "cloche1.gif"
+    },
+    {
+      "type": "img",
+      "title": "cloche2.gif"
+    },
+    {
+      "type": "img",
+      "title": "coca.gif"
+    },
+    {
+      "type": "img",
+      "title": "commun.gif"
+    },
+    {
+      "type": "img",
+      "title": "eau.gif"
+    },
+    {
+      "type": "img",
+      "title": "feuille.gif"
+    },
+    {
+      "type": "img",
+      "title": "geme.gif"
+    },
+    {
+      "type": "img",
+      "title": "imprimer.gif"
+    },
+    {
+      "type": "img",
+      "title": "indigo.gif"
+    },
+    {
+      "type": "img",
+      "title": "jerocho1.gif"
+    },
+    {
+      "type": "img",
+      "title": "jerocho2.gif"
+    },
+    {
+      "type": "img",
+      "title": "jerocho3.gif"
+    },
+    {
+      "type": "img",
+      "title": "leur1.gif"
+    },
+    {
+      "type": "img",
+      "title": "leur2.gif"
+    },
+    {
+      "type": "img",
+      "title": "leur3.gif"
+    },
+    {
+      "type": "img",
+      "title": "roche1.gif"
+    },
+    {
+      "type": "img",
+      "title": "roche2.gif"
+    },
+    {
+      "type": "img",
+      "title": "jerocho1.gif"
+    },
+    {
+      "type": "img",
+      "title": "jerocho2.gif"
+    },
+    {
+      "type": "img",
+      "title": "seldemer1.gif"
+    },
+    {
+      "type": "img",
+      "title": "seldemer2.gif"
+    },
+    {
+      "type": "img",
+      "title": "telephone.gif"
+    },
+    {
+      "type": "img",
+      "title": "tissage.gif"
+    },
+    {
+      "type": "img",
+      "title": "verre.gif"
+    }
+  ],
   "chapters": [
     {
       "urn": "1-norvege",
       "title": "Chapitre 1 : Norvège",
       "index": 0,
+      "sons": [
+        {
+          "type": "son",
+          "title": "annoncetrain1.ogg"
+        },
+        {
+          "type": "son",
+          "title": "annoncetrain1-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "annoncetrain2.ogg"
+        },
+        {
+          "type": "son",
+          "title": "annoncetrain2-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "concertlocal1.ogg"
+        },
+        {
+          "type": "son",
+          "title": "concertlocal1-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "concertlocal2.ogg"
+        },
+        {
+          "type": "son",
+          "title": "concertlocal2-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "concertlocal3.ogg"
+        },
+        {
+          "type": "son",
+          "title": "concertlocal3-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "concertlocal4.ogg"
+        },
+        {
+          "type": "son",
+          "title": "concertlocal4-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "concertlocal5.ogg"
+        },
+        {
+          "type": "son",
+          "title": "concertlocal5-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "cripecheur.ogg"
+        },
+        {
+          "type": "son",
+          "title": "cripecheur-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "djigueul.ogg"
+        },
+        {
+          "type": "son",
+          "title": "djigueul-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "journalistes1.ogg"
+        },
+        {
+          "type": "son",
+          "title": "journalistes1-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "journalistes2.ogg"
+        },
+        {
+          "type": "son",
+          "title": "journalistes2-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "journalistes3.ogg"
+        },
+        {
+          "type": "son",
+          "title": "journalistes3-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "train1.ogg"
+        },
+        {
+          "type": "son",
+          "title": "train1-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "train2.ogg"
+        },
+        {
+          "type": "son",
+          "title": "train2-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "train3.ogg"
+        },
+        {
+          "type": "son",
+          "title": "train3-reverse.ogg"
+        }
+      ],
       "subChapters": [
         {
           "medias": [
             {
               "type": "img",
-              "title": "montagnes.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "montagnes.jpg"
             },
             {
               "type": "img",
-              "title": "strahmkallen.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "strahmkallen.jpg"
             },
             {
               "type": "img",
-              "title": "seldemer1.gif",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "seldemer1.gif"
             },
             [
               {
                 "type": "img",
-                "title": "sculpture-verre.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "sculpture-verre.jpg"
               },
               {
                 "type": "video",
-                "title": "pluie.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "pluie.ogg"
               },
               {
                 "type": "son",
-                "title": "concertlocal3.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "concertlocal3.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "port.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "port.jpg"
             },
             {
               "type": "img",
-              "title": "facade-bibliotheque.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "facade-bibliotheque.jpg"
             },
             {
               "type": "img",
-              "title": "facade-bibliotheque2.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "facade-bibliotheque2.jpg"
             },
             {
               "type": "img",
-              "title": "arete-pierre.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "arete-pierre.jpg"
             },
             {
               "type": "img",
-              "title": "scan-matiere.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "scan-matiere.jpg"
             },
             {
               "type": "img",
-              "title": "falaise-maisons.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "falaise-maisons.jpg"
             },
             {
               "type": "img",
-              "title": "bateaux-cabanes-montagnes.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "bateaux-cabanes-montagnes.jpg"
             }
           ]
         },
@@ -139,84 +350,39 @@
           "medias": [
             {
               "type": "img",
-              "title": "etageres-biblioteque.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "etageres-biblioteque.jpg"
             },
             {
               "type": "img",
-              "title": "classeurs-bibliotheque.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "classeurs-bibliotheque.jpg"
             },
             {
               "type": "img",
-              "title": "classeurs-bibliotheque2.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "classeurs-bibliotheque2.jpg"
             },
             {
               "type": "img",
-              "title": "index-rusland.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "index-rusland.jpg"
             },
             {
               "type": "img",
-              "title": "rongo-rongo-stone.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "rongo-rongo-stone.jpg"
             },
             {
               "type": "img",
-              "title": "rongo-rongo-stone2.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "rongo-rongo-stone2.jpg"
             },
             {
               "type": "img",
-              "title": "inventaire-reliques.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "inventaire-reliques.jpg"
             },
             {
               "type": "img",
-              "title": "vitrine-musee.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "vitrine-musee.jpg"
             },
             {
               "type": "img",
-              "title": "cadres-explorateur.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "cadres-explorateur.jpg"
             }
           ]
         },
@@ -224,30 +390,15 @@
           "medias": [
             {
               "type": "img",
-              "title": "bateau-musee.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "bateau-musee.jpg"
             },
             {
               "type": "img",
-              "title": "plan-bateau.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "plan-bateau.jpg"
             },
             {
               "type": "img",
-              "title": "piece-musee-bergen.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "piece-musee-bergen.jpg"
             },
             {
               "type": "img",
@@ -260,59 +411,29 @@
             },
             {
               "type": "img",
-              "title": "partition-ibsery.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "partition-ibsery.jpg"
             },
             {
               "type": "img",
-              "title": "bateau-fjord.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "bateau-fjord.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "batservice.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "batservice.jpg"
               },
               {
                 "type": "video",
-                "title": "drapeau-mer.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "drapeau-mer.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "elements-jaunes-bateau.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "elements-jaunes-bateau.jpg"
             },
             {
               "type": "img",
-              "title": "carre-jaune.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "carre-jaune.jpg"
             }
           ]
         },
@@ -320,169 +441,79 @@
           "medias": [
             {
               "type": "img",
-              "title": "caillou-interieur.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "caillou-interieur.jpg"
             },
             {
               "type": "img",
-              "title": "scan-motif.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "scan-motif.jpg"
             },
             {
               "type": "img",
-              "title": "oursin.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "oursin.jpg"
             },
             {
               "type": "img",
-              "title": "chenille.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "chenille.jpg"
             },
             {
               "type": "img",
-              "title": "oiseau-mer.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "oiseau-mer.jpg"
             },
             {
               "type": "img",
-              "title": "reflet-eau.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "reflet-eau.jpg"
             },
             {
               "type": "img",
-              "title": "reflet-eau2.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "reflet-eau2.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "nuage-mer.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "nuage-mer.jpg"
               },
               {
                 "type": "video",
-                "title": "coucher-soleil.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "coucher-soleil.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "ville-nuit.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "ville-nuit.jpg"
             },
             {
               "type": "img",
-              "title": "menu.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "menu.jpg"
             },
             {
               "type": "img",
-              "title": "livre-ancien.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "livre-ancien.jpg"
             },
             {
               "type": "img",
-              "title": "moines-bouddhistes.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "moines-bouddhistes.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "gratis-internett.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "gratis-internett.jpg"
               },
               {
                 "type": "video",
-                "title": "wc-lol.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "wc-lol.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "moineaux-roues.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "moineaux-roues.jpg"
             },
             {
               "type": "img",
-              "title": "barrieres-banc.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "barrieres-banc.jpg"
             },
             {
               "type": "img",
-              "title": "dejeuner.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "dejeuner.jpg"
             }
           ]
         },
@@ -490,86 +521,41 @@
           "medias": [
             {
               "type": "img",
-              "title": "filets-volley.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "filets-volley.jpg"
             },
             {
               "type": "img",
-              "title": "cabane-verre.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "cabane-verre.jpg"
             },
             {
               "type": "img",
-              "title": "cadrage-ile.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "cadrage-ile.jpg"
             },
             {
               "type": "img",
-              "title": "cadrage-ile2.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "cadrage-ile2.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "cadrage-maison.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "cadrage-maison.jpg"
               },
               {
                 "type": "video",
-                "title": "eau-escalier.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "eau-escalier.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "verre-plage.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "verre-plage.jpg"
             },
             {
               "type": "img",
-              "title": "cadrage-fenetres.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "cadrage-fenetres.jpg"
             },
             {
               "type": "img",
-              "title": "cadre-incendie.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "cadre-incendie.jpg"
             }
           ]
         },
@@ -577,168 +563,78 @@
           "medias": [
             {
               "type": "img",
-              "title": "brume.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "brume.jpg"
             },
             {
               "type": "img",
-              "title": "brume2.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "brume2.jpg"
             },
             {
               "type": "img",
-              "title": "ciel-couleurs.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "ciel-couleurs.jpg"
             },
             {
               "type": "img",
-              "title": "affichage-train.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "affichage-train.jpg"
             },
             {
               "type": "img",
-              "title": "ciel-couleurs2.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "ciel-couleurs2.jpg"
             },
             {
               "type": "img",
-              "title": "cadres-sombres.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "cadres-sombres.jpg"
             },
             {
               "type": "img",
-              "title": "luminaires-suspendus.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "luminaires-suspendus.jpg"
             },
             {
               "type": "img",
-              "title": "ciel-couleurs3.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "ciel-couleurs3.jpg"
             },
             {
               "type": "img",
-              "title": "ciel-couleurs4.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "ciel-couleurs4.jpg"
             },
             {
               "type": "img",
-              "title": "degrade-polaire.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "degrade-polaire.jpg"
             },
             {
               "type": "img",
-              "title": "vitesse-train.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "vitesse-train.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "vitesse-train2.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "vitesse-train2.jpg"
               },
               {
                 "type": "video",
-                "title": "train-flou.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "train-flou.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "eau-trouble.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "eau-trouble.jpg"
             },
             {
               "type": "img",
-              "title": "scan-trouble.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "scan-trouble.jpg"
             },
             {
               "type": "img",
-              "title": "pub-laceree.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "pub-laceree.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "scan-brique.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "scan-brique.jpg"
               },
               {
                 "type": "video",
-                "title": "train-rail.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "train-rail.ogg"
               }
             ]
           ]
@@ -747,77 +643,37 @@
           "medias": [
             {
               "type": "img",
-              "title": "panneau-indications.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "panneau-indications.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "station-gare.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "station-gare.jpg"
               },
               {
                 "type": "video",
-                "title": "train.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "train.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "carte1.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "carte1.jpg"
             },
             {
               "type": "img",
-              "title": "carte2.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "carte2.jpg"
             },
             {
               "type": "img",
-              "title": "couverture-ligne.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "couverture-ligne.jpg"
             },
             {
               "type": "img",
-              "title": "norges-atlas.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "norges-atlas.jpg"
             },
             {
               "type": "img",
-              "title": "carte3.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "carte3.jpg"
             }
           ]
         },
@@ -825,134 +681,64 @@
           "medias": [
             {
               "type": "img",
-              "title": "trainee-bateau.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "trainee-bateau.jpg"
             },
             {
               "type": "img",
-              "title": "maelstrom1.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "maelstrom1.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "pecheur.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "pecheur.jpg"
               },
               {
                 "type": "video",
-                "title": "peche-visage.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "peche-visage.ogg"
               },
               {
                 "type": "video",
-                "title": "peche-mains.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "peche-mains.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "peche-antant.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "peche-antant.jpg"
             },
             {
               "type": "img",
-              "title": "peche-antant2.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "peche-antant2.jpg"
             },
             {
               "type": "img",
-              "title": "maelstrom2.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "maelstrom2.jpg"
             },
             {
               "type": "img",
-              "title": "maelstrom3.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "maelstrom3.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "maelstrom4.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "maelstrom4.jpg"
               },
               {
                 "type": "video",
-                "title": "maelstrom.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "maelstrom.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "maelstrom5.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "maelstrom5.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "maelstrom7.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "maelstrom7.jpg"
               },
               {
                 "type": "video",
-                "title": "maelstrom-tourbillon.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "maelstrom-tourbillon.ogg"
               }
             ]
           ]
@@ -963,328 +749,379 @@
       "urn": "2-grece",
       "title": "Chapitre 2 : Grèce",
       "index": 1,
+      "sons": [
+        {
+          "type": "son",
+          "title": "alarme.ogg"
+        },
+        {
+          "type": "son",
+          "title": "alarme-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "bricolage1.ogg"
+        },
+        {
+          "type": "son",
+          "title": "bricolage1-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "bricolage2.ogg"
+        },
+        {
+          "type": "son",
+          "title": "bricolage2-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "clapotisbateau.ogg"
+        },
+        {
+          "type": "son",
+          "title": "clapotisbateau-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "clocher.ogg"
+        },
+        {
+          "type": "son",
+          "title": "clocher-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "concertlocal1.ogg"
+        },
+        {
+          "type": "son",
+          "title": "concertlocal1-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "culte1.ogg"
+        },
+        {
+          "type": "son",
+          "title": "culte1-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "culte2.ogg"
+        },
+        {
+          "type": "son",
+          "title": "culte2-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "culte3.ogg"
+        },
+        {
+          "type": "son",
+          "title": "culte3-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "feu.ogg"
+        },
+        {
+          "type": "son",
+          "title": "feu-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "gazouillis.ogg"
+        },
+        {
+          "type": "son",
+          "title": "gazouillis-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "grotte.ogg"
+        },
+        {
+          "type": "son",
+          "title": "grotte-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "interferences.ogg"
+        },
+        {
+          "type": "son",
+          "title": "interferences-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "manif1.ogg"
+        },
+        {
+          "type": "son",
+          "title": "manif1-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "manif2.ogg"
+        },
+        {
+          "type": "son",
+          "title": "manif2-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "manif3.ogg"
+        },
+        {
+          "type": "son",
+          "title": "manif3-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "manif4.ogg"
+        },
+        {
+          "type": "son",
+          "title": "manif4-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "mer.ogg"
+        },
+        {
+          "type": "son",
+          "title": "mer-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "metro1.ogg"
+        },
+        {
+          "type": "son",
+          "title": "metro1-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "metro2.ogg"
+        },
+        {
+          "type": "son",
+          "title": "metro2-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "metro3.ogg"
+        },
+        {
+          "type": "son",
+          "title": "metro3-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "moteur1.ogg"
+        },
+        {
+          "type": "son",
+          "title": "moteur1-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "moteur2.ogg"
+        },
+        {
+          "type": "son",
+          "title": "moteur2-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "tambour1.ogg"
+        },
+        {
+          "type": "son",
+          "title": "tambour1-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "tambour2.ogg"
+        },
+        {
+          "type": "son",
+          "title": "tambour2-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "tango1.ogg"
+        },
+        {
+          "type": "son",
+          "title": "tango1-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "tango2.ogg"
+        },
+        {
+          "type": "son",
+          "title": "tango2-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "underwater.ogg"
+        },
+        {
+          "type": "son",
+          "title": "underwater-reverse.ogg"
+        }
+      ],
       "subChapters": [
         {
           "medias": [
             {
               "type": "img",
-              "title": "temple-antique.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "temple-antique.jpg"
             },
             {
               "type": "img",
-              "title": "temple-antique2.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "temple-antique2.jpg"
             },
             {
               "type": "img",
-              "title": "construction.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "construction.jpg"
             },
             {
               "type": "img",
-              "title": "piece-temple.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "piece-temple.jpg"
             },
             {
               "type": "img",
-              "title": "colonnes-antiques.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "colonnes-antiques.jpg"
             },
             {
               "type": "img",
-              "title": "construction2.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "construction2.jpg"
             },
             {
               "type": "img",
-              "title": "construction3.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "construction3.jpg"
             },
             {
               "type": "img",
-              "title": "cour-interieure.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "cour-interieure.jpg"
             },
             {
               "type": "img",
-              "title": "peintures-antiques.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "peintures-antiques.jpg"
             },
             {
               "type": "img",
-              "title": "ecriteau-antique.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "ecriteau-antique.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "boutique.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "boutique.jpg"
               },
               {
                 "type": "video",
-                "title": "cabine-tel.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "cabine-tel.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "panneau-agrafes.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "panneau-agrafes.jpg"
             },
             {
               "type": "img",
-              "title": "tv-sable.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "tv-sable.jpg"
             },
             {
               "type": "img",
-              "title": "empreintes.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "empreintes.jpg"
             },
             {
               "type": "img",
-              "title": "poissons-grillade.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "poissons-grillade.jpg"
             },
             {
               "type": "img",
-              "title": "plante.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "plante.jpg"
             },
             {
               "type": "img",
-              "title": "bidon-nature.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "bidon-nature.jpg"
             },
             {
               "type": "img",
-              "title": "caillou-sable.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "caillou-sable.jpg"
             },
             {
               "type": "img",
-              "title": "roc.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "roc.jpg"
             },
             {
               "type": "img",
-              "title": "muret-antique.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "muret-antique.jpg"
             },
             {
               "type": "img",
-              "title": "muret-recent.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "muret-recent.jpg"
             },
             {
               "type": "img",
-              "title": "agglomerat-pierres.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "agglomerat-pierres.jpg"
             },
             {
               "type": "img",
-              "title": "portail.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "portail.jpg"
             },
             {
               "type": "img",
-              "title": "tas-bois.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "tas-bois.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "debris-antique.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "debris-antique.jpg"
               },
               {
                 "type": "video",
-                "title": "fragments-antiques.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "fragments-antiques.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "anneau-antique.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "anneau-antique.jpg"
             },
             {
               "type": "img",
-              "title": "muret-sculptures.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "muret-sculptures.jpg"
             },
             {
               "type": "img",
-              "title": "pilier-antique.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "pilier-antique.jpg"
             },
             {
               "type": "img",
-              "title": "poteau-isole.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "poteau-isole.jpg"
             },
             {
               "type": "img",
-              "title": "cylindre-bois.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "cylindre-bois.jpg"
             },
             {
               "type": "img",
-              "title": "lampadaire.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "lampadaire.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "statue-antique.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "statue-antique.jpg"
               },
               {
                 "type": "video",
-                "title": "poterie-mains.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "poterie-mains.ogg"
               }
             ]
           ]
@@ -1294,68 +1131,33 @@
             [
               {
                 "type": "img",
-                "title": "tour-poterie.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "tour-poterie.jpg"
               },
               {
                 "type": "video",
-                "title": "poterie-miroir.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "poterie-miroir.ogg"
               }
             ],
             [
               {
                 "type": "img",
-                "title": "livre-poterie.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "livre-poterie.jpg"
               },
               {
                 "type": "video",
-                "title": "poterie-atelier.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "poterie-atelier.ogg"
               },
               {
                 "type": "video",
-                "title": "jarres-antiques.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "jarres-antiques.ogg"
               },
               {
                 "type": "video",
-                "title": "poncage-bateau.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "poncage-bateau.ogg"
               },
               {
                 "type": "video",
-                "title": "clean-bateau.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "clean-bateau.ogg"
               }
             ]
           ]
@@ -1364,233 +1166,113 @@
           "medias": [
             {
               "type": "img",
-              "title": "ponton-mer.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "ponton-mer.jpg"
             },
             {
               "type": "img",
-              "title": "ile.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "ile.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "ile2.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "ile2.jpg"
               },
               {
                 "type": "video",
-                "title": "drone-brasmer.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "drone-brasmer.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "terres.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "terres.jpg"
             },
             {
               "type": "img",
-              "title": "terres2.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "terres2.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "panneau.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "panneau.jpg"
               },
               {
                 "type": "video",
-                "title": "ruches.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "ruches.ogg"
               }
             ],
             [
               {
                 "type": "img",
-                "title": "paquetages.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "paquetages.jpg"
               },
               {
                 "type": "video",
-                "title": "paquetages-vent.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "paquetages-vent.ogg"
               },
               {
                 "type": "video",
-                "title": "decalage.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "decalage.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "chien.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "chien.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "bateau-rivage.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "bateau-rivage.jpg"
               },
               {
                 "type": "video",
-                "title": "passage-bateau.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "passage-bateau.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "bateau-horizon.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "bateau-horizon.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "bateau-nuit.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "bateau-nuit.jpg"
               },
               {
                 "type": "video",
-                "title": "signal-bateau.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "signal-bateau.ogg"
               }
             ],
             [
               {
                 "type": "img",
-                "title": "ciel-mer.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "ciel-mer.jpg"
               },
               {
                 "type": "video",
-                "title": "sous-leau.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "sous-leau.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "bateau-fresque.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "bateau-fresque.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "bateau-vent.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "bateau-vent.jpg"
               },
               {
                 "type": "video",
-                "title": "drapeau-bateau.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "drapeau-bateau.ogg"
               },
               {
                 "type": "video",
-                "title": "fruits-bateau.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "fruits-bateau.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "subaquatique.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "subaquatique.jpg"
             }
           ]
         },
@@ -1598,146 +1280,71 @@
           "medias": [
             {
               "type": "img",
-              "title": "ile-brouillard.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "ile-brouillard.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "montagne-brouillard.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "montagne-brouillard.jpg"
               },
               {
                 "type": "video",
-                "title": "brume.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "brume.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "montagne-aigle.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "montagne-aigle.jpg"
             },
             {
               "type": "img",
-              "title": "halo-nuages.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "halo-nuages.jpg"
             },
             {
               "type": "img",
-              "title": "halo-nuage2.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "halo-nuage2.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "peinture-religieuse.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "peinture-religieuse.jpg"
               },
               {
                 "type": "video",
-                "title": "secheresse.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "secheresse.ogg"
               }
             ],
             [
               {
                 "type": "img",
-                "title": "monts-sombres.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "monts-sombres.jpg"
               },
               {
                 "type": "video",
-                "title": "brise.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "brise.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "rocher-brouillard.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "rocher-brouillard.jpg"
             },
             {
               "type": "img",
-              "title": "arbres-brouillard.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "arbres-brouillard.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "lampion-croix.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "lampion-croix.jpg"
               },
               {
                 "type": "video",
-                "title": "mouton-calin.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "mouton-calin.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "degrade-chaud.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "degrade-chaud.jpg"
             }
           ]
         }
@@ -1747,250 +1354,234 @@
       "urn": "3-maroc",
       "title": "Chapitre 3 : Maroc",
       "index": 2,
+      "sons": [
+        {
+          "type": "son",
+          "title": "atlas1.ogg"
+        },
+        {
+          "type": "son",
+          "title": "atlas1-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "atlas2.ogg"
+        },
+        {
+          "type": "son",
+          "title": "atlas2-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "atlas3.ogg"
+        },
+        {
+          "type": "son",
+          "title": "atlas3-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "atlas4.ogg"
+        },
+        {
+          "type": "son",
+          "title": "atlas4-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "chant1.ogg"
+        },
+        {
+          "type": "son",
+          "title": "chant1-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "chant2.ogg"
+        },
+        {
+          "type": "son",
+          "title": "chant2-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "chant3.ogg"
+        },
+        {
+          "type": "son",
+          "title": "chant3-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "chant4.ogg"
+        },
+        {
+          "type": "son",
+          "title": "chant4-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "dirham1.ogg"
+        },
+        {
+          "type": "son",
+          "title": "dirham1-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "dirham2.ogg"
+        },
+        {
+          "type": "son",
+          "title": "dirham2-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "visite1.ogg"
+        },
+        {
+          "type": "son",
+          "title": "visite1-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "visite2.ogg"
+        },
+        {
+          "type": "son",
+          "title": "visite2-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "visite3.ogg"
+        },
+        {
+          "type": "son",
+          "title": "visite3-reverse.ogg"
+        },
+        {
+          "type": "son",
+          "title": "visite4.ogg"
+        },
+        {
+          "type": "son",
+          "title": "visite4-reverse.ogg"
+        }
+      ],
       "subChapters": [
         {
           "medias": [
             {
               "type": "img",
-              "title": "desert.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "desert.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "ombres-chameaux.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "ombres-chameaux.jpg"
               },
               {
                 "type": "video",
-                "title": "desert-chameau.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "desert-chameau.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "desert-infini.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "desert-infini.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "desert-brumeux.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "desert-brumeux.jpg"
               },
               {
                 "type": "video",
-                "title": "bateau-desert.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "bateau-desert.ogg"
               },
               {
                 "type": "video",
-                "title": "bateau-desert2.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "bateau-desert2.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "reg.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "reg.jpg"
             },
             {
               "type": "img",
-              "title": "desert-antenne.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "desert-antenne.jpg"
             },
             {
               "type": "img",
-              "title": "desert-antenne2.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "desert-antenne2.jpg"
             },
             {
               "type": "img",
-              "title": "desert-antenne3.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "desert-antenne3.jpg"
             },
             {
               "type": "img",
-              "title": "desert-antenne4.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "desert-antenne4.jpg"
             },
             {
               "type": "img",
-              "title": "desert-pilone.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "desert-pilone.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "herbes.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "herbes.jpg"
               },
               {
                 "type": "video",
-                "title": "travelling-desert.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "travelling-desert.ogg"
               }
             ],
             [
               {
                 "type": "img",
-                "title": "arbustes.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "arbustes.jpg"
               },
               {
                 "type": "video",
-                "title": "oasis.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "oasis.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "steppes.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "steppes.jpg"
             },
             {
               "type": "img",
-              "title": "vue-montagnes.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "vue-montagnes.jpg"
             },
             {
               "type": "img",
-              "title": "arbres-dissemines.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "arbres-dissemines.jpg"
             },
             {
               "type": "img",
-              "title": "jardins-suspendus.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "jardins-suspendus.jpg"
             },
             {
               "type": "img",
-              "title": "plaine.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "plaine.jpg"
             },
             {
               "type": "img",
-              "title": "vallee.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "vallee.jpg"
             },
             {
               "type": "img",
-              "title": "oasis.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "oasis.jpg"
             },
             {
               "type": "img",
-              "title": "palmiers-chevres.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "palmiers-chevres.jpg"
             },
             {
               "type": "img",
-              "title": "palmeraie.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "palmeraie.jpg"
             }
           ]
         },
@@ -1999,316 +1590,151 @@
             [
               {
                 "type": "img",
-                "title": "porte-atlas.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "porte-atlas.jpg"
               },
               {
                 "type": "video",
-                "title": "arche-desert.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "arche-desert.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "colonnes-route.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "colonnes-route.jpg"
             },
             {
               "type": "img",
-              "title": "tour-desert.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "tour-desert.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "batisse-desert.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "batisse-desert.jpg"
               },
               {
                 "type": "video",
-                "title": "libellule.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "libellule.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "montagne-bunker.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "montagne-bunker.jpg"
             },
             {
               "type": "img",
-              "title": "tour-colline.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "tour-colline.jpg"
             },
             {
               "type": "img",
-              "title": "abri-sommet.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "abri-sommet.jpg"
             },
             {
               "type": "img",
-              "title": "pyramide.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "pyramide.jpg"
             },
             {
               "type": "img",
-              "title": "palais-montagne.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "palais-montagne.jpg"
             },
             {
               "type": "img",
-              "title": "palais-renov.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "palais-renov.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "temple-renov.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "temple-renov.jpg"
               },
               {
                 "type": "video",
-                "title": "colonnes-egypte-structures.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "colonnes-egypte-structures.ogg"
               }
             ],
             [
               {
                 "type": "img",
-                "title": "colonnes-renov.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "colonnes-renov.jpg"
               },
               {
                 "type": "video",
-                "title": "colonnes-soleil.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "colonnes-soleil.ogg"
               },
               {
                 "type": "video",
-                "title": "decor-palmiers.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "decor-palmiers.ogg"
               }
             ],
             [
               {
                 "type": "img",
-                "title": "colonnes-renov.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "colonnes-renov.jpg"
               },
               {
                 "type": "video",
-                "title": "colonnes-soleil.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "colonnes-soleil.ogg"
               },
               {
                 "type": "video",
-                "title": "decor-palmiers.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "decor-palmiers.ogg"
               }
             ],
             [
               {
                 "type": "img",
-                "title": "temple-renov2.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "temple-renov2.jpg"
               },
               {
                 "type": "video",
-                "title": "selfie-colonnes-egypte.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "selfie-colonnes-egypte.ogg"
               },
               {
                 "type": "video",
-                "title": "visages-colonnes-egypte.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "visages-colonnes-egypte.ogg"
               },
               {
                 "type": "video",
-                "title": "visage-colonne-egypte.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "visage-colonne-egypte.ogg"
               }
             ],
             [
               {
                 "type": "img",
-                "title": "porte-temple.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "porte-temple.jpg"
               },
               {
                 "type": "video",
-                "title": "contre-jour-temple.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "contre-jour-temple.ogg"
               }
             ],
             [
               {
                 "type": "img",
-                "title": "village-renov.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "village-renov.jpg"
               },
               {
                 "type": "video",
-                "title": "paille-vent.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "paille-vent.ogg"
               },
               {
                 "type": "video",
-                "title": "palmier.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "palmier.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "circuit-auto.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "circuit-auto.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "maison-plaine.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "maison-plaine.jpg"
               },
               {
                 "type": "video",
-                "title": "interieur-lumiere.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "interieur-lumiere.ogg"
               },
               {
                 "type": "video",
-                "title": "interieur-lumiere-zoom.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "interieur-lumiere-zoom.ogg"
               }
             ]
           ]
@@ -2317,87 +1743,42 @@
           "medias": [
             {
               "type": "img",
-              "title": "interieur-modeste.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "interieur-modeste.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "paniers-pneus.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "paniers-pneus.jpg"
               },
               {
                 "type": "video",
-                "title": "pierre-souffre.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "pierre-souffre.ogg"
               }
             ],
             {
               "type": "img",
-              "title": "tas-pierre.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "tas-pierre.jpg"
             },
             {
               "type": "img",
-              "title": "filet-palmiers.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "filet-palmiers.jpg"
             },
             {
               "type": "img",
-              "title": "moisson-champs.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "moisson-champs.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "ruelle.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "ruelle.jpg"
               },
               {
                 "type": "video",
-                "title": "ruelle1.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "ruelle1.ogg"
               },
               {
                 "type": "video",
-                "title": "ruelle2.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "ruelle2.ogg"
               }
             ]
           ]
@@ -2406,112 +1787,52 @@
           "medias": [
             {
               "type": "img",
-              "title": "ruelle-topographe.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "ruelle-topographe.jpg"
             },
             {
               "type": "img",
-              "title": "couronne-montagne.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "couronne-montagne.jpg"
             },
             {
               "type": "img",
-              "title": "texte-arbre.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "texte-arbre.jpg"
             },
             {
               "type": "img",
-              "title": "texte-dune.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "texte-dune.jpg"
             },
             {
               "type": "img",
-              "title": "texte-desert.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "texte-desert.jpg"
             },
             {
               "type": "img",
-              "title": "couronne-texte.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "couronne-texte.jpg"
             },
             {
               "type": "img",
-              "title": "couronne-texte2.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "couronne-texte2.jpg"
             },
             {
               "type": "img",
-              "title": "texte-roches.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "texte-roches.jpg"
             },
             {
               "type": "img",
-              "title": "texte-cop22.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "texte-cop22.jpg"
             },
             {
               "type": "img",
-              "title": "texte-village.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "texte-village.jpg"
             },
             [
               {
                 "type": "img",
-                "title": "texte-nuit.jpg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "texte-nuit.jpg"
               },
               {
                 "type": "video",
-                "title": "palmiers-typo.ogg",
-                "infos": {
-                  "location": "",
-                  "weight": "",
-                  "date": ""
-                }
+                "title": "palmiers-typo.ogg"
               }
             ]
           ]
