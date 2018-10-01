@@ -128,7 +128,11 @@ function Video(options) {
 Object.defineProperties(Video.prototype, {
     playState: {
         get: function() {
-            return this.elem.playState;
+            let video = this.elem;
+            if (video.currentTime > 0 && !video.paused) return "running";
+            else if (video.ended || video.played.length === 0) return "finished";
+            else if (video.paused) return "paused";
+            else return undefined;
         }
     }
 });
@@ -158,15 +162,15 @@ Video.prototype.play = function() {
     }
     this.elem.play();
 };
-// Video.prototype.reverse = function() {
-//     this.elem.reverse();
-// };
-// Video.prototype.pause = function() {
-//     this.elem.pause();
-// };
-// Video.prototype.resume = function() {
-//     this.elem.play();
-// };
+Video.prototype.reverse = function() {
+    this.elem.reverse();
+};
+Video.prototype.pause = function() {
+    this.elem.pause();
+};
+Video.prototype.resume = function() {
+    this.elem.play();
+};
 
 
 /* Audio */
@@ -183,7 +187,12 @@ function Audio(options) {
 Object.defineProperties(Audio.prototype, {
     playState: {
         get: function() {
-            return this.elem.playState;
+            let audio = this.elem;
+            //FIXME (playstate troubles in subChapter between running medias (audio) and paused medias (img) so set "running" to "playing")
+            if (audio.currentTime > 0 && !audio.paused) return "playing";
+            else if (audio.ended || audio.played.length === 0) return "finished";
+            else if (audio.paused) return "paused";
+            else return undefined;
         }
     }
 });
@@ -213,15 +222,12 @@ Audio.prototype.play = function() {
     }
     this.elem.play();
 };
-// Audio.prototype.reverse = function() {
-//     this.elem.reverse();
-// };
-// Audio.prototype.pause = function() {
-//     this.elem.pause();
-// };
-// Audio.prototype.resume = function() {
-//     this.elem.play();
-// };
+Audio.prototype.reverse = function() {
+};
+Audio.prototype.pause = function() {
+};
+Audio.prototype.resume = function() {
+};
 
 /* Multimedia */
 

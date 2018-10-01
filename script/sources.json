@@ -229,6 +229,7 @@
       ],
       "subChapters": [
         {
+          "int": [0,1],
           "medias": [
             {
               "type": "img",
@@ -279,6 +280,7 @@
           ]
         },
         {
+          "int": [0,1],
           "medias": [
             {
               "type": "img",
@@ -319,6 +321,7 @@
           ]
         },
         {
+          "int": [0,1],
           "medias": [
             {
               "type": "img",
@@ -334,12 +337,7 @@
             },
             {
               "type": "img",
-              "title": "amphisbaena-cashel.jpg",
-              "infos": {
-                "location": "",
-                "weight": "",
-                "date": ""
-              }
+              "title": "amphisbaena-cashel.jpg"
             },
             {
               "type": "img",
@@ -370,6 +368,7 @@
           ]
         },
         {
+          "int": [1,2],
           "medias": [
             {
               "type": "img",
@@ -450,6 +449,7 @@
           ]
         },
         {
+          "int": [0,1],
           "medias": [
             {
               "type": "img",
@@ -492,6 +492,7 @@
           ]
         },
         {
+          "int": [1,2],
           "medias": [
             {
               "type": "img",
@@ -572,6 +573,7 @@
           ]
         },
         {
+          "int": [0,1],
           "medias": [
             {
               "type": "img",
@@ -610,6 +612,7 @@
           ]
         },
         {
+          "int": [0,1],
           "medias": [
             {
               "type": "img",
@@ -797,6 +800,7 @@
       ],
       "subChapters": [
         {
+          "int": [2,4],
           "medias": [
             {
               "type": "img",
@@ -947,7 +951,6 @@
           ]
         },
         {
-          "no_extra": true,
           "medias": [
             [
               {
@@ -984,6 +987,7 @@
           ]
         },
         {
+          "int": [1,2],
           "medias": [
             {
               "type": "img",
@@ -1098,6 +1102,7 @@
           ]
         },
         {
+          "int": [0,1],
           "medias": [
             {
               "type": "img",
@@ -1235,6 +1240,7 @@
       ],
       "subChapters": [
         {
+          "int": [1,2],
           "medias": [
             {
               "type": "img",
@@ -1351,6 +1357,7 @@
           ]
         },
         {
+          "int": [1,2],
           "medias": [
             [
               {
@@ -1505,7 +1512,6 @@
           ]
         },
         {
-          "no-extra": true,
           "medias": [
             {
               "type": "img",
@@ -1550,6 +1556,7 @@
           ]
         },
         {
+          "int": [0,1],
           "medias": [
             {
               "type": "img",
