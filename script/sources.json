@@ -165,65 +165,76 @@
       "urn": "1-norvege",
       "title": "Chapitre 1 : Norvège",
       "index": 0,
-      "sons": [
+      "text": [
+        "<p>La lumière du soleil met huit minutes pour nous parvenir.<br>Il y a derrière chaque image, un temps propre, toujours plus ou moins loin de nous, souvent un mirage.</p>",
+        "<p>Je cherchais un lieu où l'horizon se recourbait sur lui même. Un lieu où se rendent tous les corps morts, les débris, tout ce que nous ne pouvions incorporer dans l'histoire faute de sens. J'avais le pressentiment qu'en observant un tel endroit, j'aurais l'occasion de fabriquer une multitude d'outils pour offrir une lecture du présent.</p>",
+        "<p>Comme un glissement de terrain après la pluie. Sur les flans de montagne, on observe des couches de sédiments qui ne sont plus rangées par strates. Ils sont mélangés. Des éléments séparés par des milliers d'années se rencontrent, se touchent, se regardent. De quoi parlent-ils ? Dans ces montagnes, cet événement reste rare mais surtout dangereux. Il me fallait trouver un endroit où cela était quasi constant et plus facile d'accès.<br>La matière du monde est molle, mais l'homme vit trop vite pour s'en rendre compte.</p>",
+        "<p>J'avais entendu parler d'un trou dans l'horizon au-dela du cercle polaire, au nord de l'Europe. C'est en Norvège que j'en ai trouvé la première entrée. Une carte du 18ᵉ siècle montrait un <i>maelström</i>. Elle présentait aussi une mythologie Viking indiquant que c'est de ce maelström que sortait le sel qui alimente les mers. Il se trouve aujourd'hui près d'une ville du nom de Bodo, terminus du train.</p>",
+        "<p>Si du sel en sortait pour les Vikings, c'est que ce trou débouchait forcément quelque part. Je me prenais à rêver d'une route, d'un passage.</p>",
+        "<p>La nuit, je rêvais du maelström. J'imaginais des débris, des corps morts aspirés par les courants depuis des milliers d'années. Coincés, ils se fragmentaient. Rencontrant inlassablement d'autres éléments, se demandant si c'était un bout d'eux-même.</p>",
+        "<p>En apparence, il ne s'agit que d'un liquide, homogène et continu, alors même qu'il est le siège de discrètes violences entre de petits corps que nos yeux ne peuvent pas détecter. À chaque gorgée, nous ingurgitons des milliards de myriades d'atomes d'hydrogène et d'oxygène, qui sont tous de céleste lignée : les atomes d'hydrogène se sont formés dans l'univers primordial — il y a plus de treize milliards d'années — et ceux d'oxygène dans le cœur brûlant d'une étoile — il y a environ cinq milliards d'années — qui les a ensuite dispersé dans le vide intergalactique. Nous découvrirons ainsi que la <i>matière du présent</i> provient de furieusement loin dans le passé. Et qu'en conséquence, chaque moment où nous nous désaltérons est en réalité un acte grave et profond, un geste quotidien dont nous oublions qu'il nous relie intimement à l'histoire de l'Univers : chaque fois, nos corps absorbent en définitive des bribes de l'aurore du monde mélangées à des cendres plus tardives du feu stellaire.</p>",
+        "<p>Là au coeur des courants, le temps n'importerait pas, il n'y aurait plus d'individus, mais une suite de rencontres, de possibles à travers le temps et l'espace.</p>",
+        "<p>C'est dans les fils d'un pêcheur que j'ai pu le lire.</p>"
+      ],
+      "audio": [
         {
-          "type": "son",
+          "type": "audio",
           "title": "annoncetrain1.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "annoncetrain2.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "concertlocal1.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "concertlocal2.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "concertlocal3.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "concertlocal4.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "concertlocal5.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "cripecheur.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "djigueul.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "journalistes1.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "journalistes2.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "journalistes3.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "train1.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "train2.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "train3.ogg"
         }
       ],
@@ -684,117 +695,117 @@
       "urn": "2-grece",
       "title": "Chapitre 2 : Grèce",
       "index": 1,
-      "sons": [
+      "audio": [
         {
-          "type": "son",
+          "type": "audio",
           "title": "alarme.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "bricolage1.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "bricolage2.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "clapotisbateau.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "clocher.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "concertlocal1.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "culte1.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "culte2.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "culte3.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "feu.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "gazouillis.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "grotte.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "interferences.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "manif1.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "manif2.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "manif3.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "manif4.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "mer.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "metro1.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "metro2.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "metro3.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "moteur1.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "moteur2.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "tambour1.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "tambour2.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "tango1.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "tango2.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "underwater.ogg"
         }
       ],
@@ -1180,61 +1191,61 @@
       "urn": "3-maroc",
       "title": "Chapitre 3 : Maroc",
       "index": 2,
-      "sons": [
+      "audio": [
         {
-          "type": "son",
+          "type": "audio",
           "title": "atlas1.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "atlas2.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "atlas3.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "atlas4.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "chant1.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "chant2.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "chant3.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "chant4.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "dirham1.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "dirham2.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "visite1.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "visite2.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "visite3.ogg"
         },
         {
-          "type": "son",
+          "type": "audio",
           "title": "visite4.ogg"
         }
       ],

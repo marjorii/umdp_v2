@@ -48,7 +48,6 @@ SubChapter.prototype.play = function() {
             }
             var media = _this.medias[_this.index];
             if (media) {
-                console.log("medias index", _this.index);
                 media.play();
                 await reversableSleep(2000);
                 _this.index = _this.findLastStopped(direction === -1);
@@ -100,6 +99,7 @@ SubChapter.prototype.findLastStopped = function (reversed) {
 
 function Chapter(jsonOBJ) {
     this.index = 0;
+    this.text = jsonOBJ.text;
     this.subChapters = jsonOBJ.subChapters.map(subChapter => {
         return new SubChapter(subChapter, jsonOBJ.urn);
     });
@@ -135,24 +135,37 @@ Chapter.prototype.load = function() {
 Chapter.prototype.play = function() {
     return new Promise((resolve, reject) => {
         var _this = this;
+        var textIndex = direction === 1 ? 0 : this.text.length -1;
         async function playSubChapter(orientation) {
             if (orientation) {
+                await _this.textDisplay(textIndex);
+                textIndex += direction;
                 _this.index = orientation === 1 ? 0 : _this.subChapters.length -1;
             }
             var subChapter = _this.subChapters[_this.index];
             if (subChapter) {
                 await subChapter.play();
+                await _this.textDisplay(textIndex);
+                textIndex += direction;
                 await reversableSleep(2000);
                 _this.index = _this.findLastStopped(direction === -1);
-                // _this.index += direction;
                 playSubChapter();
-                console.log("sub index", _this.index);
             }
             else {
                 resolve();
             }
         }
         playSubChapter(direction);
+    });
+};
+
+Chapter.prototype.textDisplay = function(index) {
+    return new Promise (async(resolve, reject) => {
+        var texttable = document.getElementById("text-content");
+            texttable.innerHTML = this.text[index];
+            await reversableSleep(5000);
+            resolve();
+            texttable.innerHTML = "";
     });
 };
 

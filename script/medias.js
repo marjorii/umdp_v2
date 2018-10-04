@@ -163,13 +163,10 @@ Video.prototype.play = function() {
     this.elem.play();
 };
 Video.prototype.reverse = function() {
-    this.elem.reverse();
 };
 Video.prototype.pause = function() {
-    this.elem.pause();
 };
 Video.prototype.resume = function() {
-    this.elem.play();
 };
 
 
@@ -188,7 +185,7 @@ Object.defineProperties(Audio.prototype, {
     playState: {
         get: function() {
             let audio = this.elem;
-            //FIXME (playstate troubles in subChapter between running medias (audio) and paused medias (img) so set "running" to "playing")
+            //FIXME (playstate troubles in subChapter between running medias (audio) and paused medias (img) so set "running" to "playing" on line beneath)
             if (audio.currentTime > 0 && !audio.paused) return "playing";
             else if (audio.ended || audio.played.length === 0) return "finished";
             else if (audio.paused) return "paused";
@@ -228,6 +225,7 @@ Audio.prototype.pause = function() {
 };
 Audio.prototype.resume = function() {
 };
+
 
 /* Multimedia */
 

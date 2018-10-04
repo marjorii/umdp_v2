@@ -4,9 +4,9 @@ async function initProject() {
     var json = await readJSONFile("script/sources.json");
     json = createUrls(json);
 
+
     allChapter = new AllChapter(json);
     await allChapter.load();
-    console.log("Medias loaded !");
     await allChapter.play();
     console.log("Done !");
 }
@@ -29,7 +29,7 @@ function createMedia(media, urn) {
     else if (type === "video") {
         return new Video(media, urn);
     }
-    else if (type === "son") {
+    else if (type === "audio") {
         return new Audio(media, urn);
     }
     else {
@@ -124,14 +124,14 @@ function createUrls(data) {
         else if (media.type === "img" && media.title.match(/.(gif)$/i)) {
             media.uri = ["medias", media.type, "gif", media.title].join("/");
         }
-        else {
+        else if (media.type === "video" || media.type === "audio") {
             media.uri = ["medias", media.type, chapter, media.title].join("/");
         }
         return media;
     }
     var occur = {};
     return data.chapters.map(chapter => {
-        var sMix = shuffle(chapter.sons);
+        var sMix = shuffle(chapter.audio);
         chapter.subChapters = chapter.subChapters.map(subChapter => {
             if (subChapter.int) {
                 var pickedNumber = randomFromTo(1, 4);
@@ -149,16 +149,16 @@ function createUrls(data) {
 
                 var pickedNumber = randomFromTo(subChapter.int[0], subChapter.int[1]);
                 for (var s = 0; s < pickedNumber; s++) {
-                    pick = chapter.sons.shift();
+                    pick = chapter.audio.shift();
                     pickedRange = randomFromTo(0, subChapter.medias.length);
                     subChapter.medias.splice(pickedRange, 0, pick);
                 }
             } else {
                 pickedNumber = 0;
             }
-            // console.log(pickedNumber);
-            // console.log(pick);
-            // console.log(subChapter.medias);
+
+            // console.log(chapter.text)
+
             return subChapter.medias.map(media => {
                 if (Array.isArray(media)) {
                     return media.map(med => {

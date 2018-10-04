@@ -5,6 +5,16 @@
 	src: url("../fonts/garcia.woff2");
 }
 
+@font-face {
+	font-family: "Cormorant";
+	src: url("../fonts/cormorant-medium.woff2");
+}
+
+@font-face {
+	font-family: "Cormorant italic";
+	src: url("../fonts/cormorant-medium-italic.woff2");
+}
+
 :root {
 	font-family: "Garcia";
 	font-size: 1.5em;
@@ -36,9 +46,6 @@ a {
 #container, #container img {
 	position: absolute;
 }
-/* #container img{
-	opacity: 0.2;
-} */
 
 #mediatable {
 	position: absolute;
@@ -56,6 +63,46 @@ video {
 	display: block;
 	width: 50%;
 	/* tablette portrait : 100%; */
+}
+
+#text-table {
+	position: absolute;
+	width: calc(100% - 200px);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	/* tablette :
+	width: calc(100% - 170px);
+	*/
+}
+#text-content {
+	position: absolute;
+	width: calc(100% - 200px);
+	height: 100%;
+	/* width: 50%;
+	margin: auto; */
+	pointer-events: none;
+	/* tablette :
+	width: calc(100% - 170px);
+	*/
+}
+#text-content p {
+	margin-top: 50px;
+	margin-left: 50px;
+	font-family: "Cormorant";
+	font-size: 1.5rem;
+	line-height: 2rem;
+	/* text-align: left; */
+	text-align: center;
+	/* tablette :
+	font-size: 1rem;
+	line-height: 1.5rem;
+	*/
+}
+#text-content p i {
+	font-family: "Cormorant italic";
 }
 
 nav {
@@ -106,14 +153,26 @@ nav a {
 	pointer-events: auto;
 }
 
+/* centrer par rapport au textes (si textes = centrés) */
+#buttons-container {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(100% - 200px);
+	/* tablette :
+	width: calc(100% - 170px);
+	*/
+}
 #actions-buttons {
 	position: absolute;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	width: 400px;
-	left: 0; bottom: 25px; right: 0;
-	margin: auto;
+	bottom: 25px;
+	/* centrer par rapport à l'écran = enlever #buttons-container + réactiver code ci-dessous */
+	/* left: 0; bottom: 25px; right: 0;
+	margin: auto; */
 }
 #actions-buttons a img {
 height: 25px;
