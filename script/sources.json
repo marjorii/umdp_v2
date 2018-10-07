@@ -168,7 +168,7 @@
       "text": [
         "<p>La lumière du soleil met huit minutes pour nous parvenir.<br>Il y a derrière chaque image, un temps propre, toujours plus ou moins loin de nous, souvent un mirage.</p>",
         "<p>Je cherchais un lieu où l'horizon se recourbait sur lui même. Un lieu où se rendent tous les corps morts, les débris, tout ce que nous ne pouvions incorporer dans l'histoire faute de sens. J'avais le pressentiment qu'en observant un tel endroit, j'aurais l'occasion de fabriquer une multitude d'outils pour offrir une lecture du présent.</p>",
-        "<p>Comme un glissement de terrain après la pluie. Sur les flans de montagne, on observe des couches de sédiments qui ne sont plus rangées par strates. Ils sont mélangés. Des éléments séparés par des milliers d'années se rencontrent, se touchent, se regardent. De quoi parlent-ils ? Dans ces montagnes, cet événement reste rare mais surtout dangereux. Il me fallait trouver un endroit où cela était quasi constant et plus facile d'accès.<br>La matière du monde est molle, mais l'homme vit trop vite pour s'en rendre compte.</p>",
+        "<p>Comme un glissement de terrain après la pluie. Sur les flans de montagne, on observe des couches de sédiments qui ne sont plus rangées par strates. Elles sont mélangées. Des éléments séparés par des milliers d'années se rencontrent, se touchent, se regardent. De quoi parlent-ils ? Dans ces montagnes, cet événement reste rare mais surtout dangereux. Il me fallait trouver un endroit où cela était quasi constant et plus facile d'accès.<br>La matière du monde est molle, mais l'homme vit trop vite pour s'en rendre compte.</p>",
         "<p>J'avais entendu parler d'un trou dans l'horizon au-dela du cercle polaire, au nord de l'Europe. C'est en Norvège que j'en ai trouvé la première entrée. Une carte du 18ᵉ siècle montrait un <i>maelström</i>. Elle présentait aussi une mythologie Viking indiquant que c'est de ce maelström que sortait le sel qui alimente les mers. Il se trouve aujourd'hui près d'une ville du nom de Bodo, terminus du train.</p>",
         "<p>Si du sel en sortait pour les Vikings, c'est que ce trou débouchait forcément quelque part. Je me prenais à rêver d'une route, d'un passage.</p>",
         "<p>La nuit, je rêvais du maelström. J'imaginais des débris, des corps morts aspirés par les courants depuis des milliers d'années. Coincés, ils se fragmentaient. Rencontrant inlassablement d'autres éléments, se demandant si c'était un bout d'eux-même.</p>",
@@ -240,7 +240,7 @@
       ],
       "subChapters": [
         {
-          "int": [0,1],
+          "int": [1,1],
           "medias": [
             {
               "type": "img",
@@ -695,6 +695,13 @@
       "urn": "2-grece",
       "title": "Chapitre 2 : Grèce",
       "index": 1,
+      "text": [
+        "<p>Texte 1.</p>",
+        "<p>Texte 2.</p>",
+        "<p>Texte 3.</p>",
+        "<p>Texte 4.</p>",
+        "<p>Texte 5.</p>"
+      ],
       "audio": [
         {
           "type": "audio",
@@ -1191,6 +1198,13 @@
       "urn": "3-maroc",
       "title": "Chapitre 3 : Maroc",
       "index": 2,
+      "text": [
+        "<p>Texte 1.</p>",
+        "<p>Texte 2.</p>",
+        "<p>Texte 3.</p>",
+        "<p>Texte 4.</p>",
+        "<p>Texte 5.</p>"
+      ],
       "audio": [
         {
           "type": "audio",

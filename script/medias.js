@@ -211,14 +211,37 @@ Audio.prototype.load = function() {
 Audio.prototype.init = function() {
     document.getElementById("mediatable").append(this.elem);
     this.ready = true;
+    this.elem.onplay = () => {
+        this.fade(1);
+    };
 };
 
-Audio.prototype.play = function() {
+Audio.prototype.play = async function() {
     if(!this.ready) {
         this.init();
     }
     this.elem.play();
+    await reversableSleep(15000);
+    this.fade(-1);
 };
+
+Audio.prototype.fade = function(dir) {
+    console.log("volume", this.elem.volume);
+    if (this.elem.volume) {
+        var int = dir === 1 ? 0 : 1;
+        var setVolume = dir === 1 ? 1 : 0;
+        var speed = dir === 1 ? 0.05 : -0.05;
+        this.elem.volume = int;
+        var iAudio = setInterval( () => {
+            int += speed;
+            this.elem.volume = int.toFixed(1);
+            if ((dir === 1 && int.toFixed(1) >= setVolume) || (dir === -1 && int.toFixed(1) <= setVolume)) {
+                clearInterval(iAudio);
+            };
+        }, 250);
+    }
+};
+
 Audio.prototype.reverse = function() {
 };
 Audio.prototype.pause = function() {
