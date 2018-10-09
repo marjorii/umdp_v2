@@ -181,18 +181,18 @@ function Audio(options) {
     this.ready = false;
 }
 
-Object.defineProperties(Audio.prototype, {
-    playState: {
-        get: function() {
-            let audio = this.elem;
-            //FIXME (playstate troubles in subChapter between running medias (audio) and paused medias (img) so set "running" to "playing" on line beneath)
-            if (audio.currentTime > 0 && !audio.paused) return "playing";
-            else if (audio.ended || audio.played.length === 0) return "finished";
-            else if (audio.paused) return "paused";
-            else return undefined;
-        }
-    }
-});
+// Object.defineProperties(Audio.prototype, {
+//     playState: {
+//         get: function() {
+//             let audio = this.elem;
+//             //FIXME (playstate troubles in subChapter between running medias (audio) and paused medias (img) so set "running" to "playing" on line beneath)
+//             if (audio.currentTime > 0 && !audio.paused) return "running";
+//             else if (audio.ended || audio.played.length === 0) return "finished";
+//             else if (audio.paused) return "paused";
+//             else return undefined;
+//         }
+//     }
+// });
 
 Audio.prototype.load = function() {
     return new Promise ((resolve, reject) => {
@@ -214,39 +214,55 @@ Audio.prototype.init = function() {
     this.elem.onplay = () => {
         this.fade(1);
     };
+    this.elem.onended = () => {
+        this.playState = "finished";
+        console.log("audio finished !");
+    };
 };
 
-Audio.prototype.play = async function() {
+Audio.prototype.play = function() {
     if(!this.ready) {
         this.init();
     }
+    this.playState = "running";
     this.elem.play();
-    await reversableSleep(15000);
-    this.fade(-1);
+    this.pAudio = setTimeout(() => {
+        this.fade(-1);
+    }, 5000);
 };
 
 Audio.prototype.fade = function(dir) {
-    console.log("volume", this.elem.volume);
-    if (this.elem.volume) {
-        var int = dir === 1 ? 0 : 1;
-        var setVolume = dir === 1 ? 1 : 0;
-        var speed = dir === 1 ? 0.05 : -0.05;
-        this.elem.volume = int;
-        var iAudio = setInterval( () => {
-            int += speed;
-            this.elem.volume = int.toFixed(1);
-            if ((dir === 1 && int.toFixed(1) >= setVolume) || (dir === -1 && int.toFixed(1) <= setVolume)) {
-                clearInterval(iAudio);
-            };
-        }, 250);
-    }
+    return new Promise((resolve, reject) => {
+        console.log("volume", this.elem.volume);
+        if (this.elem.volume) {
+            var int = dir === 1 ? 0 : 1;
+            var setVolume = dir === 1 ? 1 : 0;
+            var speed = dir === 1 ? 0.05 : -0.05;
+            this.elem.volume = int;
+            this.iAudio = setInterval(() => {
+                int += speed;
+                this.elem.volume = int.toFixed(1);
+                if ((dir === 1 && int.toFixed(1) >= setVolume) || (dir === -1 && int.toFixed(1) <= setVolume)) {
+                    clearInterval(this.iAudio);
+                    resolve();
+                };
+            }, 250);
+        }
+    });
 };
 
 Audio.prototype.reverse = function() {
 };
 Audio.prototype.pause = function() {
+    this.playState = "paused";
+    console.log(this.pAudio);
+    clearTimeout(this.pAudio);
 };
-Audio.prototype.resume = function() {
+Audio.prototype.resume = async function() {
+    this.playState = "running";
+    await this.fade(-1);
+    this.pause();
+    this.currentTime = 0;
 };
 
 
