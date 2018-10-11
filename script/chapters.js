@@ -99,7 +99,7 @@ SubChapter.prototype.findLastStopped = function (reversed) {
 
 function Chapter(jsonOBJ) {
     this.index = 0;
-    this.text = jsonOBJ.text;
+    this.text = randomPick(jsonOBJ.text);
     this.subChapters = jsonOBJ.subChapters.map(subChapter => {
         return new SubChapter(subChapter, jsonOBJ.urn);
     });

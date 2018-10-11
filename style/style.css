@@ -111,10 +111,10 @@ video {
 	font-family: "Cormorant italic";
 }
 
-/* #text-content p span {
+#text-content p span {
 	font-family: "Tifinagh Revue";
 	font-weight: lighter;
-} */
+}
 
 nav {
 	position: fixed;

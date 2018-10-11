@@ -166,15 +166,28 @@
       "title": "Chapitre 1 : Norvège",
       "index": 0,
       "text": [
-        "<p>En apparence, il ne s’agit que d’un liquide, homogène et continu, alors même qu’il est le siège de discrètes violences entre de petits corps que nos yeux ne peuvent pas détecter.</p>",
-        "<p>À chaque gorgée, nous ingurgitons des milliards de myriades d’atomes d’hydrogène et d’oxygène, qui sont tous de céleste lignée : les atomes d’hydrogène se sont formés dans l’univers primordial — il y a plus de treize milliards d’années — et ceux d’oxygène dans le cœur brûlant d’une étoile — il y a environ cinq milliards d’années — qui les a ensuite dispersé dans le vide intergalactique.<br><br>Nous découvrirons ainsi que la matière du présent provient de furieusement loin dans le passé.</p>",
-        "<p>Chaque moment où nous nous désaltérons est en réalité un acte grave et profond, un geste quotidien dont nous oublions qu’il nous relie intimement à l’histoire de l’Univers : chaque fois, nos corps absorbent en définitive des bribes de l’aurore du monde, mélangées à des cendres plus tardives du feu stellaire.</p>",
-        "<p>La lumière du soleil met huit minutes pour nous parvenir.<br>Il y a derrière chaque éclat, un temps propre, toujours plus ou moins loin de nous, souvent un mirage.</p>",
-        "<p>Je cherchais un lieu où l’horizon se recourbait sur lui même, un lieu où se rendent tous les corps morts, les débris, comme un glissement de terrain après la pluie sur les flans de montagnes. On observe des couches de sédiments qui ne sont plus rangées par strates, elles sont mélangées. Des éléments séparés par des milliers d’années se rencontrent, se touchent, se regardent. De quoi parlent-ils ?.</p>",
-        "<p>Dans ces montagnes, cet événement reste rare mais surtout dangereux, il me fallait trouver un endroit où cela était quasi constant et plus facile d’accès. C’est en Norvège que j’en est trouvé la première entrée ;<br>un maelström illustré sur une carte datant de 1539 après J.-C.</p>",
-        "<p>Le cartographe Olaus Magnus mentionne ainsi un trait de la mythologie Viking indiquant que c’est de ce maelström que sortait le sel qui alimente les mers.</p>",
-        "<p>Si du sel en sortait pour les Vikings, c’est que ce trou débouche forcément quelque part. Je me prenais à rêver d’une route, d’un passage.</p>",
-        "<p>La nuit, je rêvais du maelström. J’imaginais des débris, des corps morts aspirés par les courants, coincés depuis des milliers d’années, se morcelant par la force des flux, rencontrant inlassablement d’autres éléments, finissant par se demander si ce n’était pas un fragment d’eux-mêmes.</p>"
+        [
+          "<p>En apparence, il ne s’agit que d’un liquide, homogène et continu,</p>",
+          "<p>alors même qu’il est le siège de discrètes violences entre de petits corps que nos yeux ne peuvent pas détecter.</p>",
+          "<p>À chaque gorgée, nous ingurgitons des milliards de myriades d’atomes d’hydrogène et d’oxygène, qui sont tous de céleste lignée :</p>",
+          "<p>les atomes d’hydrogène se sont formés dans l’univers primordial<br>— il y a plus de treize milliards d’années —</p>",
+          "<p>et ceux d’oxygène dans le cœur brûlant d’une étoile<br>— il y a environ cinq milliards d’années —<br>qui les a ensuite dispersé dans le vide intergalactique.</p>",
+          "<p>Nous découvrirons ainsi que la <i>matière du présent</i> provient<br>de furieusement loin dans le passé.</p>",
+          "<p>Chaque moment où nous nous désaltérons est en réalité un acte grave et profond,</p>",
+          "<p>un geste quotidien dont nous oublions qu’il nous relie intimement à l’histoire de l’Univers :</p>",
+          "<p>chaque fois, nos corps absorbent en définitive des bribes de l’aurore du monde, mélangées à des cendres plus tardives du feu stellaire.</p>"
+        ],
+        [
+          "<p>La lumière du soleil met huit minutes pour nous parvenir.<br>Il y a derrière chaque éclat, un temps propre, toujours plus ou moins loin de nous, souvent un mirage.</p>",
+          "<p>Je cherchais un lieu où l’horizon se recourbait sur lui même,<br>un lieu où se rendent tous les corps morts, les débris,<br>comme un glissement de terrain après la pluie sur les flans de montagnes.</p>",
+          "<p>On observe des couches de sédiments qui ne sont plus rangées par strates, elles sont mélangées.<br>Des éléments séparés par des milliers d’années se rencontrent, se touchent, se regardent.<br><br>De quoi parlent-ils ?</p>",
+          "<p>Dans ces montagnes, cet événement reste rare mais surtout dangereux, il me fallait trouver un endroit où cela était quasi constant et plus facile d’accès. C’est en Norvège que j’en est trouvé la première entrée ;<br>un maelström illustré sur une carte datant de 1539 après J.-C.</p>",
+          "<p>Le cartographe Olaus Magnus mentionne ainsi un trait de la mythologie Viking indiquant que c’est de ce <i>maelström</i> que sortait le sel qui alimente les mers.</p>",
+          "<p>Si du sel en sortait pour les Vikings, c’est que ce trou débouche forcément quelque part.<br><br>Je me prenais à rêver d’une route, d’un passage.</p>",
+          "<p>La nuit, je rêvais du <i>maelström</i>. J’imaginais des débris, des corps morts aspirés par les courants, coincés depuis des milliers d’années,</p>",
+          "<p>se morcelant par la force des flux, rencontrant inlassablement d’autres éléments, finissant par se demander si ce n’était pas un fragment d’eux-mêmes.</p>",
+          "<p>C’est dans les fils d’un pêcheur que j’ai pu le lire.</p>"
+        ]
       ],
       "audio": [
         {
@@ -696,11 +709,19 @@
       "title": "Chapitre 2 : Grèce",
       "index": 1,
       "text": [
-        "<p>Texte 1.</p>",
-        "<p>Texte 2.</p>",
-        "<p>Texte 3.</p>",
-        "<p>Texte 4.</p>",
-        "<p>Texte 5.</p>"
+        [
+          "<p>Il avait traversé <i>toute la Grèce</i>.<br>En s’énumérant les paysages que nous avions parcouru, nous avions entre autre une traversée en commun.<br>La seule dont j’avais réalisé un enregistrement.</p>",
+          "<p>L’anglais commençait à manquer, surtout de mon coté.<br>Alors nous avons commencé à nous montrer nos cartes.<br>Je me surprenais à chercher un relief sur les lettres imprimées.</p>",
+          "<p>Il replongea ses mains dans ses poches. Puis délicatement, il me présenta le bout de ses doigts.<br>Entre la sueur due à la chaleur écrasante régnant sur les docs, des pépites de sable.</p>",
+          "<p>Les grains étaient bien ronds dans des tonalités de jaune écru.<br>Parmi eux j’en distinguais d’autres plus gris, sculptés, semblables à du béton.</p>",
+          "<p>J’ai tenté de retenir son prénom, le répétant plusieurs fois par jour.<br>Mais la prononciation et les tonalités m’éloignaient chaque semaine de ce qu’il m’avait dit.</p>"
+        ],
+        [
+          "<p>Quand venait leur temps, des brises froides descendaient. Alors tous les <i>flamants roses</i>, qu’il chassait au bord du lac, migraient sur la Lune pour quelques mois. Attendant là-haut des jours plus cléments.<br>Comme si elle s’était perchée là-haut pour eux. Sinon où iraient-ils ?</p>",
+          "<p>Les <i>flamants roses</i> ? Je me posais la même question étant jeune : où partent-ils ?<br>Le monde s’arrête aux mots que nous connaissons, ceux-là même qui construisent le paysage.</p>",
+          "<p>Moi c’était Camargue, France, Europe. Incapable de voir le monde qui s’étendait sur Terre, sous mes pieds ou plutôt sous les ailes de ces volatiles.<br>Aujourd’hui je sais où se rendaient les <i>flamants roses</i> l’hiver. Chez lui.</p>",
+          "<p>Et pourtant, j’ai beau connaître leur destination, ma mémoire n’en retient qu’une seule ; Camargue.<br>Sans doute parce que le souvenir de l’autre, comme j’ai manqué de mots pour le fixer, s’est perdu.</p>",
+          "<p>Les <i>flamants roses</i>, comme une invitation aux langages.</p>"        ]
       ],
       "audio": [
         {
@@ -1199,11 +1220,20 @@
       "title": "Chapitre 3 : Maroc",
       "index": 2,
       "text": [
-        "<p>Texte 1.</p>",
-        "<p>Texte 2.</p>",
-        "<p>Texte 3.</p>",
-        "<p>Texte 4.</p>",
-        "<p>Texte 5.</p>"
+        [
+          "<p><span>ⵏⴽⴽⴰ  ⴷ  ⴱⴻⵔⵔⴰ.  ⵢⴻⵍⵍⴰ  ⵓⵚⵎⵎⵉⴹ  ⵉⵛⴻⵇⵇⴰⵏ : ⵢⴻⵇⵇⵓⵔ.<br>ⵓⵔ  ⵣⴷⴰⵔⴰⵖ  ⴰⴷ  ⴱⴷⵓⵖ  ⵏⴳⵔ  ⴰⵜⴼⴻⵍ  ⴷ  ⵜⴰⴳⵓⵜ.</span></p>",
+          "<p>Cela me rappelait un livre où il était inscrit :<br>« Le monde n’a pas de nom, dit-il. Les noms des collines et des sierras et des déserts n’existent que sur les cartes. On leur donne des noms de peur de s’égarer en chemin.<br>Mais c’est parce qu’on s’est déjà égaré qu’on leur a donné ces noms.<br>Le monde ne peut pas se perdre. Mais nous, nous le pouvons. »</p>",
+          "<p><span>ⵎⴰⵛⴰ  ⵓⵔⴷ   ⵓⴼⵉⵖ   ⴰⵊⴻⵔⵇⵔⴰⵅ .   ⵜⵉⵍⵉⴼⵓⵏ   ⵉⵏⵓ   ⵓⵔ   ⵉⵢⵉ   ⵢⵄⴰⵡⴻⵏ ,<br>ⵙⴰⵜⵉⵍⵉⵜ  </span>(satellite)<span>  ⵓⵔⵜⴻⵏ   ⵉⴽⴰ    ⴰⵔ   ⵉⵥⵕⴰ<br>ⵜⴰⴳⴰⵏⵜ    ⵏ   ⵓⵊⵔⵉⴷ ,   ⵓⵔ   ⴰⵢⵥⵕ   ⵍⴰ  ⵜⴰⵙⵙⵓⴽⵜ   ⵍⴰ  ⵍⵉⵙⵎ .</span></p>",
+          "<p>Mon téléphone n’était pas d’une plus grande aide.<br>Le satellite ne voyait qu’une gigantesque forêt de palmiers, ni rue, ni nom.</p>",
+          "<p><span>ⵎⴰⵛⴰ  ⵓⵔⴷ   ⵓⴼⵉⵖ   ⴰⵊⴻⵔⵇⵔⴰⵅ.   ⵜⵉⵍⵉⴼⵓⵏ   ⵉⵏⵓ   ⵓⵔ   ⵉⵢⵉ   ⵢⵄⴰⵡⴻⵏ,   ⵙⴰⵜⵉⵍⵉⵜ  </span>(satellite)<span>  ⵓⵔⵜⴻⵏ   ⵉⴽⴰ    ⴰⵔ   ⵉⵥⵕⴰ    ⵜⴰⴳⴰⵏⵜ    ⵏ   ⵓⵊⵔⵉⴷ,   ⵓⵔ   ⴰⵢⵥⵕ   ⵍⴰ  ⵜⴰⵙⵙⵓⴽⵜ   ⵍⴰ  ⵍⵉⵙⵎ .<br>ⵢⵓⵛⴽⴰⴷ ⵉⴹ . ⵢⵍⵍⴰ ⵉⴼⵙⵜⵉ . ⵉⴼⵙⵜⵉ ⴰⵔ ⴰⵣⵏⵥⵓⵎ</span></p>"
+        ],
+        [
+          "<p><span>ⵖⵖⵉⴷ  ⴽoⵍⵛⵉ  ⴰⵔ  ⵢⵜⵥⵥⴰⵢ  ⵙ  ⵍⴻⵎⵀⴻⵍ,  ⵃⴰⵇⵇⴰⵏ   ⵜⴰⴼⵓⴽⵜ  ⵉⵃⵔⵔⴰⵏ   ⴰⵢⴳⴰⵏ  ⵙⵙⴱⴰⴱ,</span><br><br>Ici tout est lent. Le temps a sa propre épaisseur, sa propre densité.<br>Le soleil écrasant y est peut-être pour quelque chose.<br>Même les emballages de plastique prennent leur temps pour se faire trimballer par le vent.</p>",
+          "<p><span>ⴰⵡⵍⴰ ⵍⴱⵍⴰⵙⵜⵉⴽ (ⵍⵎⵉⴽⴰ)   ⵢⵓⵎⵣⴻⵏ  ⵍⵓⵇⵜ   ⵏⵙ ⵏ   ⴱⴰⵛ  ⴰⵔ  ⵢⵙⵜⴻⵟⵢⴰⵕ  ⵙ  ⵡⴰⴹⵓ.  ⴰⵔ  ⵏⵥⴻⵕ  ⵎⴷⴷⴻⵏ  ⴱⵍⴰ  ⵏⴼⵀⴰⵎ   ⵓⵏⴰ ⵏⵙⵙⴻⵏ  ⵎⴰⴼⴰ  ⵙⴰⵡⴰⵍⵏ.</span><br><br>Quand nous nous déplaçons, nous croisons des foyers de discussions que nous ne pouvons qu’effleurer.<br>Pour nous, ces paroles existent puis s’envolent instantanément.</p>",
+          "<p><span>ⴰⵎⴰⵔⴳ   ⵏ ⵓⵃⵡⴰⵛ,  ⵉⴳⴷⴰⴷ,  ⴷ  ⵍⴰⴷⴰⵏ   ⵏ  ⵜⵎⵣⴳⵉⴷⴰ.</span><br><br>C’est comme une musique discordante, soutenue par le chant des oiseaux,<br>rythmée par les appels à la prière des haut-parleurs de la mosquée.</p>",
+          "<p><span>ⵓⵔⵉⵖ  ⴷ  ⴳⴳⵉⵡⵔⵖ.  ⴰⵔ  ⵢⵟⵙⵙⴰ.  </span>«<span> ⴰⵏⵟ ⵡⴰⵏ </span>»<span> </span>(Antoine)<span> ⴷ  ⵏⴻⴽⴽⵉⵏ<br>ⵏⵣⵔⵉ  ⵖⴰⴷ  ⵉⴱⵇⴰⵏ  ⵖ ⵡⴰⵙⵙ   ⴰⵔ  ⵏⵜⵚⵓⵡⴰⵕ  ⵙⵏⴰⴷⴻⵇ  ⵏⵏⴻⵙ.<br>ⵏⴳⴻⵔ  ⵢⴰⵏ  ⴷ  ⵡⴰⵢⴰ,  ⴰⵔ  ⴰⵖ  ⵢⴼⴼⴰⵍ .  ⴰⵏⵜⵜⴰⵔⴰ  ⴽⵔⴰ  ⵏ  ⵉⵙⵍⵉⵏ.</span><br><br>Je reviens m’asseoir. Il sourit. Antoine et moi avons pris le reste de la journée pour photographier ses coffrages.<br>Entre chacun d’eux, il nous fit prendre des notes. À nos yeux, l’alchimiste était devenu gardien de musée.</p>",
+          "<p><span>ⵙ  ⴰⵍⵍⴻⵏ  ⵏⴰⵖ ,  ⵍⴰⵍⵛⵉⵎⵉⵙ ⵜ   ⵢ   ⵡⵓⵔⵔⵉ  ⵉ   ⵓⵄⵙⵙ ⴰⵙ    ⵏ  ⵓⵙⴰⵍⴰⵢ.   ⵍⵍⵉⵖ  ⵏⴻⴼⵜⴰ, ⵏⴻⵏⴰ ⵢⵉⵙ  ⵔⴰⵙ  ⵙⵓⵍ  ⵏⵡⵓⵔⵔⵉ.<br>ⴰⵔ   ⵉⵜⵎⴰⵜ   ⵙ ⵜⴰⵟⵚⴰ    ⴰⵛⴽⵓ   ⵢⴰⵏ  ⵓⵖⴰⵔⴰⵙ   ⴰⵢⵍⵍⴰⵏ    ⴱⴰⵛ     ⴰⵔ   ⴳⵉⵙ   ⵏⵡⵓⵔⵔⵉ    ⵣⵖ  ⵖⵉⴷ   ⴰⵙ    ⵏⴷⴷⴰ.</span><br><br>En partant, nous lui promettons de repasser. Il éclate à nouveau de rire en nous expliquant que c’est la seule route pour revenir de là où nous voulons aller.</p>"
+        ]
       ],
       "audio": [
         {

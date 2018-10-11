@@ -211,12 +211,8 @@ Audio.prototype.load = function() {
 Audio.prototype.init = function() {
     document.getElementById("mediatable").append(this.elem);
     this.ready = true;
-    this.elem.onplay = () => {
-        this.fade(1);
-    };
     this.elem.onended = () => {
         this.playState = "finished";
-        console.log("audio finished !");
     };
 };
 
@@ -228,12 +224,11 @@ Audio.prototype.play = function() {
     this.elem.play();
     this.pAudio = setTimeout(() => {
         this.fade(-1);
-    }, 5000);
+    }, randomPick([8000, 16000, 24000]));
 };
 
 Audio.prototype.fade = function(dir) {
     return new Promise((resolve, reject) => {
-        console.log("volume", this.elem.volume);
         if (this.elem.volume) {
             var int = dir === 1 ? 0 : 1;
             var setVolume = dir === 1 ? 1 : 0;
@@ -246,7 +241,7 @@ Audio.prototype.fade = function(dir) {
                     clearInterval(this.iAudio);
                     resolve();
                 };
-            }, 250);
+            }, 150);
         }
     });
 };
@@ -261,8 +256,8 @@ Audio.prototype.pause = function() {
 Audio.prototype.resume = async function() {
     this.playState = "running";
     await this.fade(-1);
-    this.pause();
-    this.currentTime = 0;
+    this.elem.pause();
+    this.elem.currentTime = 0;
 };
 
 
