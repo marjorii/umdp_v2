@@ -104,6 +104,7 @@ function Chapter(jsonOBJ) {
         return new SubChapter(subChapter, jsonOBJ.urn);
     });
     this.direction = 1;
+    this.textIndex = 0;
 }
 
 Object.defineProperties(Chapter.prototype, {
@@ -135,21 +136,24 @@ Chapter.prototype.load = function() {
 Chapter.prototype.play = function() {
     return new Promise((resolve, reject) => {
         var _this = this;
-        var textIndex = direction === 1 ? 0 : this.text.length -1;
         async function playSubChapter(orientation) {
             if (orientation) {
-                await _this.textDisplay(textIndex);
-                textIndex += direction;
+                _this.textIndex = direction === 1 ? 0 : _this.text.length -1;
                 _this.index = orientation === 1 ? 0 : _this.subChapters.length -1;
+                await _this.textDisplay(_this.textIndex);
+            }
+            else {
+                _this.index = _this.findLastStopped(direction === -1);
             }
             var subChapter = _this.subChapters[_this.index];
             if (subChapter) {
                 await subChapter.play();
-                await _this.textDisplay(textIndex);
-                textIndex += direction;
+                await _this.textDisplay(_this.textIndex);
                 await reversableSleep(2000);
-                _this.index = _this.findLastStopped(direction === -1);
                 playSubChapter();
+                // var DOMelem = document.getElementsByClassName("fullfilled");
+                // DOMelem[DOMelem.length-1].nextElementSibling.classList.add("fullfilled");
+                // document.querySelector(".subchapter:not(.fullfilled)").classList.add("fullfilled");
             }
             else {
                 resolve();
@@ -163,6 +167,7 @@ Chapter.prototype.textDisplay = function(index) {
     return new Promise (async(resolve, reject) => {
         var texttable = document.getElementById("text-content");
             texttable.innerHTML = this.text[index];
+            this.textIndex += direction;
             await reversableSleep(5000);
             resolve();
             texttable.innerHTML = "";
@@ -175,6 +180,7 @@ Chapter.prototype.reverse = function() {
             subChapter.reverse();
         }
     });
+    this.textIndex += direction * -1;
 };
 Chapter.prototype.pause = function() {
     this.subChapters.forEach(subChapter => {
