@@ -113,18 +113,18 @@ video {
 	-ms-user-select: text;
 	user-select: text;
 }
-#text-content p::selection {
+#text-content p::selection, #text-content p i::selection, #text-content p span::selection {
 	color: black;
 	background: white;
 }
-#text-content p::-moz-selection {
+#text-content p::-moz-selection, #text-content p i::-moz-selection, #text-content p span::-moz-selection {
 	color: black;
 	background: white;
 }
 #text-content p i {
 	font-family: "Cormorant italic";
 }
-#text-content p span span {
+#text-content p span {
 	font-family: "Tifinagh Revue";
 	font-weight: lighter;
 }

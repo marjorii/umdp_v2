@@ -71,7 +71,6 @@ function scrollHandler(e) {
         }
     }
     else {
-        console.log("no effect");
         return;
     }
     e.preventDefault();
