@@ -89,7 +89,6 @@ video {
 	height: 100%;
 	/* width: 50%;
 	margin: auto; */
-	pointer-events: none;
 	/* tablette :
 	width: calc(100% - 170px);
 	*/
@@ -106,12 +105,26 @@ video {
 	font-size: 1rem;
 	line-height: 1.5rem;
 	*/
+	pointer-events: initial;
+	-webkit-touch-callout: text;
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}
+#text-content p::selection {
+	color: black;
+	background: white;
+}
+#text-content p::-moz-selection {
+	color: black;
+	background: white;
 }
 #text-content p i {
 	font-family: "Cormorant italic";
 }
-
-#text-content p span {
+#text-content p span span {
 	font-family: "Tifinagh Revue";
 	font-weight: lighter;
 }
