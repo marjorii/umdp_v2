@@ -87,7 +87,7 @@ Img.prototype.createAnimation = function() {
     var maxY = window.innerHeight;
     var pos = {
         startX: (maxX - width) / 2,
-        startY: (maxY - height) /2,
+        startY: (maxY - height) / 2,
         endX: randomFromTo(-width * 1.5, maxY + width / 2),
         endY: randomFromTo(-height * 1.5, maxY + height / 2)
     };

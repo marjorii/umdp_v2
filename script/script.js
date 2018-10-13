@@ -7,8 +7,15 @@ async function initProject() {
 
     allChapter = new AllChapter(json);
     await allChapter.load();
-    await allChapter.play();
-    console.log("Done !");
+
+    var button = document.getElementById("start");
+    button.classList.remove("hide");
+    button.addEventListener("click", async() => {
+        document.querySelector("main").classList.remove("hide");
+        document.getElementById("load-page").classList.add("hide");
+        await allChapter.play();
+        console.log("Done !");
+    });
 }
 
 function initEvent() {
@@ -118,16 +125,17 @@ function playerOnClick(e) {
 function createUrls(data) {
     function buildUrl(media, chapter) {
         if (media.type === "img" && media.title.match(/.(jpg|jpeg|png)$/i)) {
-            media.uri = ["medias", media.type, "medium", chapter, media.title].join("/");
+            media.uri = [url, "medias", media.type, "medium", chapter, media.title].join("/");
         }
         else if (media.type === "img" && media.title.match(/.(gif)$/i)) {
-            media.uri = ["medias", media.type, "gif", media.title].join("/");
+            media.uri = [url, "medias", media.type, "gif", media.title].join("/");
         }
         else if (media.type === "video" || media.type === "audio") {
-            media.uri = ["medias", media.type, chapter, media.title].join("/");
+            media.uri = [url, "medias", media.type, chapter, media.title].join("/");
         }
         return media;
     }
+    var url = "https://autre.space/ressources/_marjo";
     var occur = {};
     return data.chapters.map(chapter => {
         var sMix = shuffle(chapter.audio);
