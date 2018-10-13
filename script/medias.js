@@ -163,6 +163,8 @@ Video.prototype.play = function() {
     this.elem.play();
 };
 Video.prototype.reverse = function() {
+    this.elem.src = this.uri.replace(".ogg", "-reverse.ogg");
+    this.elem.play();
 };
 Video.prototype.pause = function() {
 };
@@ -228,6 +230,9 @@ Audio.prototype.play = function() {
         this.fadeOut();
     }, randomPick([8000, 16000, 24000]));
 };
+
+// Audio.prototype.fadeIn = function() {
+// };
 
 Audio.prototype.fadeOut = function() {
     return new Promise((resolve, reject) => {
@@ -314,7 +319,7 @@ MultiMedia.prototype.play = function() {
 };
 MultiMedia.prototype.reverse = function() {
     this.img.reverse();
-    // this.medias.forEach(media => media.reverse());
+    this.medias.forEach(media => media.reverse());
 };
 MultiMedia.prototype.pause = function() {
     this.img.pause();
