@@ -221,24 +221,27 @@ Audio.prototype.play = function() {
         this.init();
     }
     this.playState = "running";
+    this.elem.currentTime = 0;
+    this.elem.volume = 1;
     this.elem.play();
-    this.pAudio = setTimeout(() => {
-        this.fade(-1);
+    this.fadeTimeOut = setTimeout(() => {
+        this.fadeOut();
     }, randomPick([8000, 16000, 24000]));
 };
 
-Audio.prototype.fade = function(dir) {
+Audio.prototype.fadeOut = function() {
     return new Promise((resolve, reject) => {
         if (this.elem.volume) {
-            var int = dir === 1 ? 0 : 1;
-            var setVolume = dir === 1 ? 1 : 0;
-            var speed = dir === 1 ? 0.05 : -0.05;
-            this.elem.volume = int;
-            this.iAudio = setInterval(() => {
-                int += speed;
-                this.elem.volume = int.toFixed(1);
-                if ((dir === 1 && int.toFixed(1) >= setVolume) || (dir === -1 && int.toFixed(1) <= setVolume)) {
-                    clearInterval(this.iAudio);
+            var volume = 1;
+            var step = 0.05;
+            this.elem.volume = volume;
+            var iAudio = setInterval(() => {
+                volume -= step;
+                this.elem.volume = volume.toFixed(1);
+                if (this.elem.volume <= 0) {
+                    clearInterval(iAudio);
+                    this.playState = "finished";
+                    this.elem.pause();
                     resolve();
                 };
             }, 150);
@@ -250,12 +253,11 @@ Audio.prototype.reverse = function() {
 };
 Audio.prototype.pause = function() {
     this.playState = "paused";
-    console.log(this.pAudio);
-    clearTimeout(this.pAudio);
+    clearTimeout(this.fadeTimeOut);
 };
 Audio.prototype.resume = async function() {
     this.playState = "running";
-    await this.fade(-1);
+    await this.fadeOut();
     this.elem.pause();
     this.elem.currentTime = 0;
 };
