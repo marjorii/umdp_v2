@@ -243,8 +243,10 @@ AllChapter.prototype.play = function() {
         else {
             _this.index = _this.findLastStopped(direction === -1);
             if (direction === -1 && _this.index === 3) {
-                rebootLoadPage();
-                return;
+                return rebootLoadPage();
+            }
+            else if (direction === 1 && _this.index === -1) {
+                _this.index = 0;
             }
         }
         var chapter = _this.chapters[_this.index];
