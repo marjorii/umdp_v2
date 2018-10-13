@@ -235,24 +235,26 @@ AllChapter.prototype.load = function() {
 };
 
 AllChapter.prototype.play = function() {
-    return new Promise((resolve, reject) => {
-        var _this = this;
-        async function playChapter(orientation) {
-            if (orientation) {
-                _this.index = orientation === 1 ? 0 : _this.chapters.length -1;
-            }
-            var chapter = _this.chapters[_this.index];
-            if (chapter) {
-                await chapter.play();
-                await reversableSleep(2000);
-                _this.index = _this.findLastStopped(direction === -1);
-                playChapter();
-            } else {
-                resolve();
+    var _this = this;
+    async function playChapter(orientation) {
+        if (orientation) {
+            _this.index = orientation === 1 ? 0 : _this.chapters.length -1;
+        }
+        else {
+            _this.index = _this.findLastStopped(direction === -1);
+            if (direction === -1 && _this.index === 3) {
+                rebootLoadPage();
+                return;
             }
         }
-        playChapter(direction);
-    });
+        var chapter = _this.chapters[_this.index];
+        if (chapter) {
+            await chapter.play();
+            await reversableSleep(2000);
+            playChapter();
+        }
+    }
+    playChapter(direction);
 };
 
 AllChapter.prototype.reverse = function() {

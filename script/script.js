@@ -8,20 +8,27 @@ async function initProject() {
     allChapter = new AllChapter(json);
     await allChapter.load();
 
-    var button = document.getElementById("start");
-    button.classList.remove("hide");
-    button.addEventListener("click", async() => {
-        document.querySelector("main").classList.remove("hide");
-        document.getElementById("load-page").classList.add("hide");
-        await allChapter.play();
-        console.log("Done !");
-    });
+    document.getElementById("start").classList.remove("hide");
+    initEvent()
 }
 
 function initEvent() {
-    window.addEventListener("wheel", scrollHandler, false);
-    window.addEventListener("keydown", scrollHandler, false);
-    document.getElementById("actions-buttons").addEventListener("click", playerOnClick);
+    document.getElementById("start").addEventListener("click", () => {
+        window.addEventListener("wheel", scrollHandler, false);
+        window.addEventListener("keydown", scrollHandler, false);
+        document.getElementById("actions-buttons").addEventListener("click", playerOnClick);
+        document.querySelector("main").classList.remove("hide");
+        document.getElementById("load-page").classList.add("hide");
+        allChapter.play();
+    });
+}
+function rebootLoadPage() {
+    document.querySelector("main").classList.add("hide");
+    document.getElementById("load-page").classList.remove("hide");
+    direction = 1;
+    window.removeEventListener("wheel", scrollHandler, false);
+    window.removeEventListener("keydown", scrollHandler, false);
+    document.getElementById("actions-buttons").removeEventListener("click", playerOnClick);
 }
 
 function createMedia(media, urn) {
@@ -189,6 +196,5 @@ var paused = false;
 // ACTION
 
 window.onload = () => {
-    initEvent();
     initProject();
 };
