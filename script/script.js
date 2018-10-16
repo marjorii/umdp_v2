@@ -1,8 +1,8 @@
 //CORE
 
 async function initProject() {
-    // var json = await readJSONFile("script/sources.json");
-    var json = await readJSONFile("script/sources-test.json");
+    var json = await readJSONFile("script/sources.json");
+    // var json = await readJSONFile("script/sources-test.json");
     json = createUrls(json);
 
     allChapter = new AllChapter(json);
@@ -69,7 +69,6 @@ function scrollHandler(e) {
     else if (e.keyCode == "32") {
         if (!paused) {
             paused = true;
-            console.log("pause");
             allChapter.pause();
             window.dispatchEvent(new Event("pause"));
             document.getElementById("pause").src = "medias/ui/play.png";
@@ -77,7 +76,6 @@ function scrollHandler(e) {
         }
         else {
             paused = false;
-            console.log("play");
             allChapter.resume();
             window.dispatchEvent(new Event("resume"));
             document.getElementById("play").src = "medias/ui/pause.png";
@@ -105,7 +103,6 @@ function playerOnClick(e) {
         window.dispatchEvent(new Event("pause"));
         document.getElementById("pause").src = "medias/ui/play.png";
         document.getElementById("pause").id = "play";
-        console.log("pause");
     }
     else if (paused && button == "play") {
         paused = false;
@@ -113,20 +110,18 @@ function playerOnClick(e) {
         window.dispatchEvent(new Event("resume"));
         document.getElementById("play").src = "medias/ui/pause.png";
         document.getElementById("play").id = "pause";
-        console.log("play");
     }
     else if (button == "mute") {
         document.querySelectorAll("audio").forEach(audio => audio.muted = true);
         document.getElementById("mute").src = "medias/ui/notmute.png";
         document.getElementById("mute").id = "unmute";
-        console.log("mute");
     }
     else if (button == "unmute") {
         document.querySelectorAll("audio").forEach(audio => audio.muted = false);
         document.getElementById("unmute").src = "medias/ui/mute.png";
         document.getElementById("unmute").id = "mute";
-        console.log("unmute");
     }
+    console.log(direction);
 }
 
 function createUrls(data) {
@@ -145,34 +140,31 @@ function createUrls(data) {
     var url = "https://autre.space/ressources/_marjo";
     var occur = {};
     return data.chapters.map(chapter => {
-        // var sMix = shuffle(chapter.audio);
+        var sMix = shuffle(chapter.audio);
         chapter.subChapters = chapter.subChapters.map(subChapter => {
-            // if (subChapter.int) {
-            //     var pickedNumber = randomFromTo(1, 4);
-            //     for (var g = 0; g < pickedNumber; g++) {
-            //         var pick = randomPick(data.gifs);
-            //         var pickedRange = randomFromTo(0, subChapter.medias.length);
-            //         subChapter.medias.splice(pickedRange, 0, pick);
-            //         // if (!occur.hasOwnProperty(pick.title)) {
-            //         //     occur[pick.title] = 1;
-            //         // }
-            //         // else {
-            //         //     occur[pick.title] += 1;
-            //         // }
-            //     }
-            //
-            //     var pickedNumber = randomFromTo(subChapter.int[0], subChapter.int[1]);
-            //     for (var s = 0; s < pickedNumber; s++) {
-            //         pick = chapter.audio.shift();
-            //         pickedRange = randomFromTo(0, subChapter.medias.length);
-            //         subChapter.medias.splice(pickedRange, 0, pick);
-            //     }
-            // } else {
-            //     pickedNumber = 0;
-            // }
+            if (subChapter.int) {
+                var pickedNumber = randomFromTo(1, 4);
+                for (var g = 0; g < pickedNumber; g++) {
+                    var pick = randomPick(data.gifs);
+                    var pickedRange = randomFromTo(0, subChapter.medias.length);
+                    subChapter.medias.splice(pickedRange, 0, pick);
+                    // if (!occur.hasOwnProperty(pick.title)) {
+                    //     occur[pick.title] = 1;
+                    // }
+                    // else {
+                    //     occur[pick.title] += 1;
+                    // }
+                }
 
-            // console.log(chapter.text)
-
+                var pickedNumber = randomFromTo(subChapter.int[0], subChapter.int[1]);
+                for (var s = 0; s < pickedNumber; s++) {
+                    pick = chapter.audio.shift();
+                    pickedRange = randomFromTo(0, subChapter.medias.length);
+                    subChapter.medias.splice(pickedRange, 0, pick);
+                }
+            } else {
+                pickedNumber = 0;
+            }
             return subChapter.medias.map(media => {
                 if (Array.isArray(media)) {
                     return media.map(med => {
