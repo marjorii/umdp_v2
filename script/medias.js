@@ -162,7 +162,6 @@ Video.prototype.play = function() {
         this.init();
     }
     this.elem.play();
-    console.log("Video played", this.elem.src);
 };
 Video.prototype.reverse = function() {
     if (direction === 1) {
@@ -191,7 +190,7 @@ function Audio(options) {
     this.loaded = false;
     this.playState = undefined;
     this.ready = false;
-    this.direction= 1;
+    this.direction = 1;
 }
 
 // Object.defineProperties(Audio.prototype, {
@@ -237,7 +236,6 @@ Audio.prototype.play = function() {
     this.elem.currentTime = 0;
     this.elem.volume = 1;
     this.elem.play();
-    console.log("Audio played", this.elem.src);
     this.fadeTimeOut = setTimeout(() => {
         this.fadeOut();
     }, randomPick([8000, 16000, 24000]));
@@ -270,10 +268,12 @@ Audio.prototype.reverse = function() {
     if (direction === 1) {
         this.direction = -1;
         this.elem.src = this.uri.replace(".ogg", "-reverse.ogg");
+        console.log(this.direction);
         console.log("Audio reversed", this.elem.src);
     } else {
         this.direction = 1;
         this.elem.src = this.uri.replace("-reverse.ogg", ".ogg");
+        console.log(this.direction);
         console.log("Audio reversed again", this.elem.src);
     }
     this.elem.play();

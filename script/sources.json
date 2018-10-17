@@ -263,6 +263,10 @@
               "type": "img",
               "title": "strahmkallen.jpg"
             },
+            {
+              "type": "img",
+              "title": "dessin.jpg"
+            },
             [
               {
                 "type": "img",
@@ -328,6 +332,10 @@
             },
             {
               "type": "img",
+              "title": "cable-sousmarin1.jpg"
+            },
+            {
+              "type": "img",
               "title": "rongo-rongo-stone2.jpg"
             },
             {
@@ -347,6 +355,14 @@
         {
           "int": [1,1],
           "medias": [
+          {
+            "type": "img",
+            "title": "dessin2.jpg"
+          },
+          {
+            "type": "img",
+            "title": "strahmkallen.jpg"
+          },
             {
               "type": "img",
               "title": "bateau-musee.jpg"
@@ -369,6 +385,10 @@
             },
             {
               "type": "img",
+              "title": "cable-sousmarin5.jpg"
+            },
+            {
+              "type": "img",
               "title": "bateau-fjord.jpg"
             },
             [
@@ -387,8 +407,18 @@
             },
             {
               "type": "img",
-              "title": "carre-jaune.jpg"
-            }
+              "title": "cable-sousmarin2.jpg"
+            },
+            [
+              {
+                "type": "img",
+                "title": "carre-jaune.jpg"
+              },
+              {
+                "type": "video",
+                "title": "cable1.ogg"
+              }
+            ]
           ]
         },
         {
@@ -404,6 +434,18 @@
             },
             {
               "type": "img",
+              "title": "cable-sousmarin3.jpg"
+            },
+            {
+              "type": "img",
+              "title": "dessin3.jpg"
+            },
+            {
+              "type": "img",
+              "title": "cable-sousmarin4.jpg"
+            },
+            {
+              "type": "img",
               "title": "oursin.jpg"
             },
             {
@@ -414,14 +456,26 @@
               "type": "img",
               "title": "oiseau-mer.jpg"
             },
-            {
-              "type": "img",
-              "title": "reflet-eau.jpg"
-            },
-            {
-              "type": "img",
-              "title": "reflet-eau2.jpg"
-            },
+            [
+              {
+                "type": "img",
+                "title": "reflet-eau.jpg"
+              },
+              {
+                "type": "video",
+                "title": "cable2.ogg"
+              }
+            ],
+            [
+              {
+                "type": "img",
+                "title": "reflet-eau2.jpg"
+              },
+              {
+                "type": "video",
+                "title": "titan.ogg"
+              }
+            ],
             [
               {
                 "type": "img",
@@ -448,6 +502,10 @@
               "type": "img",
               "title": "moines-bouddhistes.jpg"
             },
+            {
+              "type": "img",
+              "title": "carta-marina.jpg"
+            },
             [
               {
                 "type": "img",
@@ -466,10 +524,16 @@
               "type": "img",
               "title": "barrieres-banc.jpg"
             },
-            {
-              "type": "img",
-              "title": "dejeuner.jpg"
-            }
+            [
+              {
+                "type": "img",
+                "title": "dejeuner.jpg"
+              },
+              {
+                "type": "video",
+                "title": "japon.ogg"
+              }
+            ]
           ]
         },
         {
@@ -486,6 +550,10 @@
             {
               "type": "img",
               "title": "cadrage-ile.jpg"
+            },
+            {
+              "type": "img",
+              "title": "dessin4.jpg"
             },
             {
               "type": "img",
@@ -582,6 +650,10 @@
             },
             {
               "type": "img",
+              "title": "dessin5.jpg"
+            },
+            {
+              "type": "img",
               "title": "pub-laceree.jpg"
             },
             [
@@ -629,10 +701,16 @@
               "type": "img",
               "title": "norges-atlas.jpg"
             },
-            {
-              "type": "img",
-              "title": "carte3.jpg"
-            }
+            [
+              {
+                "type": "img",
+                "title": "carte3.jpg"
+              },
+              {
+                "type": "video",
+                "title": "peche-filet.ogg"
+              }
+            ]
           ]
         },
         {
@@ -676,16 +754,24 @@
               "type": "img",
               "title": "maelstrom3.jpg"
             },
+            {
+              "type": "img",
+              "title": "maelstrom4.jpg"
+            },
             [
               {
                 "type": "img",
-                "title": "maelstrom4.jpg"
+                "title": "dessin6.jpg"
               },
               {
                 "type": "video",
                 "title": "maelstrom.ogg"
               }
             ],
+            {
+              "type": "img",
+              "title": "poisson.jpg"
+            },
             {
               "type": "img",
               "title": "maelstrom5.jpg"
@@ -859,11 +945,19 @@
             },
             {
               "type": "img",
+              "title": "dessin.jpg"
+            },
+            {
+              "type": "img",
               "title": "colonnes-antiques.jpg"
             },
             {
               "type": "img",
               "title": "construction2.jpg"
+            },
+            {
+              "type": "img",
+              "title": "dessin2.jpg"
             },
             {
               "type": "img",
@@ -893,12 +987,22 @@
             ],
             {
               "type": "img",
-              "title": "panneau-agrafes.jpg"
+              "title": "dessin3.jpg"
             },
             {
               "type": "img",
-              "title": "tv-sable.jpg"
+              "title": "panneau-agrafes.jpg"
             },
+            [
+              {
+                "type": "img",
+                "title": "tv-sable.jpg"
+              },
+              {
+                "type": "video",
+                "title": "filet.ogg"
+              }
+            ],
             {
               "type": "img",
               "title": "empreintes.jpg"
@@ -925,11 +1029,19 @@
             },
             {
               "type": "img",
+              "title": "dessin4.jpg"
+            },
+            {
+              "type": "img",
               "title": "muret-antique.jpg"
             },
             {
               "type": "img",
               "title": "muret-recent.jpg"
+            },
+            {
+              "type": "img",
+              "title": "dessin5.jpg"
             },
             {
               "type": "img",
@@ -971,7 +1083,15 @@
             },
             {
               "type": "img",
+              "title": "dessin6.jpg"
+            },
+            {
+              "type": "img",
               "title": "cylindre-bois.jpg"
+            },
+            {
+              "type": "img",
+              "title": "dessin7.jpg"
             },
             {
               "type": "img",
@@ -1001,6 +1121,10 @@
                 "title": "poterie-miroir.ogg"
               }
             ],
+            {
+              "type": "img",
+              "title": "dessin8.jpg"
+            },
             [
               {
                 "type": "img",
@@ -1080,6 +1204,10 @@
             ],
             {
               "type": "img",
+              "title": "dessin9.jpg"
+            },
+            {
+              "type": "img",
               "title": "chien.jpg"
             },
             [
@@ -1136,6 +1264,10 @@
             ],
             {
               "type": "img",
+              "title": "dessin10.jpg"
+            },
+            {
+              "type": "img",
               "title": "subaquatique.jpg"
             }
           ]
@@ -1160,6 +1292,10 @@
             {
               "type": "img",
               "title": "montagne-aigle.jpg"
+            },
+            {
+              "type": "img",
+              "title": "dessin11.jpg"
             },
             {
               "type": "img",
@@ -1207,6 +1343,10 @@
                 "title": "mouton-calin.ogg"
               }
             ],
+            {
+              "type": "img",
+              "title": "dessin12.jpg"
+            },
             {
               "type": "img",
               "title": "degrade-chaud.jpg"
@@ -1331,6 +1471,10 @@
             ],
             {
               "type": "img",
+              "title": "dessin.jpg"
+            },
+            {
+              "type": "img",
               "title": "reg.jpg"
             },
             {
@@ -1363,6 +1507,10 @@
                 "title": "travelling-desert.ogg"
               }
             ],
+            {
+              "type": "img",
+              "title": "cinema.jpg"
+            },
             [
               {
                 "type": "img",
@@ -1375,11 +1523,23 @@
             ],
             {
               "type": "img",
+              "title": "cinema2.jpg"
+            },
+            {
+              "type": "img",
               "title": "steppes.jpg"
             },
             {
               "type": "img",
+              "title": "cinema3.jpg"
+            },
+            {
+              "type": "img",
               "title": "vue-montagnes.jpg"
+            },
+            {
+              "type": "img",
+              "title": "cinema4.jpg"
             },
             {
               "type": "img",
@@ -1388,6 +1548,10 @@
             {
               "type": "img",
               "title": "jardins-suspendus.jpg"
+            },
+            {
+              "type": "img",
+              "title": "dessin2.jpg"
             },
             {
               "type": "img",
@@ -1403,6 +1567,10 @@
             },
             {
               "type": "img",
+              "title": "dessin3.jpg"
+            },
+            {
+              "type": "img",
               "title": "palmiers-chevres.jpg"
             },
             {
@@ -1414,6 +1582,10 @@
         {
           "int": [1,2],
           "medias": [
+            {
+              "type": "img",
+              "title": "cinema5.jpg"
+            },
             [
               {
                 "type": "img",
@@ -1426,7 +1598,15 @@
             ],
             {
               "type": "img",
+              "title": "cinema6.jpg"
+            },
+            {
+              "type": "img",
               "title": "colonnes-route.jpg"
+            },
+            {
+              "type": "img",
+              "title": "cinema7.jpg"
             },
             {
               "type": "img",
@@ -1522,6 +1702,10 @@
                 "title": "visage-colonne-egypte.ogg"
               }
             ],
+            {
+              "type": "img",
+              "title": "dessin4.jpg"
+            },
             [
               {
                 "type": "img",
@@ -1532,6 +1716,10 @@
                 "title": "contre-jour-temple.ogg"
               }
             ],
+            {
+              "type": "img",
+              "title": "cinema8.jpg"
+            },
             [
               {
                 "type": "img",
@@ -1572,6 +1760,10 @@
               "type": "img",
               "title": "interieur-modeste.jpg"
             },
+            {
+              "type": "img",
+              "title": "cinema9.jpg"
+            },
             [
               {
                 "type": "img",
@@ -1584,7 +1776,15 @@
             ],
             {
               "type": "img",
+              "title": "cinema10.jpg"
+            },
+            {
+              "type": "img",
               "title": "tas-pierre.jpg"
+            },
+            {
+              "type": "img",
+              "title": "cinema11.jpg"
             },
             {
               "type": "img",
@@ -1613,9 +1813,23 @@
         {
           "int": [1,1],
           "medias": [
+            [
+              {
+                "type": "img",
+                "title": "ruelle-topographe.jpg"
+              },
+              {
+                "type": "video",
+                "title": "atlas.ogg"
+              },
+              {
+                "type": "video",
+                "title": "tifina.ogg"
+              }
+            ],
             {
               "type": "img",
-              "title": "ruelle-topographe.jpg"
+              "title": "dessin5.jpg"
             },
             {
               "type": "img",

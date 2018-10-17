@@ -86,7 +86,7 @@ function scrollHandler(e) {
         return;
     }
     e.preventDefault();
-    console.log(direction);
+    // console.log(direction);
 }
 
 function playerOnClick(e) {
