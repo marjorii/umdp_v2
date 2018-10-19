@@ -85,30 +85,58 @@ Img.prototype.createAnimation = function() {
     var height = this.elem.height;
     var maxX = window.innerWidth;
     var maxY = window.innerHeight;
+    var scale = 1;
+    var endX = width + (width * ((scale -1) / 2));
+    var endY = height + (height * ((scale - 1) / 2));
     var pos = {
         startX: (maxX - width) / 2,
         startY: (maxY - height) / 2,
-        endX: randomFromTo(-width * 1.5, maxY + width / 2),
-        endY: randomFromTo(-height * 1.5, maxY + height / 2)
+        endX: randomPick([-endX, endX + (maxX - width)]),
+        endY: randomFromTo(-endY, endY + (maxY - height)),
+        // endXBis: randomFromTo(-endX, endX + (maxX - width)),
+        // endYBis: randomPick([-endY, endY + (maxY - height)])
     };
-    var keyframes = [
-        {
-            transform: "translate(" + pos.startX + "px, " + pos.startY + "px) scale(0)",
-            offset: 0
-        },
-        {
-            transform: "translate(" + pos.endX + "px, " + pos.endY + "px) scale(1.75)",
-            offset: 1
+    // var number = Math.random();
+    // console.log("number", number);
+    // if (number <= 0.5) {
+    //     pos.endX = pos.endX;
+    //     pos.endY = pos.endY;
+    //     console.log("number <= 0.5");
+    // } else if (number > 0.5) {
+    //     pos.endX = pos.endXBis;
+    //     pos.endY = pos.endYBis;
+    //     console.log("number > 0.5");
+    // }
+
+    var distX = pos.endX - pos.startX;
+    var distY = pos.endY - pos.startY;
+    var stepScale = scale / 30;
+    var actualScale = 0;
+
+    var keyframes = [];
+
+    for (var i = 0; i <= 90; i += 3) {
+        var realI = i / 90;
+        var stepX = Math.pow(realI, 4) * distX + pos.startX;
+        var stepY = Math.pow(realI, 4) * distY + pos.startY;
+        var step = {
+            transform: "translate(" + stepX + "px, " + stepY + "px) scale(" + actualScale + ")",
+            offset: realI
         }
-    ];
+        actualScale += stepScale;
+        keyframes.push(step);
+    }
+
+    // var animspeed = randomPick([10000, 15000, 20000]);
 
     var options = {
-        duration: 10000,
-        //easing: "",
+        duration: 14000,
+        easing: "ease-in",
         iterations: 1,
         direction: "normal",
         fill: "both"
     };
+    // options.duration = animspeed;
     this.anim = this.elem.animate(keyframes, options);
     this.anim.pause();
 }
@@ -153,6 +181,7 @@ Video.prototype.load = function() {
 };
 
 Video.prototype.init = function() {
+    // this.vidIn();
     document.getElementById("mediatable").append(this.elem);
     this.ready = true;
 };
@@ -241,9 +270,6 @@ Audio.prototype.play = function() {
     }, randomPick([8000, 16000, 24000]));
 };
 
-// Audio.prototype.fadeIn = function() {
-// };
-
 Audio.prototype.fadeOut = function() {
     return new Promise((resolve, reject) => {
         if (this.elem.volume) {
@@ -328,13 +354,16 @@ MultiMedia.prototype.init = function() {
 MultiMedia.prototype.play = function() {
     if (!this.ready) this.init();
     this.medias.forEach(other => {
+        other.elem.classList.remove("ended");
         other.elem.classList.remove("hide");
     });
     this.medias.forEach(media => media.play());
     this.img.play();
     this.img.anim.onfinish = () => {
-        this.medias.forEach(other => {
+        this.medias.forEach(async (other) => {
             other.elem.pause();
+            other.elem.classList.add("ended");
+            await delay(2000);
             other.elem.classList.add("hide");
         });
     };
@@ -349,5 +378,6 @@ MultiMedia.prototype.pause = function() {
 };
 MultiMedia.prototype.resume = function() {
     this.img.resume();
+    this.medias.forEach(other => other.elem.classList.add("ended"));
     // this.medias.forEach(media => media.resume());
 };

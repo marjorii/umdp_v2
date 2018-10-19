@@ -49,7 +49,7 @@ SubChapter.prototype.play = function() {
             var media = _this.medias[_this.index];
             if (media) {
                 media.play();
-                await reversableSleep(2000);
+                await reversableSleep(4000);
                 _this.index = _this.findLastStopped(direction === -1);
                 playMedia();
             }

@@ -51,6 +51,7 @@ a {
 
 #container, #container img {
 	position: absolute;
+	transform-origin: center;
 }
 
 #mediatable {
@@ -69,6 +70,28 @@ video {
 	display: block;
 	width: 50%;
 	/* tablette portrait : 100%; */
+	-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	animation-fill-mode: both;
+}
+.ended {
+	-webkit-animation-name: fadeOut;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-name: fadeOut;
+	animation-duration: 2s;
+	animation-fill-mode: both;
+}
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@keyframes fadeOut {
+	from {opacity: 1;}
+	to {opacity: 0;}
 }
 
 #text-table {
@@ -168,7 +191,7 @@ nav .fullfilled::after {
 nav .chap::before {
 	width: 40px;
 }
-nav a {
+nav p {
 	position: absolute;
 	right: 75px;
 	margin-top: -15px;
