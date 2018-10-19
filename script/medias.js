@@ -90,6 +90,7 @@ Img.prototype.createAnimation = function() {
     var endY = height + (height * ((scale - 1) / 2));
     var pos = {
         startX: (maxX - width) / 2,
+        // startX: (maxX - width) / 2 + randomFromTo(-100, 100),
         startY: (maxY - height) / 2,
         endX: randomPick([-endX, endX + (maxX - width)]),
         endY: randomFromTo(-endY, endY + (maxY - height)),
@@ -148,10 +149,10 @@ function Video(options) {
     this.title = options.title;
     this.elem = undefined;
     this.uri = options.uri;
+    this.uriReverse = this.uri.replace(".ogg", "-reverse.ogg");
     this.loaded = false;
     this.playState = undefined;
     this.ready = false;
-    this.direction = 1;
 }
 
 Object.defineProperties(Video.prototype, {
@@ -190,17 +191,18 @@ Video.prototype.play = function() {
     if(!this.ready) {
         this.init();
     }
+    if (direction === 1 && this.elem.src !== this.uri) {
+        this.elem.src = this.uri;
+    } else if (direction === -1 && this.elem.src !== this.uriReverse) {
+        this.elem.src = this.uriReverse;
+    }
     this.elem.play();
 };
 Video.prototype.reverse = function() {
     if (direction === 1) {
-        this.direction = -1;
-        this.elem.src = this.uri.replace(".ogg", "-reverse.ogg");
-        console.log("Video reversed", this.elem.src);
+        this.elem.src = this.uriReverse;
     } else {
-        this.direction = 1;
-        this.elem.src = this.uri.replace("-reverse.ogg", ".ogg");
-        console.log("Video reversed again", this.elem.src);
+        this.elem.src = this.uri;
     }
     this.elem.play();
 };
@@ -216,10 +218,10 @@ function Audio(options) {
     this.title = options.title;
     this.elem = undefined;
     this.uri = options.uri;
+    this.uriReverse = this.uri.replace(".ogg", "-reverse.ogg");
     this.loaded = false;
     this.playState = undefined;
     this.ready = false;
-    this.direction = 1;
 }
 
 // Object.defineProperties(Audio.prototype, {
@@ -261,6 +263,11 @@ Audio.prototype.play = function() {
     if(!this.ready) {
         this.init();
     }
+    if (direction === 1 && this.elem.src !== this.uri) {
+        this.elem.src = this.uri;
+    } else if (direction === -1 && this.elem.src !== this.uriReverse) {
+        this.elem.src = this.uriReverse;
+    }
     this.playState = "running";
     this.elem.currentTime = 0;
     this.elem.volume = 1;
@@ -292,15 +299,9 @@ Audio.prototype.fadeOut = function() {
 
 Audio.prototype.reverse = function() {
     if (direction === 1) {
-        this.direction = -1;
-        this.elem.src = this.uri.replace(".ogg", "-reverse.ogg");
-        console.log(this.direction);
-        console.log("Audio reversed", this.elem.src);
+        this.elem.src = this.uriReverse;
     } else {
-        this.direction = 1;
-        this.elem.src = this.uri.replace("-reverse.ogg", ".ogg");
-        console.log(this.direction);
-        console.log("Audio reversed again", this.elem.src);
+        this.elem.src = this.uri;
     }
     this.elem.play();
 };
