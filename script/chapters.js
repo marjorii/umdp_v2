@@ -168,7 +168,27 @@ Chapter.prototype.textDisplay = function(index) {
         var texttable = document.getElementById("text-content");
             texttable.innerHTML = this.text[index];
             this.textIndex += direction;
-            await reversableSleep(5000);
+            if (this.text[index].length <= 100) {
+                console.log("5s");
+                await reversableSleep(5000);
+            }
+            else if (this.text[index].length <= 200) {
+                console.log("10s");
+                await reversableSleep(10000);
+            }
+            else if (this.text[index].length <= 300) {
+                console.log("15s");
+                await reversableSleep(15000);
+            }
+            else if (this.text[index].length <= 400) {
+                console.log("20s");
+                await reversableSleep(20000);
+            }
+            else if (this.text[index].length <= 500) {
+                console.log("25s");
+                await reversableSleep(25000);
+            }
+            // await reversableSleep(5000);
             resolve();
             texttable.innerHTML = "";
     });
