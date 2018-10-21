@@ -8,6 +8,7 @@ async function initProject() {
     allChapter = new AllChapter(json);
     await allChapter.load();
 
+    document.getElementById("load").classList.add("hide");
     document.getElementById("start").classList.remove("hide");
     initEvent()
 }

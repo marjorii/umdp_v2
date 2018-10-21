@@ -355,14 +355,10 @@
         {
           "int": [1,1],
           "medias": [
-          {
-            "type": "img",
-            "title": "dessin2.jpg"
-          },
-          {
-            "type": "img",
-            "title": "strahmkallen.jpg"
-          },
+            {
+              "type": "img",
+              "title": "dessin2.jpg"
+            },
             {
               "type": "img",
               "title": "bateau-musee.jpg"
