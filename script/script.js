@@ -10,7 +10,8 @@ async function initProject() {
 
     document.getElementById("load").classList.add("hide");
     document.getElementById("start").classList.remove("hide");
-    initEvent()
+
+    initEvent();
 }
 
 function initEvent() {

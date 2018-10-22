@@ -100,6 +100,7 @@ SubChapter.prototype.findLastStopped = function (reversed) {
 function Chapter(jsonOBJ) {
     this.index = 0;
     this.text = randomPick(jsonOBJ.text);
+    this.urn = jsonOBJ.urn;
     this.subChapters = jsonOBJ.subChapters.map(subChapter => {
         return new SubChapter(subChapter, jsonOBJ.urn);
     });
@@ -168,27 +169,8 @@ Chapter.prototype.textDisplay = function(index) {
         var texttable = document.getElementById("text-content");
             texttable.innerHTML = this.text[index];
             this.textIndex += direction;
-            if (this.text[index].length <= 100) {
-                console.log("5s");
-                await reversableSleep(5000);
-            }
-            else if (this.text[index].length <= 200) {
-                console.log("10s");
-                await reversableSleep(10000);
-            }
-            else if (this.text[index].length <= 300) {
-                console.log("15s");
-                await reversableSleep(15000);
-            }
-            else if (this.text[index].length <= 400) {
-                console.log("20s");
-                await reversableSleep(20000);
-            }
-            else if (this.text[index].length <= 500) {
-                console.log("25s");
-                await reversableSleep(25000);
-            }
-            // await reversableSleep(5000);
+            var duration = this.text[index].length * 50;
+            await reversableSleep(duration < 5000 ? 5000 : duration);
             resolve();
             texttable.innerHTML = "";
     });
@@ -234,13 +216,24 @@ function AllChapter(jsonOBJ) {
     this.chapters = jsonOBJ.map(chapter => {
         return new Chapter(chapter);
     });
-    this.direction = 1;
+    this.init();
 }
 
-// AllChapter.prototype.init = function(){
-//     if
-//         document.querySelector("nav").append
-// };
+AllChapter.prototype.init = function() {
+    var nav = document.querySelector("nav");
+    this.chapters.forEach((chap, index) => {
+        var subNumber = chap.urn === "1-norvege" ? 8 : 4;
+            for (var n = 0; n < subNumber; n++) {
+            var div = document.createElement("div");
+            div.classList.add("subchapter");
+            if (n === 0) {
+                div.classList.add("chap");
+                div.innerHTML = "<p>Chapitre " + (index + 1) + "</p>";
+            }
+            nav.appendChild(div);
+        }
+    });
+};
 
 AllChapter.prototype.load = function() {
     // return Promise.all(this.chapters.map(chapter => {
