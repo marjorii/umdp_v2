@@ -85,18 +85,27 @@ a {
 	justify-content: center;
 	border: 2px solid black;
 	height: 25px;
+	font-family: "Garcia";
+	font-size: 1rem;
 }
 #space-bar{
+	justify-content: center;
+	align-items: center;
 	width: 150px;
 	margin-left: 30px;
-	font-size: 0.75rem;
+}
+#notice p span #content {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	transform: rotate(-90deg);
+	border: none;
+	font-size: 1.25rem;
 }
 #top, #down {
 	width: 25px;
 	line-height: 25px;
 	padding: 5px;
-	font-family: "Garcia";
-	font-size: 1rem;
 }
 #top {
 	margin: 0 10px 0 30px;

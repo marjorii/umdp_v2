@@ -237,6 +237,11 @@ function AllChapter(jsonOBJ) {
     this.direction = 1;
 }
 
+// AllChapter.prototype.init = function(){
+//     if
+//         document.querySelector("nav").append
+// };
+
 AllChapter.prototype.load = function() {
     // return Promise.all(this.chapters.map(chapter => {
     //     console.log("Chapter loaded !");

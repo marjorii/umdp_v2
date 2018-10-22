@@ -140,8 +140,16 @@ function createUrls(data) {
     }
     var url = "https://autre.space/ressources/_marjo";
     var occur = {};
+
+    var randomInt = randomFromTo(0, 2);
+    for (var r = 0; r < randomInt; r++) {
+        var temp = data.chapters.shift();
+        data.chapters.push(temp);
+    }
+
     return data.chapters.map(chapter => {
         var sMix = shuffle(chapter.audio);
+
         chapter.subChapters = chapter.subChapters.map(subChapter => {
             if (subChapter.int) {
                 var pickedNumber = randomFromTo(1, 4);
