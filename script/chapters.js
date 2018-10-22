@@ -152,9 +152,14 @@ Chapter.prototype.play = function() {
                 await _this.textDisplay(_this.textIndex);
                 await reversableSleep(2000);
                 playSubChapter();
-                // var DOMelem = document.getElementsByClassName("fullfilled");
-                // DOMelem[DOMelem.length-1].nextElementSibling.classList.add("fullfilled");
-                // document.querySelector(".subchapter:not(.fullfilled)").classList.add("fullfilled");
+                var DOMelem = document.getElementsByClassName("fullfilled");
+                if (direction === 1) {
+                    DOMelem[DOMelem.length-1].nextElementSibling.classList.add("fullfilled");
+                } else {
+                    if (!DOMelem[DOMelem.length-1].classList.contains("firstsub")) {
+                        DOMelem[DOMelem.length-1].classList.remove("fullfilled");
+                    }
+                }
             }
             else {
                 resolve();
@@ -223,7 +228,7 @@ AllChapter.prototype.init = function() {
     var nav = document.querySelector("nav");
     this.chapters.forEach((chap, index) => {
         var subNumber = chap.urn === "1-norvege" ? 8 : 4;
-            for (var n = 0; n < subNumber; n++) {
+        for (var n = 0; n < subNumber; n++) {
             var div = document.createElement("div");
             div.classList.add("subchapter");
             if (n === 0) {
@@ -264,6 +269,12 @@ AllChapter.prototype.play = function() {
                 return rebootLoadPage();
             }
             else if (direction === 1 && _this.index === -1) {
+                var DOMelem = document.getElementsByClassName("subchapter");
+                for (var i = 0; i < DOMelem.length; i++) {
+                    if (!DOMelem[i].classList.contains("firstsub")) {
+                        DOMelem[i].classList.remove("fullfilled");
+                    }
+                }
                 _this.index = 0;
             }
         }
