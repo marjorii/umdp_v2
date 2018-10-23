@@ -6,6 +6,16 @@ async function initProject() {
     json = createUrls(json);
 
     allChapter = new AllChapter(json);
+
+    document.getElementById("cross").addEventListener("click", () => {
+        document.getElementById("intro").classList.add("hide");
+        document.getElementById("notice").classList.remove("opacity");
+        document.getElementById("infos").classList.remove("opacity");
+        document.getElementById("load").classList.add("grey");
+        document.getElementById("start").classList.remove("disable-buttons");
+        document.getElementById("infos").classList.remove("disable-buttons");
+    });
+
     await allChapter.load();
 
     document.getElementById("load").classList.add("hide");

@@ -44,11 +44,86 @@ a {
 	color: black;
 	outline: 0;
 }
+p {
+	pointer-events: initial;
+	-webkit-touch-callout: text;
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}
 
 .hide {
 	display: none;
+	visibility: hidden;
+}
+.opacity {
+	opacity: 0.4;
+}
+.grey {
+	color: grey;
+}
+.disable-buttons {
+	pointer-events: none;
 }
 
+#load-page p::selection, #load-page p i::selection, #load-page p span::selection {
+	color: black;
+	background: white;
+}
+#load-page p::-moz-selection, #load-page p i::-moz-selection, #load-page p span::-moz-selection {
+	color: black;
+	background: white;
+}
+
+#intro {
+	position: absolute;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 40%;
+	/* tablette paysage */
+	/* width: 75%; */
+	/* tablette portrait */
+	/* 	width: 65%; */
+	top: 0; left: 0; bottom: 0; right: 0;
+	margin: auto;
+}
+#intro a {
+	position: absolute;
+	top: -23px;
+	right: -23px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+}
+#cross {
+	height: 20px;
+}
+#intro p {
+	font-family: "Cormorant";
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	/* tablette */
+	/* 	font-size: 1.25rem;
+		line-height: 2rem; */
+	/* tablette portrait */
+	/* padding: 0 40px; */
+	text-align: center;
+}
+#intro p i {
+	font-family: "Cormorant italic";
+}
 #notice {
 	height: calc(100% - 150px);
 	margin: 75px 0;
@@ -60,6 +135,12 @@ a {
 #notice img {
 	height: 25px;
 	margin-left: 30px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 #notice p:not(#load) {
 	display: flex;
@@ -69,13 +150,6 @@ a {
 	font-family: "Cormorant";
 	font-size: 1.5rem;
 	text-align: center;
-	pointer-events: initial;
-	-webkit-touch-callout: text;
-	-webkit-user-select: text;
-	-khtml-user-select: text;
-	-moz-user-select: text;
-	-ms-user-select: text;
-	user-select: text;
 }
 #notice p i {
 	font-family: "Cormorant italic";
@@ -116,14 +190,13 @@ a {
 #load {
 	font-family: "Cormorant";
 	font-size: 1.5rem;
-	color: grey;
 }
 #start {
 	font-family: "Cormorant";
 	font-size: 1.5rem;
 	color: black;
 	border: 2px solid black;
-	border-radius: 5%;
+	border-radius: 5px;
 	padding: 5px 15px 5px 15px;
 }
 
@@ -131,18 +204,17 @@ a {
 	position: absolute;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	bottom: 40px;
-	right: 40px;
+	bottom: 45px;
+	right: 45px;
 }
 /* #infos p {
 	font-family: "Cormorant";
 	font-size: 0.75rem;
 } */
 #infos a {
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
 	border-radius: 50%;
 	border: 2px solid black;
 	display: flex;
@@ -231,13 +303,6 @@ video {
 	font-size: 1rem;
 	line-height: 1.5rem;
 	*/
-	pointer-events: initial;
-	-webkit-touch-callout: text;
-	-webkit-user-select: text;
-	-khtml-user-select: text;
-	-moz-user-select: text;
-	-ms-user-select: text;
-	user-select: text;
 }
 #text-content p::selection, #text-content p i::selection, #text-content p span::selection {
 	color: black;
