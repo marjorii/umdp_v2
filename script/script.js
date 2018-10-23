@@ -6,9 +6,10 @@ async function initProject() {
     json = createUrls(json);
 
     allChapter = new AllChapter(json);
+    // console.log(allChapter);
 
     document.getElementById("cross").addEventListener("click", () => {
-        document.getElementById("intro").classList.add("hide");
+        document.getElementById("box").classList.add("hide");
         document.getElementById("notice").classList.remove("opacity");
         document.getElementById("infos").classList.remove("opacity");
         document.getElementById("load").classList.add("grey");
@@ -139,7 +140,7 @@ function playerOnClick(e) {
 function createUrls(data) {
     function buildUrl(media, chapter) {
         if (media.type === "img" && media.title.match(/.(jpg|jpeg|png)$/i)) {
-            media.uri = [url, "medias", media.type, "medium", chapter, media.title].join("/");
+            media.uri = [url, "medias", media.type, chapter, media.title].join("/");
         }
         else if (media.type === "img" && media.title.match(/.(gif)$/i)) {
             media.uri = [url, "medias", media.type, "gif", media.title].join("/");

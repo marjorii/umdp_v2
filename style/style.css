@@ -21,12 +21,34 @@
 }
 
 :root {
-	font-family: "Garcia";
+	font-family: "Cormorant";
 	font-size: 1.5em;
 	font-weight: normal;
 }
 
-body, html, main, #load-page, #container {
+#load-page, main {
+	display: none;
+}
+
+#phone-page {
+	position: absolute;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+}
+
+#phone-page p {
+	color: white;
+	text-align: center;
+	line-height: 2rem;
+	padding: 0 30px;
+}
+
+#phone-page img {
+	height: 50px;
+}
+
+body, html, main, #load-page, #container, #box {
 	margin: 0;
 	height: 100%;
 	width: 100%;
@@ -37,7 +59,7 @@ body, html, main, #load-page, #container {
 	-moz-user-select: none;      /* Firefox */
 	-ms-user-select: none;       /* Internet Explorer/Edge */
 	user-select: none;           /* Non-prefixed version, currently supported by any browser but < IE9 */
-  }
+}
 
 a {
 	text-decoration: none;
@@ -45,6 +67,7 @@ a {
 	outline: 0;
 }
 p {
+	font-size: 1.5rem;
 	pointer-events: initial;
 	-webkit-touch-callout: text;
 	-webkit-user-select: text;
@@ -53,10 +76,16 @@ p {
 	-ms-user-select: text;
 	user-select: text;
 }
-
-.hide {
-	display: none;
-	visibility: hidden;
+p i {
+	font-family: "Cormorant italic";
+}
+p::selection, p i::selection, p span::selection {
+	color: black;
+	background: white;
+}
+p::-moz-selection, p i::-moz-selection, p span::-moz-selection {
+	color: black;
+	background: white;
 }
 .opacity {
 	opacity: 0.4;
@@ -68,62 +97,6 @@ p {
 	pointer-events: none;
 }
 
-#load-page p::selection, #load-page p i::selection, #load-page p span::selection {
-	color: black;
-	background: white;
-}
-#load-page p::-moz-selection, #load-page p i::-moz-selection, #load-page p span::-moz-selection {
-	color: black;
-	background: white;
-}
-
-#intro {
-	position: absolute;
-	background-color: white;
-	border: 2px solid black;
-	border-radius: 5px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 50%;
-	height: 40%;
-	/* tablette paysage */
-	/* width: 75%; */
-	/* tablette portrait */
-	/* 	width: 65%; */
-	top: 0; left: 0; bottom: 0; right: 0;
-	margin: auto;
-}
-#intro a {
-	position: absolute;
-	top: -23px;
-	right: -23px;
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 2px solid black;
-	border-radius: 50%;
-	width: 45px;
-	height: 45px;
-}
-#cross {
-	height: 20px;
-}
-#intro p {
-	font-family: "Cormorant";
-	font-size: 1.5rem;
-	line-height: 2.5rem;
-	/* tablette */
-	/* 	font-size: 1.25rem;
-		line-height: 2rem; */
-	/* tablette portrait */
-	/* padding: 0 40px; */
-	text-align: center;
-}
-#intro p i {
-	font-family: "Cormorant italic";
-}
 #notice {
 	height: calc(100% - 150px);
 	margin: 75px 0;
@@ -147,14 +120,8 @@ p {
 	flex-direction: row;
 	align-items: center;
 	margin: 0;
-	font-family: "Cormorant";
-	font-size: 1.5rem;
 	text-align: center;
 }
-#notice p i {
-	font-family: "Cormorant italic";
-}
-
 #notice p span:not(#margin) {
 	justify-content: center;
 	border: 2px solid black;
@@ -187,14 +154,9 @@ p {
 #margin {
 	margin: 0 30px 0 10px;
 }
-#load {
-	font-family: "Cormorant";
-	font-size: 1.5rem;
-}
 #start {
-	font-family: "Cormorant";
-	font-size: 1.5rem;
 	color: black;
+	font-size: 1.5rem;
 	border: 2px solid black;
 	border-radius: 5px;
 	padding: 5px 15px 5px 15px;
@@ -207,10 +169,6 @@ p {
 	bottom: 45px;
 	right: 45px;
 }
-/* #infos p {
-	font-family: "Cormorant";
-	font-size: 0.75rem;
-} */
 #infos a {
 	width: 45px;
 	height: 45px;
@@ -221,6 +179,42 @@ p {
 	justify-content: center;
 	font-family: "Garcia";
 	font-size: 1.5rem;
+}
+
+#box {
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#intro {
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 5px;
+	display: inline;
+	padding: 20px 45px;
+}
+#intro a {
+	position: relative;
+	float: right;
+	margin-top: -45px;
+	margin-right: -70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+}
+#cross {
+	height: 20px;
+}
+
+#intro p {
+	text-align: center;
 }
 
 
@@ -238,13 +232,10 @@ p {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	/* tablette paysage (max-width: 1024px ? issue with 1280x980 ~square format) = height: 75%; */
-	/* tablette portrait = width: 50%; */
 }
 video {
 	display: block;
 	width: 50%;
-	/* tablette portrait : 100%; */
 	-webkit-animation-name: fadeIn;
 	-webkit-animation-duration: 2s;
 	-webkit-animation-fill-mode: both;
@@ -271,49 +262,20 @@ video {
 
 #text-table {
 	position: absolute;
-	width: calc(100% - 200px);
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	pointer-events: none;
-	/* tablette :
-	width: calc(100% - 170px);
-	*/
 }
 #text-content {
 	position: absolute;
-	width: calc(100% - 200px);
 	height: 100%;
-	/* width: 50%;
-	margin: auto; */
-	/* tablette :
-	width: calc(100% - 170px);
-	*/
 }
 #text-content p {
 	margin-top: 50px;
 	margin-left: 50px;
-	font-family: "Cormorant";
-	font-size: 1.5rem;
-	line-height: 2rem;
-	/* text-align: left; */
 	text-align: center;
-	/* tablette :
-	font-size: 1rem;
-	line-height: 1.5rem;
-	*/
-}
-#text-content p::selection, #text-content p i::selection, #text-content p span::selection {
-	color: black;
-	background: white;
-}
-#text-content p::-moz-selection, #text-content p i::-moz-selection, #text-content p span::-moz-selection {
-	color: black;
-	background: white;
-}
-#text-content p i {
-	font-family: "Cormorant italic";
 }
 #text-content p span {
 	font-family: "Tifinagh Revue";
@@ -366,16 +328,15 @@ nav p {
 	border-bottom: 1px solid black;
 	pointer-events: auto;
 }
+nav .chap p {
+	font-family: "Garcia";
+	font-size: 1rem;
+}
 
-/* centrer par rapport au textes (si textes = centrés) */
 #buttons-container {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	width: calc(100% - 200px);
-	/* tablette :
-	width: calc(100% - 170px);
-	*/
 }
 #actions-buttons {
 	position: absolute;
@@ -384,10 +345,70 @@ nav p {
 	justify-content: space-around;
 	width: 400px;
 	bottom: 25px;
-	/* centrer par rapport à l'écran = enlever #buttons-container + réactiver code ci-dessous */
-	/* left: 0; bottom: 25px; right: 0;
-	margin: auto; */
 }
 #actions-buttons a img {
-height: 25px;
+	height: 25px;
+}
+
+@media screen and (min-width: 600px) {
+
+	#phone-page {
+		display: none;
+	}
+	#load-page, main {
+		display: block;
+	}
+	#intro p {
+		font-size: 1.25rem;
+		line-height: 2rem;
+		}
+	#text-content p {
+		font-size: 1rem;
+		line-height: 2rem;
+	}
+	#text-table, #text-content {
+		width: calc(100% - 170px);
+	}
+	#buttons-container {
+		width: calc(100% - 170px);
+	}
+}
+
+@media screen and (min-width: 600px) and (orientation: portrait) {
+	#intro {
+		width: 50%;
+	}
+	#mediatable {
+		width: 50%;
+	}
+	video {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 600px) and (orientation: landscape) {
+	#mediatable {
+		height: 75%;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+
+	#intro p, #text-content p {
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+	}
+	#mediatable {
+		height: 90%;
+	}
+	#text-table, #text-content {
+		width: calc(100% - 200px);
+	}
+	#buttons-container {
+		width: calc(100% - 200px);
+	}
+}
+
+.hide {
+	display: none !important;
 }
