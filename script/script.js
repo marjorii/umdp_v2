@@ -73,10 +73,10 @@ function changeDirection(dir) {
 
 function scrollHandler(e) {
     if (e.deltaY > 0 || e.keyCode == "40") {
-        changeDirection(1);
+        if (!forbidden) changeDirection(1);
     }
     else if (e.deltaY < 0 || e.keyCode == "38") {
-        changeDirection(-1);
+        if (!forbidden) changeDirection(-1);
     }
     else if (e.keyCode == "32") {
         if (!paused) {
@@ -104,10 +104,10 @@ function scrollHandler(e) {
 function playerOnClick(e) {
     var button = e.target.id;
     if (button == "forward") {
-        changeDirection(1);
+        if (!forbidden) changeDirection(1);
     }
     else if (button == "backward") {
-        changeDirection(-1);
+        if (!forbidden) changeDirection(-1);
     }
     else if (!paused && button == "pause") {
         paused = true;
@@ -158,22 +158,26 @@ function createUrls(data) {
         data.chapters.push(temp);
     }
 
+
     return data.chapters.map(chapter => {
         var sMix = shuffle(chapter.audio);
 
+        // console.log(chapter.subChapters, "subChapters");
+        // shuffle(chapter.subChapters);
+        // console.log(orderSubMix, "New subchapters order");
+
+
         chapter.subChapters = chapter.subChapters.map(subChapter => {
+            // 
+            // console.log(subChapter.medias, "medias");
+            // console.log(SubMix, "shuffled medias order");
+
             if (subChapter.int) {
                 var pickedNumber = randomFromTo(1, 4);
                 for (var g = 0; g < pickedNumber; g++) {
                     var pick = randomPick(data.gifs);
                     var pickedRange = randomFromTo(0, subChapter.medias.length);
                     subChapter.medias.splice(pickedRange, 0, pick);
-                    // if (!occur.hasOwnProperty(pick.title)) {
-                    //     occur[pick.title] = 1;
-                    // }
-                    // else {
-                    //     occur[pick.title] += 1;
-                    // }
                 }
 
                 var pickedNumber = randomFromTo(subChapter.int[0], subChapter.int[1]);
@@ -203,6 +207,7 @@ function createUrls(data) {
 var allChapter;
 var direction = 1;
 var paused = false;
+var forbidden = false;
 
 
 // ACTION

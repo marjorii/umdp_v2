@@ -42,7 +42,7 @@
 }
 #text-block {
 	display: inline;
-	padding: 20 45px;
+	padding: 20px 45px;
 }
 #phone-page p {
 	color: white;
@@ -140,13 +140,15 @@ p::-moz-selection, p i::-moz-selection, p span::-moz-selection {
 
 #notice img {
 	height: 25px;
-	margin-left: 30px;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+#notice img:nth-child(2) {
+	margin-left: 30px;
 }
 #notice p {
 	display: flex;

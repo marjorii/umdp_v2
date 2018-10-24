@@ -150,7 +150,6 @@ Chapter.prototype.play = function() {
             if (subChapter) {
                 await subChapter.play();
                 await _this.textDisplay(_this.textIndex);
-                await reversableSleep(2000);
                 playSubChapter();
                 var DOMelem = document.getElementsByClassName("fullfilled");
                 if (direction === 1) {
@@ -171,13 +170,15 @@ Chapter.prototype.play = function() {
 
 Chapter.prototype.textDisplay = function(index) {
     return new Promise (async(resolve, reject) => {
+        forbidden = true;
         var texttable = document.getElementById("text-content");
-            texttable.innerHTML = this.text[index];
-            this.textIndex += direction;
-            var duration = this.text[index].length * 50;
-            await reversableSleep(duration < 5000 ? 5000 : duration);
-            resolve();
-            texttable.innerHTML = "";
+        texttable.innerHTML = this.text[index];
+        this.textIndex += direction;
+        var duration = this.text[index].length * 50;
+        await reversableSleep(duration < 5000 ? 5000 : duration);
+        resolve();
+        forbidden = false;
+        texttable.innerHTML = "";
     });
 };
 
@@ -291,7 +292,7 @@ AllChapter.prototype.play = function() {
 AllChapter.prototype.reverse = function() {
     this.chapters.forEach(chapter => {
         if (chapter.playState === "running") {
-                chapter.reverse();
+            chapter.reverse();
         }
     });
 };
