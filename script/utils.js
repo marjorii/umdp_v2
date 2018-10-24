@@ -56,6 +56,15 @@ function shuffle(array) {
     return array;
 }
 
+function randomNumbers(n, maxn) {
+    var numbers = []
+    while (numbers.length < n) {
+        let number = Math.floor(Math.random() * maxn);
+        if (!numbers.includes(number)) numbers.push(number);
+    }
+    return numbers;
+}
+
 /* reverse sleep */
 
 function reversableSleep(duration) {

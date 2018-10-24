@@ -168,27 +168,27 @@ function createUrls(data) {
 
 
         chapter.subChapters = chapter.subChapters.map(subChapter => {
-            // 
-            // console.log(subChapter.medias, "medias");
-            // console.log(SubMix, "shuffled medias order");
+            var toRemove = randomNumbers(Math.floor(subChapter.medias.length/2), subChapter.medias.length - 1)
+            subChapter.medias = subChapter.medias.filter((media, index) => {
+                return !toRemove.includes(index);
+            });
 
             if (subChapter.int) {
-                var pickedNumber = randomFromTo(1, 4);
+                var pickedNumber = randomFromTo(1, 2);
                 for (var g = 0; g < pickedNumber; g++) {
                     var pick = randomPick(data.gifs);
                     var pickedRange = randomFromTo(0, subChapter.medias.length);
                     subChapter.medias.splice(pickedRange, 0, pick);
                 }
 
-                var pickedNumber = randomFromTo(subChapter.int[0], subChapter.int[1]);
+                pickedNumber = randomFromTo(subChapter.int[0], subChapter.int[1]);
                 for (var s = 0; s < pickedNumber; s++) {
                     pick = chapter.audio.shift();
                     pickedRange = randomFromTo(0, subChapter.medias.length);
                     subChapter.medias.splice(pickedRange, 0, pick);
                 }
-            } else {
-                pickedNumber = 0;
             }
+
             return subChapter.medias.map(media => {
                 if (Array.isArray(media)) {
                     return media.map(med => {
