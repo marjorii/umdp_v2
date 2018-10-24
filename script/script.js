@@ -6,15 +6,14 @@ async function initProject() {
     json = createUrls(json);
 
     allChapter = new AllChapter(json);
-    // console.log(allChapter);
 
-    document.getElementById("cross").addEventListener("click", () => {
+    document.querySelector("#intro a").addEventListener("click", () => {
+        document.getElementById("white-block").classList.add("fade");
+        document.getElementById("load").classList.add("fadeBis");
+        setTimeout(() => {
+            document.getElementById("white-block").classList.add("hide");
+        }, 1000);
         document.getElementById("box").classList.add("hide");
-        document.getElementById("notice").classList.remove("opacity");
-        document.getElementById("infos").classList.remove("opacity");
-        document.getElementById("load").classList.add("grey");
-        document.getElementById("start").classList.remove("disable-buttons");
-        document.getElementById("infos").classList.remove("disable-buttons");
     });
 
     await allChapter.load();
@@ -209,5 +208,14 @@ var paused = false;
 // ACTION
 
 window.onload = () => {
-    initProject();
+    var isMobile = false;
+    if ( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        isMobile = true;
+        document.getElementById("phone-page").classList.add("show");
+        document.getElementById("load-page").classList.add("hide");
+        document.querySelector("main").classList.add("hide");
+    } else {
+        isMobile = false;
+        initProject();
+    }
 };

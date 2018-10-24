@@ -1110,7 +1110,8 @@
             [
               {
                 "type": "img",
-                "title": "tour-poterie.jpg"
+                "title": "tour-poterie.jpg",
+                "pause": 1
               },
               {
                 "type": "video",
@@ -1124,7 +1125,8 @@
             [
               {
                 "type": "img",
-                "title": "livre-poterie.jpg"
+                "title": "livre-poterie.jpg",
+                "pause": -1
               },
               {
                 "type": "video",
@@ -1655,7 +1657,8 @@
             [
               {
                 "type": "img",
-                "title": "colonnes-renov.jpg"
+                "title": "colonnes-renov.jpg",
+                "pause": 1
               },
               {
                 "type": "video",
@@ -1669,7 +1672,8 @@
             [
               {
                 "type": "img",
-                "title": "temple-renov2.jpg"
+                "title": "temple-renov2.jpg",
+                "pause": -1
               },
               {
                 "type": "video",

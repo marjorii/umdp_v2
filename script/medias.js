@@ -325,6 +325,9 @@ function MultiMedia(medias) {
     this.medias = others.map(media => createMedia(media));
     this.loaded = false;
     this.ready = false;
+    if (img.hasOwnProperty("pause")) {
+        this.suspend = img.pause;
+    }
 }
 
 Object.defineProperties(MultiMedia.prototype, {
