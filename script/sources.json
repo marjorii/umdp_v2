@@ -253,7 +253,7 @@
       ],
       "subChapters": [
         {
-          "int": [0,1],
+          "int": [1,1],
           "medias": [
             {
               "type": "img",
@@ -353,7 +353,7 @@
           ]
         },
         {
-          "int": [0,1],
+          "int": [1,1],
           "medias": [
             {
               "type": "img",
@@ -710,7 +710,7 @@
           ]
         },
         {
-          "int": [0,1],
+          "int": [1,1],
           "medias": [
             {
               "type": "img",
@@ -1361,9 +1361,9 @@
         [
           "<p><span>ⵏⴽⴽⴰ  ⴷ  ⴱⴻⵔⵔⴰ.  ⵢⴻⵍⵍⴰ  ⵓⵚⵎⵎⵉⴹ  ⵉⵛⴻⵇⵇⴰⵏ&nbsp;: ⵢⴻⵇⵇⵓⵔ.<br>ⵓⵔ  ⵣⴷⴰⵔⴰⵖ  ⴰⴷ  ⴱⴷⵓⵖ  ⵏⴳⵔ  ⴰⵜⴼⴻⵍ  ⴷ  ⵜⴰⴳⵓⵜ.</span></p>",
           "<p>Cela me rappelait un livre où il était inscrit :<br>«&nbsp;Le monde n’a pas de nom, dit-il. Les noms des collines<br>et des sierras et des déserts n’existent que sur les cartes.<br>On leur donne des noms de peur de s’égarer en chemin.<br>Mais c’est parce qu’on s’est déjà égaré qu’on leur<br>a donné ces noms. Le monde ne peut pas se perdre.<br>Mais nous, nous le pouvons.&nbsp;»</p>",
-          "<p><span>ⵎⴰⵛⴰ  ⵓⵔⴷ   ⵓⴼⵉⵖ   ⴰⵊⴻⵔⵇⵔⴰⵅ .   ⵜⵉⵍⵉⴼⵓⵏ   ⵉⵏⵓ   ⵓⵔ   ⵉⵢⵉ<br>ⵢⵄⴰⵡⴻⵏ ,<br>ⵙⴰⵜⵉⵍⵉⵜ  </span>(satellite)<span>  ⵓⵔⵜⴻⵏ   ⵉⴽⴰ    ⴰⵔ   ⵉⵥⵕⴰ<br>ⵜⴰⴳⴰⵏⵜ    ⵏ   ⵓⵊⵔⵉⴷ ,   ⵓⵔ   ⴰⵢⵥⵕ   ⵍⴰ  ⵜⴰⵙⵙⵓⴽⵜ   ⵍⴰ  ⵍⵉⵙⵎ .</span></p>",
+          "<p><span>ⵎⴰⵛⴰ  ⵓⵔⴷ   ⵓⴼⵉⵖ   ⴰⵊⴻⵔⵇⵔⴰⵅ .   ⵜⵉⵍⵉⴼⵓⵏ   ⵉⵏⵓ   ⵓⵔ   ⵉⵢⵉ<br>ⵢⵄⴰⵡⴻⵏ ,<br>ⵙⴰⵜⵉⵍⵉⵜ  </span>(satellite)<span>  ⵓⵔⵜⴻⵏ   ⵉⴽⴰ    ⴰⵔ   ⵉⵥⵕⴰ<br>ⵜⴰⴳⴰⵏⵜ    ⵏ   ⵓⵊⵔⵉⴷ ,   ⵓⵔ   ⴰⵢⵥⵕ   ⵍⴰ  ⵜⴰⵙⵙⵓⴽⵜ   ⵍⴰ  ⵍⵉⵙⵎ .<br>ⵢⵓⵛⴽⴰⴷ ⵉⴹ . ⵢⵍⵍⴰ ⵉⴼⵙⵜⵉ . ⵉⴼⵙⵜⵉ ⴰⵔ ⴰⵣⵏⵥⵓⵎ</span></p>",
           "<p>Mon téléphone n’était pas d’une plus grande aide.<br>Le satellite ne voyait qu’une gigantesque forêt de palmiers,<br>ni rue, ni nom.</p>",
-          "<p><span>ⵎⴰⵛⴰ  ⵓⵔⴷ   ⵓⴼⵉⵖ   ⴰⵊⴻⵔⵇⵔⴰⵅ.   ⵜⵉⵍⵉⴼⵓⵏ   ⵉⵏⵓ   ⵓⵔ   ⵉⵢⵉ<br>ⵢⵄⴰⵡⴻⵏ,   ⵙⴰⵜⵉⵍⵉⵜ  </span>(satellite)<span>  ⵓⵔⵜⴻⵏ   ⵉⴽⴰ    ⴰⵔ   ⵉⵥⵕⴰ<br>ⵜⴰⴳⴰⵏⵜ    ⵏ   ⵓⵊⵔⵉⴷ,   ⵓⵔ   ⴰⵢⵥⵕ   ⵍⴰ  ⵜⴰⵙⵙⵓⴽⵜ   ⵍⴰ  ⵍⵉⵙⵎ .<br>ⵢⵓⵛⴽⴰⴷ ⵉⴹ . ⵢⵍⵍⴰ ⵉⴼⵙⵜⵉ . ⵉⴼⵙⵜⵉ ⴰⵔ ⴰⵣⵏⵥⵓⵎ</span></p>"
+          "<p><span>ⴰⵡⵍⴰ ⵍⴱⵍⴰⵙⵜⵉⴽ (ⵍⵎⵉⴽⴰ) ⵢⵓⵎⵣⴻⵏ  ⵍⵓⵇⵜ   ⵏⵙ ⵏ   ⴱⴰⵛ  ⴰⵔ<br>ⵢⵙⵜⴻⵟⵢⴰⵕ  ⵙ  ⵡⴰⴹⵓ.  ⴰⵔ  ⵏⵥⴻⵕ  ⵎⴷⴷⴻⵏ  ⴱⵍⴰ  ⵏⴼⵀⴰⵎ<br>ⵓⵏⴰ ⵏⵙⵙⴻⵏ  ⵎⴰⴼⴰ  ⵙⴰⵡⴰⵍⵏ.</span></p>"
         ],
         [
           "<p><span>ⵖⵖⵉⴷ  ⴽ </span>o<span> ⵍⵛⵉ  ⴰⵔ  ⵢⵜⵥⵥⴰⵢ  ⵙ  ⵍⴻⵎⵀⴻⵍ,  ⵃⴰⵇⵇⴰⵏ<br>ⵜⴰⴼⵓⴽⵜ  ⵉⵃⵔⵔⴰⵏ   ⴰⵢⴳⴰⵏ  ⵙⵙⴱⴰⴱ,</span><br><br>Ici tout est lent. Le temps a sa propre épaisseur, sa propre densité.<br>Le soleil écrasant y est peut-être pour<br>quelque chose. Même les emballages de plastique prennent<br>leur temps pour se faire trimballer par le vent.</p>",
@@ -1798,7 +1798,7 @@
           ]
         },
         {
-          "int": [0,1],
+          "int": [1,1],
           "medias": [
             [
               {

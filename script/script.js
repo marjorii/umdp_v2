@@ -6,15 +6,22 @@ async function initProject() {
     json = createUrls(json);
 
     allChapter = new AllChapter(json);
+    console.log(window.location.hash);
 
-    document.querySelector("#intro a").addEventListener("click", () => {
-        document.getElementById("white-block").classList.add("fade");
-        document.getElementById("load").classList.add("fadeBis");
-        setTimeout(() => {
-            document.getElementById("white-block").classList.add("hide");
-        }, 1000);
-        document.getElementById("box").classList.add("hide");
-    });
+    if (window.location.hash !== "#hidebox") {
+        document.getElementById("white-block").classList.remove("hide");
+        document.getElementById("box").classList.remove("hide");
+        document.querySelector("#intro a").addEventListener("click", () => {
+            document.getElementById("white-block").classList.add("fade");
+            document.getElementById("load").classList.add("fadeBis");
+            setTimeout(() => {
+                document.getElementById("white-block").classList.add("hide");
+            }, 1000);
+            document.getElementById("box").classList.add("hide");
+        });
+    } else {
+        document.getElementById("load").classList.add("opacity");
+    }
 
     await allChapter.load();
 
@@ -133,6 +140,10 @@ function playerOnClick(e) {
         document.getElementById("unmute").src = "medias/ui/mute.png";
         document.getElementById("unmute").id = "mute";
     }
+    else if (button == "shuffle") {
+        window.location = "#hidebox";
+        window.location.reload();
+    }
     console.log(direction);
 }
 
@@ -161,11 +172,6 @@ function createUrls(data) {
 
     return data.chapters.map(chapter => {
         var sMix = shuffle(chapter.audio);
-
-        // console.log(chapter.subChapters, "subChapters");
-        // shuffle(chapter.subChapters);
-        // console.log(orderSubMix, "New subchapters order");
-
 
         chapter.subChapters = chapter.subChapters.map(subChapter => {
             var toRemove = randomNumbers(Math.floor(subChapter.medias.length/2), subChapter.medias.length - 1)

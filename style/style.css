@@ -1,25 +1,5 @@
 @charset "utf-8";
 
-@font-face {
-	font-family: "Garcia";
-	src: url("../fonts/garcia.woff2");
-}
-
-@font-face {
-	font-family: "Cormorant";
-	src: url("../fonts/cormorant-medium.woff2");
-}
-
-@font-face {
-	font-family: "Cormorant italic";
-	src: url("../fonts/cormorant-medium-italic.woff2");
-}
-
-@font-face {
-	font-family: "Tifinagh Revue";
-	src: url("../fonts/tifinagh_revue1.woff2");
-}
-
 :root {
 	font-family: "Cormorant";
 	font-size: 1.5em;
@@ -110,6 +90,9 @@ p::-moz-selection, p i::-moz-selection, p span::-moz-selection {
 	background: white;
 }
 
+.opacity {
+	opacity: 0.5;
+}
 
 .fade {
 	-webkit-animation: fade 1s forwards;
@@ -464,4 +447,25 @@ nav .chap p {
 
 .show {
 	display: flex !important;
+}
+
+
+@font-face {
+	font-family: "Garcia";
+	src: url("../fonts/garcia.woff2");
+}
+
+@font-face {
+	font-family: "Cormorant";
+	src: url("../fonts/cormorant-medium.woff2");
+}
+
+@font-face {
+	font-family: "Cormorant italic";
+	src: url("../fonts/cormorant-medium-italic.woff2");
+}
+
+@font-face {
+	font-family: "Tifinagh Revue";
+	src: url("../fonts/tifinagh_revue1.woff2");
 }
