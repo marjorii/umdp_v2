@@ -13,12 +13,12 @@
       "index": 0,
       "text": [
         [
-          "<p>En apparence, il ne s’agit que d’un liquide, homogène et continu,</p>",
+          "<p><span>ⵓⵔⵉⵖ  ⴷ  ⴳⴳⵉⵡⵔⵖ.  ⴰⵔ  ⵢⵟⵙⵙⴰ.  </span>«<span> ⴰⵏⵟ ⵡⴰⵏ </span>»<span> </span>(Antoine)<span><br>ⴷ  ⵏⴻⴽⴽⵉⵏ  ⵏⵣⵔⵉ  ⵖⴰⴷ  ⵉⴱⵇⴰⵏ  ⵖ ⵡⴰⵙⵙ   ⴰⵔ  ⵏⵜⵚⵓⵡⴰⵕ<br>ⵙⵏⴰⴷⴻⵇ  ⵏⵏⴻⵙ. ⵏⴳⴻⵔ  ⵢⴰⵏ  ⴷ  ⵡⴰⵢⴰ,  ⴰⵔ  ⴰⵖ<br>ⵢⴼⴼⴰⵍ .  ⴰⵏⵜⵜⴰⵔⴰ  ⴽⵔⴰ  ⵏ  ⵉⵙⵍⵉⵏ.</span><br><br>Je reviens m’asseoir. Il sourit. Antoine et moi avons pris<br>le reste de la journée pour photographier ses coffrages.<br>Entre chacun d’eux, il nous fit prendre des notes. À nos yeux,<br>l’alchimiste était devenu gardien de musée.</p>",
           "<p>alors même qu’il est le siège de discrètes violences entre de petits corps que nos yeux ne peuvent pas détecter.</p>",
           "<p>À chaque gorgée, nous ingurgitons des milliards de myriades d’atomes d’hydrogène et d’oxygène, qui sont tous de céleste lignée :</p>"
         ],
         [
-          "<p>La lumière du soleil met huit minutes pour nous parvenir.<br>Il y a derrière chaque éclat, un temps propre, toujours plus ou moins loin de nous, souvent un mirage.</p>",
+          "<p><span>ⵓⵔⵉⵖ  ⴷ  ⴳⴳⵉⵡⵔⵖ.  ⴰⵔ  ⵢⵟⵙⵙⴰ.  </span>«<span> ⴰⵏⵟ ⵡⴰⵏ </span>»<span> </span>(Antoine)<span><br>ⴷ  ⵏⴻⴽⴽⵉⵏ  ⵏⵣⵔⵉ  ⵖⴰⴷ  ⵉⴱⵇⴰⵏ  ⵖ ⵡⴰⵙⵙ   ⴰⵔ  ⵏⵜⵚⵓⵡⴰⵕ<br>ⵙⵏⴰⴷⴻⵇ  ⵏⵏⴻⵙ. ⵏⴳⴻⵔ  ⵢⴰⵏ  ⴷ  ⵡⴰⵢⴰ,  ⴰⵔ  ⴰⵖ<br>ⵢⴼⴼⴰⵍ .  ⴰⵏⵜⵜⴰⵔⴰ  ⴽⵔⴰ  ⵏ  ⵉⵙⵍⵉⵏ.</span><br><br>Je reviens m’asseoir. Il sourit. Antoine et moi avons pris<br>le reste de la journée pour photographier ses coffrages.<br>Entre chacun d’eux, il nous fit prendre des notes. À nos yeux,<br>l’alchimiste était devenu gardien de musée.</p>",
           "<p>Je cherchais un lieu où l’horizon se recourbait sur lui même,<br>un lieu où se rendent tous les corps morts, les débris,<br>comme un glissement de terrain après la pluie sur les flans de montagnes.</p>",
           "<p>On observe des couches de sédiments qui ne sont plus rangées par strates, elles sont mélangées.<br>Des éléments séparés par des milliers d’années se rencontrent, se touchent, se regardent.<br><br>De quoi parlent-ils ?</p>"
         ]
@@ -90,7 +90,8 @@
             [
               {
                 "type": "img",
-                "title": "tour-poterie.jpg"
+                "title": "tour-poterie.jpg",
+                "pause": 1
               },
               {
                 "type": "video",
@@ -100,7 +101,8 @@
             [
               {
                 "type": "img",
-                "title": "livre-poterie.jpg"
+                "title": "livre-poterie.jpg",
+                "pause": -1
               },
               {
                 "type": "video",
