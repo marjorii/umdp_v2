@@ -5,9 +5,9 @@ async function initProject() {
     json = createUrls(json);
 
     allChapter = new AllChapter(json);
-    console.log(window.location.hash);
+    console.log(window.location.href);
 
-    if (window.location.hash !== "#hidebox") {
+    if (window.location.href.split("#")[1] !== "hidebox") {
         document.getElementById("white-block").classList.remove("hide");
         document.getElementById("box").classList.remove("hide");
         document.querySelector("#intro a").addEventListener("click", () => {
@@ -140,7 +140,8 @@ function playerOnClick(e) {
         document.getElementById("unmute").id = "mute";
     }
     else if (button == "shuffle") {
-        window.location = "#hidebox";
+        window.location.href = window.location.href.split("#")[0] + "#hidebox";
+        console.log(window.location.href);
         window.location.reload();
     }
     console.log(direction);
