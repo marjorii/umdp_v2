@@ -2,7 +2,6 @@
 
 async function initProject() {
     var json = await readJSONFile("script/sources.json");
-    // var json = await readJSONFile("script/sources-test.json");
     json = createUrls(json);
 
     allChapter = new AllChapter(json);
@@ -150,17 +149,17 @@ function playerOnClick(e) {
 function createUrls(data) {
     function buildUrl(media, chapter) {
         if (media.type === "img" && media.title.match(/.(jpg|jpeg|png)$/i)) {
-            media.uri = [url, "medias", media.type, chapter, media.title].join("/");
+            media.uri = ["medias", media.type, chapter, media.title].join("/");
         }
         else if (media.type === "img" && media.title.match(/.(gif)$/i)) {
-            media.uri = [url, "medias", media.type, "gif", media.title].join("/");
+            media.uri = ["medias", media.type, "gif", media.title].join("/");
         }
         else if (media.type === "video" || media.type === "audio") {
-            media.uri = [url, "medias", media.type, chapter, media.title].join("/");
+            media.uri = ["medias", media.type, chapter, media.title].join("/");
         }
         return media;
     }
-    var url = "https://autre.space/ressources/_marjo";
+
     var occur = {};
 
     var randomInt = randomFromTo(0, 2);
