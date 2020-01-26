@@ -137,6 +137,7 @@ Chapter.prototype.load = function() {
 Chapter.prototype.play = function() {
     return new Promise((resolve, reject) => {
         var _this = this;
+        n = 0;
         async function playSubChapter(orientation) {
             if (orientation) {
                 _this.textIndex = direction === 1 ? 0 : _this.text.length -1;
@@ -151,14 +152,6 @@ Chapter.prototype.play = function() {
                 await subChapter.play();
                 await _this.textDisplay(_this.textIndex);
                 playSubChapter();
-                var DOMelem = document.getElementsByClassName("fullfilled");
-                if (direction === 1) {
-                    DOMelem[DOMelem.length-1].nextElementSibling.classList.add("fullfilled");
-                } else {
-                    if (!DOMelem[DOMelem.length-1].classList.contains("firstsub")) {
-                        DOMelem[DOMelem.length-1].classList.remove("fullfilled");
-                    }
-                }
             }
             else {
                 resolve();
@@ -171,14 +164,12 @@ Chapter.prototype.play = function() {
 Chapter.prototype.textDisplay = function(index) {
     return new Promise (async(resolve, reject) => {
         forbidden = true;
-        var texttable = document.getElementById("text-content");
-        texttable.innerHTML = this.text[index];
+        console.log(this.text[index]);
         this.textIndex += direction;
-        var duration = this.text[index].length * 50;
-        await reversableSleep(duration < 5000 ? 5000 : duration);
+        var duration = this.text[index].length * 215;
+        await reversableSleep(duration < 1000 ? 1000 : duration);
         resolve();
         forbidden = false;
-        texttable.innerHTML = "";
     });
 };
 
@@ -226,19 +217,14 @@ function AllChapter(jsonOBJ) {
 }
 
 AllChapter.prototype.init = function() {
-    var nav = document.querySelector("nav");
-    this.chapters.forEach((chap, index) => {
-        var subNumber = chap.urn === "1-norvege" ? 8 : 4;
-        for (var n = 0; n < subNumber; n++) {
-            var div = document.createElement("div");
-            div.classList.add("subchapter");
-            if (n === 0) {
-                div.classList.add("chap");
-                div.innerHTML = "<p>Chapitre " + (index + 1) + "</p>";
-            }
-            nav.appendChild(div);
-        }
-    });
+    // this.chapters.forEach((chap, index) => {
+    //     var subNumber = chap.urn === "1-norvege" ? 8 : 4;
+    //     for (var n = 0; n < subNumber; n++) {
+    //         if (n === 0) {
+    //             console.log("Chapitre " + (index + 1));
+    //         }
+    //     }
+    // });
 };
 
 AllChapter.prototype.load = function() {
@@ -270,19 +256,14 @@ AllChapter.prototype.play = function() {
                 return rebootLoadPage();
             }
             else if (direction === 1 && _this.index === -1) {
-                var DOMelem = document.getElementsByClassName("subchapter");
-                for (var i = 0; i < DOMelem.length; i++) {
-                    if (!DOMelem[i].classList.contains("firstsub")) {
-                        DOMelem[i].classList.remove("fullfilled");
-                    }
-                }
                 _this.index = 0;
             }
         }
         var chapter = _this.chapters[_this.index];
         if (chapter) {
+            console.log("Chapitre " + (_this.index + 1));
             await chapter.play();
-            await reversableSleep(2000);
+            await reversableSleep(15000);
             playChapter();
         }
     }

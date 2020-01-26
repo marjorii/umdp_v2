@@ -163,30 +163,30 @@
   "chapters": [
     {
       "urn": "1-norvege",
-      "title": "Chapitre 1 : Norvège",
+      "title": "Chapitre 1 : Norvege",
       "index": 0,
       "text": [
         [
-          "<p>En apparence, il ne s’agit que d’un liquide,<br>homogène et continu,</p>",
-          "<p>alors même qu’il est le siège de discrètes violences entre<br>de petits corps que nos yeux ne peuvent pas détecter.</p>",
-          "<p>À chaque gorgée, nous ingurgitons des milliards<br>de myriades d’atomes d’hydrogène et d’oxygène,<br>qui sont tous de céleste lignée&nbsp;:</p>",
-          "<p>les atomes d’hydrogène se sont formés<br>dans l’univers primordial<br>—&nbsp;il y a plus de treize milliards d’années&nbsp;—</p>",
-          "<p>et ceux d’oxygène dans le cœur brûlant d’une étoile<br>—&nbsp;il y a environ cinq milliards d’années&nbsp;—<br>qui les a ensuite dispersé dans le vide intergalactique.</p>",
-          "<p>Nous découvrirons ainsi que la <i>matière du présent</i><br>provient<br>de furieusement loin dans le passé.</p>",
-          "<p>Chaque moment où nous nous désaltérons est en réalité<br>un acte grave et profond,</p>",
-          "<p>un geste quotidien dont nous oublions qu’il nous relie<br>intimement à l’histoire de l’Univers&nbsp;:</p>",
-          "<p>chaque fois, nos corps absorbent en définitive des bribes<br>de l’aurore du monde, mélangées à des cendres<br>plus tardives du feu stellaire.</p>"
+          "En apparence, il ne s'agit que d'un liquide, homogene et continu,",
+          "alors meme qu'il est le siege de discretes violences entre de petits corps que nos yeux ne peuvent pas detecter.",
+          "a chaque gorgee, nous ingurgitons des milliards de myriades d'atomes d'hydrogene et d'oxygene, qui sont tous de celeste lignee :",
+          "les atomes d'hydrogene se sont formes dans l'univers primordial — il y a plus de treize milliards d'annees —",
+          "et ceux d'oxygene dans le coeur brulant d'une etoile — il y a environ cinq milliards d'annees — qui les a ensuite disperse dans le vide intergalactique.",
+          "Nous decouvrirons ainsi que la matiere du present provient de furieusement loin dans le passe.",
+          "Chaque moment ou nous nous desalterons est en realite un acte grave et profond,",
+          "un geste quotidien dont nous oublions qu'il nous relie intimement a l'histoire de l'Univers :",
+          "chaque fois, nos corps absorbent en definitive des bribes de l'aurore du monde, melangees a des cendres plus tardives du feu stellaire."
         ],
         [
-          "<p>La lumière du soleil met huit minutes pour nous parvenir.<br>Il y a derrière chaque éclat, un temps propre, toujours plus<br>ou moins loin de nous, souvent un mirage.</p>",
-          "<p>Je cherchais un lieu où l’horizon se recourbait sur lui même,<br>un lieu où se rendent tous les corps morts, les débris,<br>comme un glissement de terrain après la pluie<br>sur les flans de montagnes.</p>",
-          "<p>On observe des couches de sédiments qui ne sont plus rangées<br>par strates, elles sont mélangées.<br>Des éléments séparés par des milliers d’années<br>se rencontrent, se touchent, se regardent.<br>De quoi parlent-ils ?</p>",
-          "<p>Dans ces montagnes, cet événement reste rare mais surtout<br>dangereux, il me fallait trouver un endroit où cela était quasi<br>constant et plus facile d’accès. C’est en Norvège<br>que j’en ai trouvé la première entrée&nbsp;; un maelström<br>illustré sur une carte datant de 1539 après J.-C.</p>",
-          "<p>Le cartographe Olaus Magnus mentionne ainsi un trait<br>de la mythologie Viking indiquant que c’est de ce <i>maelström</i><br>que sortait le sel qui alimente les mers.</p>",
-          "<p>Si du sel en sortait pour les Vikings, c’est que ce trou<br>débouche forcément quelque part.<br>Je me prenais à rêver d’une route, d’un passage.</p>",
-          "<p>La nuit, je rêvais du <i>maelström</i>. J’imaginais des débris,<br>des corps morts aspirés par les courants,<br>coincés depuis des milliers d’années,</p>",
-          "<p>se morcelant par la force des flux, rencontrant<br>inlassablement d’autres éléments, finissant par se demander<br>si ce n’était pas un fragment d’eux-mêmes.</p>",
-          "<p>C’est dans les fils d’un pêcheur que j’ai pu le lire.</p>"
+          "La lumiere du soleil met huit minutes pour nous parvenir. Il y a derriere chaque eclat, un temps propre, toujours plus ou moins loin de nous, souvent un mirage.",
+          "Je cherchais un lieu ou l'horizon se recourbait sur lui meme, un lieu ou se rendent tous les corps morts, les debris, comme un glissement de terrain apres la pluie sur les flans de montagnes.",
+          "On observe des couches de sediments qui ne sont plus rangees par strates, elles sont melangees. Des elements separes par des milliers d'annees se rencontrent, se touchent, se regardent. De quoi parlent-ils ?",
+          "Dans ces montagnes, cet evenement reste rare mais surtout dangereux, il me fallait trouver un endroit ou cela etait quasi constant et plus facile d'acces. C'est en Norvege que j'en ai trouve la premiere entree ; un maelstrom illustre sur une carte datant de 1539 apres J.-C.",
+          "Le cartographe Olaus Magnus mentionne ainsi un trait de la mythologie Viking indiquant que c'est de ce maelstrom que sortait le sel qui alimente les mers.",
+          "Si du sel en sortait pour les Vikings, c'est que ce trou debouche forcement quelque part. Je me prenais a rever d'une route, d'un passage.",
+          "La nuit, je revais du maelstrom. J'imaginais des debris, des corps morts aspires par les courants, coinces depuis des milliers d'annees,",
+          "se morcelant par la force des flux, rencontrant inlassablement d'autres elements, finissant par se demander si ce n'etait pas un fragment d'eux-memes.",
+          "C'est dans les fils d'un pecheur que j'ai pu le lire."
         ]
       ],
       "audio": [
@@ -697,16 +697,10 @@
               "type": "img",
               "title": "norges-atlas.jpg"
             },
-            [
-              {
-                "type": "img",
-                "title": "carte3.jpg"
-              },
-              {
-                "type": "video",
-                "title": "peche-filet.ogg"
-              }
-            ]
+            {
+              "type": "img",
+              "title": "carte3.jpg"
+            }
           ]
         },
         {
@@ -788,22 +782,23 @@
     },
     {
       "urn": "2-grece",
-      "title": "Chapitre 2 : Grèce",
+      "title": "Chapitre 2 : Grece",
       "index": 1,
       "text": [
         [
-          "<p>Il avait traversé <i>toute la Grèce</i>.<br>En s’énumérant les paysages que nous avions parcouru,<br>nous avions entre autre une traversée en commun.<br>La seule dont j’avais réalisé un enregistrement.</p>",
-          "<p>L’anglais commençait à manquer, surtout de mon coté.<br>Alors nous avons commencé à nous montrer nos cartes.<br>Je me surprenais à chercher un relief<br>sur les lettres imprimées.</p>",
-          "<p>Il replongea ses mains dans ses poches.<br>Puis délicatement, il me présenta le bout de ses doigts.<br>Entre la sueur due à la chaleur écrasante régnant<br>sur les docs, des pépites de sable.</p>",
-          "<p>Les grains étaient bien ronds dans des tonalités<br>de jaune écru. Parmi eux j’en distinguais d’autres plus gris,<br>sculptés, semblables à du béton.</p>",
-          "<p>J’ai tenté de retenir son prénom, le répétant plusieurs fois<br>par jour. Mais la prononciation et les tonalités m’éloignaient<br>chaque semaine de ce qu’il m’avait dit.</p>"
+          "Il avait traverse toute la Grece. En s'enumerant les paysages que nous avions parcouru, nous avions entre autre une traversee en commun. La seule dont j'avais realise un enregistrement.",
+          "L'anglais commencait a manquer, surtout de mon cote. Alors nous avons commence a nous montrer nos cartes. Je me surprenais a chercher un relief sur les lettres imprimees.",
+          "Il replongea ses mains dans ses poches. Puis delicatement, il me presenta le bout de ses doigts. Entre la sueur due a la chaleur ecrasante regnant sur les docs, des pepites de sable.",
+          "Les grains etaient bien ronds dans des tonalites de jaune ecru. Parmi eux j'en distinguais d'autres plus gris, sculptes, semblables a du beton.",
+          "J'ai tente de retenir son prenom, le repetant plusieurs fois par jour. Mais la prononciation et les tonalites m'eloignaient chaque semaine de ce qu'il m'avait dit."
         ],
         [
-          "<p>Quand venait leur temps, des brises froides descendaient.<br>Alors tous les <i>flamants roses</i>, qu’il chassait au bord du lac,<br>migraient sur la Lune pour quelques mois.<br>Attendant là-haut des jours plus cléments.<br>Comme si elle s’était perchée là-haut pour eux.<br>Sinon où iraient-ils&nbsp;?</p>",
-          "<p>Les <i>flamants roses</i>&nbsp;?<br>Je me posais la même question étant jeune&nbsp;: où partent-ils&nbsp;?<br>Le monde s’arrête aux mots que nous connaissons,<br>ceux-là même qui construisent le paysage.</p>",
-          "<p>Moi c’était Camargue, France, Europe.<br>Incapable de voir le monde qui s’étendait sur Terre,<br>sous mes pieds ou plutôt sous les ailes de ces volatiles.<br>Aujourd’hui je sais où se rendaient les <i>flamants roses</i> l’hiver.<br>Chez lui.</p>",
-          "<p>Et pourtant, j’ai beau connaître leur destination,<br>ma mémoire n’en retient qu’une seule&nbsp;; Camargue.<br>Sans doute parce que le souvenir de l’autre,<br>comme j’ai manqué de mots pour le fixer, s’est perdu.</p>",
-          "<p>Les <i>flamants roses</i>, comme une invitation aux langages.</p>"        ]
+          "Quand venait leur temps, des brises froides descendaient. Alors tous les flamants roses, qu'il chassait au bord du lac, migraient sur la Lune pour quelques mois. Attendant la-haut des jours plus clements. Comme si elle s'etait perchee la-haut pour eux. Sinon ou iraient-ils ?",
+          "Les flamants roses ? Je me posais la meme question etant jeune : ou partent-ils ? Le monde s'arrete aux mots que nous connaissons, ceux-la meme qui construisent le paysage.",
+          "Moi c'etait Camargue, France, Europe. Incapable de voir le monde qui s'etendait sur Terre, sous mes pieds ou plutôt sous les ailes de ces volatiles. Aujourd'hui je sais ou se rendaient les flamants roses l'hiver. Chez lui.",
+          "Et pourtant, j'ai beau connaitre leur destination, ma memoire n'en retient qu'une seule ; Camargue. Sans doute parce que le souvenir de l'autre, comme j'ai manque de mots pour le fixer, s'est perdu.",
+          "Les flamants roses, comme une invitation aux langages."
+        ]
       ],
       "audio": [
         {
@@ -1130,19 +1125,7 @@
               },
               {
                 "type": "video",
-                "title": "poterie-atelier.ogg"
-              },
-              {
-                "type": "video",
-                "title": "jarres-antiques.ogg"
-              },
-              {
-                "type": "video",
                 "title": "poncage-bateau.ogg"
-              },
-              {
-                "type": "video",
-                "title": "clean-bateau.ogg"
               }
             ]
           ]
@@ -1165,7 +1148,8 @@
               },
               {
                 "type": "video",
-                "title": "drone-brasmer.ogg"
+                "title": "drone-brasmer.ogg",
+                "pause": 1
               }
             ],
             {
@@ -1183,7 +1167,8 @@
               },
               {
                 "type": "video",
-                "title": "ruches.ogg"
+                "title": "ruches.ogg",
+                "pause": -1
               }
             ],
             [
@@ -1194,10 +1179,6 @@
               {
                 "type": "video",
                 "title": "paquetages-vent.ogg"
-              },
-              {
-                "type": "video",
-                "title": "decalage.ogg"
               }
             ],
             {
@@ -1222,26 +1203,14 @@
               "type": "img",
               "title": "bateau-horizon.jpg"
             },
-            [
-              {
-                "type": "img",
-                "title": "bateau-nuit.jpg"
-              },
-              {
-                "type": "video",
-                "title": "signal-bateau.ogg"
-              }
-            ],
-            [
-              {
-                "type": "img",
-                "title": "ciel-mer.jpg"
-              },
-              {
-                "type": "video",
-                "title": "sous-leau.ogg"
-              }
-            ],
+            {
+              "type": "img",
+              "title": "bateau-nuit.jpg"
+            },
+            {
+              "type": "img",
+              "title": "ciel-mer.jpg"
+            },
             {
               "type": "img",
               "title": "bateau-fresque.jpg"
@@ -1313,16 +1282,10 @@
                 "title": "secheresse.ogg"
               }
             ],
-            [
-              {
-                "type": "img",
-                "title": "monts-sombres.jpg"
-              },
-              {
-                "type": "video",
-                "title": "brise.ogg"
-              }
-            ],
+            {
+              "type": "img",
+              "title": "monts-sombres.jpg"
+            },
             {
               "type": "img",
               "title": "rocher-brouillard.jpg"
@@ -1359,18 +1322,18 @@
       "index": 2,
       "text": [
         [
-          "<p><span>ⵏⴽⴽⴰ  ⴷ  ⴱⴻⵔⵔⴰ.  ⵢⴻⵍⵍⴰ  ⵓⵚⵎⵎⵉⴹ  ⵉⵛⴻⵇⵇⴰⵏ&nbsp;: ⵢⴻⵇⵇⵓⵔ.<br>ⵓⵔ  ⵣⴷⴰⵔⴰⵖ  ⴰⴷ  ⴱⴷⵓⵖ  ⵏⴳⵔ  ⴰⵜⴼⴻⵍ  ⴷ  ⵜⴰⴳⵓⵜ.</span></p>",
-          "<p>Cela me rappelait un livre où il était inscrit :<br>«&nbsp;Le monde n’a pas de nom, dit-il. Les noms des collines<br>et des sierras et des déserts n’existent que sur les cartes.<br>On leur donne des noms de peur de s’égarer en chemin.<br>Mais c’est parce qu’on s’est déjà égaré qu’on leur<br>a donné ces noms. Le monde ne peut pas se perdre.<br>Mais nous, nous le pouvons.&nbsp;»</p>",
-          "<p><span>ⵎⴰⵛⴰ  ⵓⵔⴷ   ⵓⴼⵉⵖ   ⴰⵊⴻⵔⵇⵔⴰⵅ .   ⵜⵉⵍⵉⴼⵓⵏ   ⵉⵏⵓ   ⵓⵔ   ⵉⵢⵉ<br>ⵢⵄⴰⵡⴻⵏ ,<br>ⵙⴰⵜⵉⵍⵉⵜ  </span>(satellite)<span>  ⵓⵔⵜⴻⵏ   ⵉⴽⴰ    ⴰⵔ   ⵉⵥⵕⴰ<br>ⵜⴰⴳⴰⵏⵜ    ⵏ   ⵓⵊⵔⵉⴷ ,   ⵓⵔ   ⴰⵢⵥⵕ   ⵍⴰ  ⵜⴰⵙⵙⵓⴽⵜ   ⵍⴰ  ⵍⵉⵙⵎ .<br>ⵢⵓⵛⴽⴰⴷ ⵉⴹ . ⵢⵍⵍⴰ ⵉⴼⵙⵜⵉ . ⵉⴼⵙⵜⵉ ⴰⵔ ⴰⵣⵏⵥⵓⵎ</span></p>",
-          "<p>Mon téléphone n’était pas d’une plus grande aide.<br>Le satellite ne voyait qu’une gigantesque forêt de palmiers,<br>ni rue, ni nom.</p>",
-          "<p><span>ⴰⵡⵍⴰ ⵍⴱⵍⴰⵙⵜⵉⴽ (ⵍⵎⵉⴽⴰ) ⵢⵓⵎⵣⴻⵏ  ⵍⵓⵇⵜ   ⵏⵙ ⵏ   ⴱⴰⵛ  ⴰⵔ<br>ⵢⵙⵜⴻⵟⵢⴰⵕ  ⵙ  ⵡⴰⴹⵓ.  ⴰⵔ  ⵏⵥⴻⵕ  ⵎⴷⴷⴻⵏ  ⴱⵍⴰ  ⵏⴼⵀⴰⵎ<br>ⵓⵏⴰ ⵏⵙⵙⴻⵏ  ⵎⴰⴼⴰ  ⵙⴰⵡⴰⵍⵏ.</span></p>"
+          "Cela me rappelait un livre ou il etait inscrit : \" Le monde n'a pas de nom, dit-il. Les noms des collines et des sierras et des deserts n'existent que sur les cartes. \"",
+          "\" On leur donne des noms de peur de s'egarer en chemin. Mais c'est parce qu'on s'est deja egare qu'on leur a donne ces noms. \"",
+          "\" Le monde ne peut pas se perdre. Mais nous, nous le pouvons. \"",
+          "Mon telephone n'etait pas d'une plus grande aide.",
+          "Le satellite ne voyait qu'une gigantesque foret de palmiers, ni rue, ni nom."
         ],
         [
-          "<p><span>ⵖⵖⵉⴷ  ⴽ </span>o<span> ⵍⵛⵉ  ⴰⵔ  ⵢⵜⵥⵥⴰⵢ  ⵙ  ⵍⴻⵎⵀⴻⵍ,  ⵃⴰⵇⵇⴰⵏ<br>ⵜⴰⴼⵓⴽⵜ  ⵉⵃⵔⵔⴰⵏ   ⴰⵢⴳⴰⵏ  ⵙⵙⴱⴰⴱ,</span><br><br>Ici tout est lent. Le temps a sa propre épaisseur, sa propre densité.<br>Le soleil écrasant y est peut-être pour<br>quelque chose. Même les emballages de plastique prennent<br>leur temps pour se faire trimballer par le vent.</p>",
-          "<p><span>ⴰⵡⵍⴰ ⵍⴱⵍⴰⵙⵜⵉⴽ (ⵍⵎⵉⴽⴰ)   ⵢⵓⵎⵣⴻⵏ  ⵍⵓⵇⵜ   ⵏⵙ ⵏ   ⴱⴰⵛ  ⴰⵔ<br>ⵢⵙⵜⴻⵟⵢⴰⵕ  ⵙ  ⵡⴰⴹⵓ.  ⴰⵔ  ⵏⵥⴻⵕ  ⵎⴷⴷⴻⵏ  ⴱⵍⴰ  ⵏⴼⵀⴰⵎ<br>ⵓⵏⴰ ⵏⵙⵙⴻⵏ  ⵎⴰⴼⴰ  ⵙⴰⵡⴰⵍⵏ.</span><br><br>Quand nous nous déplaçons, nous croisons des foyers<br>de discussions que nous ne pouvons qu’effleurer.<br>Pour nous, ces paroles existent puis s’envolent<br>instantanément.</p>",
-          "<p><span>ⴰⵎⴰⵔⴳ   ⵏ ⵓⵃⵡⴰⵛ,  ⵉⴳⴷⴰⴷ,  ⴷ  ⵍⴰⴷⴰⵏ   ⵏ  ⵜⵎⵣⴳⵉⴷⴰ.</span><br><br>C’est comme une musique discordante,<br>soutenue par le chant des oiseaux, rythmée par les appels<br>à la prière des haut-parleurs de la mosquée.</p>",
-          "<p><span>ⵓⵔⵉⵖ  ⴷ  ⴳⴳⵉⵡⵔⵖ.  ⴰⵔ  ⵢⵟⵙⵙⴰ.  </span>«<span>&nbsp;ⴰⵏⵟ ⵡⴰⵏ&nbsp;</span>»<span> </span>(Antoine)<span><br>ⴷ  ⵏⴻⴽⴽⵉⵏ  ⵏⵣⵔⵉ  ⵖⴰⴷ  ⵉⴱⵇⴰⵏ  ⵖ ⵡⴰⵙⵙ   ⴰⵔ  ⵏⵜⵚⵓⵡⴰⵕ<br>ⵙⵏⴰⴷⴻⵇ  ⵏⵏⴻⵙ. ⵏⴳⴻⵔ  ⵢⴰⵏ  ⴷ  ⵡⴰⵢⴰ,  ⴰⵔ  ⴰⵖ<br>ⵢⴼⴼⴰⵍ .  ⴰⵏⵜⵜⴰⵔⴰ  ⴽⵔⴰ  ⵏ  ⵉⵙⵍⵉⵏ.</span><br><br>Je reviens m’asseoir. Il sourit. Antoine et moi avons pris<br>le reste de la journée pour photographier ses coffrages.<br>Entre chacun d’eux, il nous fit prendre des notes. À nos yeux,<br>l’alchimiste était devenu gardien de musée.</p>",
-          "<p><span>ⵙ  ⴰⵍⵍⴻⵏ  ⵏⴰⵖ ,  ⵍⴰⵍⵛⵉⵎⵉⵙ ⵜ   ⵢ   ⵡⵓⵔⵔⵉ  ⵉ   ⵓⵄⵙⵙ ⴰⵙ    ⵏ<br>ⵓⵙⴰⵍⴰⵢ.   ⵍⵍⵉⵖ  ⵏⴻⴼⵜⴰ, ⵏⴻⵏⴰ ⵢⵉⵙ  ⵔⴰⵙ  ⵙⵓⵍ  ⵏⵡⵓⵔⵔⵉ.<br>ⴰⵔ   ⵉⵜⵎⴰⵜ   ⵙ ⵜⴰⵟⵚⴰ    ⴰⵛⴽⵓ   ⵢⴰⵏ  ⵓⵖⴰⵔⴰⵙ   ⴰⵢⵍⵍⴰⵏ    ⴱⴰⵛ<br>ⴰⵔ   ⴳⵉⵙ   ⵏⵡⵓⵔⵔⵉ    ⵣⵖ  ⵖⵉⴷ   ⴰⵙ    ⵏⴷⴷⴰ.</span><br><br>En partant, nous lui promettons de repasser. Il éclate<br>à nouveau de rire en nous expliquant que c’est la seule<br>route pour revenir de là où nous voulons aller.</p>"
+          "Ici tout est lent. Le temps a sa propre epaisseur, sa propre densite. Le soleil ecrasant y est peut-etre pour quelque chose. Meme les emballages de plastique prennent leur temps pour se faire trimballer par le vent.",
+          "Quand nous nous deplacons, nous croisons des foyers de discussions que nous ne pouvons qu'effleurer. Pour nous, ces paroles existent puis s'envolent instantanement.",
+          "C'est comme une musique discordante, soutenue par le chant des oiseaux, rythmee par les appels a la priere des haut-parleurs de la mosquee.",
+          "Je reviens m'asseoir. Il sourit. Antoine et moi avons pris le reste de la journee pour photographier ses coffrages. Entre chacun d'eux, il nous fit prendre des notes. a nos yeux, l'alchimiste etait devenu gardien de musee.",
+          "En partant, nous lui promettons de repasser. Il eclate a nouveau de rire en nous expliquant que c'est la seule route pour revenir de la ou nous voulons aller."
         ]
       ],
       "audio": [
@@ -1461,10 +1424,6 @@
               {
                 "type": "video",
                 "title": "bateau-desert.ogg"
-              },
-              {
-                "type": "video",
-                "title": "bateau-desert2.ogg"
               }
             ],
             {
@@ -1651,7 +1610,7 @@
               },
               {
                 "type": "video",
-                "title": "colonnes-egypte-structures.ogg"
+                "title": "decor-palmiers.ogg"
               }
             ],
             [
@@ -1659,14 +1618,6 @@
                 "type": "img",
                 "title": "colonnes-renov.jpg",
                 "pause": 1
-              },
-              {
-                "type": "video",
-                "title": "colonnes-soleil.ogg"
-              },
-              {
-                "type": "video",
-                "title": "decor-palmiers.ogg"
               }
             ],
             [
@@ -1674,14 +1625,6 @@
                 "type": "img",
                 "title": "temple-renov2.jpg",
                 "pause": -1
-              },
-              {
-                "type": "video",
-                "title": "selfie-colonnes-egypte.ogg"
-              },
-              {
-                "type": "video",
-                "title": "visages-colonnes-egypte.ogg"
               },
               {
                 "type": "video",
@@ -1714,10 +1657,6 @@
               {
                 "type": "video",
                 "title": "paille-vent.ogg"
-              },
-              {
-                "type": "video",
-                "title": "palmier.ogg"
               }
             ],
             {
@@ -1732,10 +1671,6 @@
               {
                 "type": "video",
                 "title": "interieur-lumiere.ogg"
-              },
-              {
-                "type": "video",
-                "title": "interieur-lumiere-zoom.ogg"
               }
             ]
           ]
@@ -1785,10 +1720,6 @@
               {
                 "type": "img",
                 "title": "ruelle.jpg"
-              },
-              {
-                "type": "video",
-                "title": "ruelle1.ogg"
               },
               {
                 "type": "video",

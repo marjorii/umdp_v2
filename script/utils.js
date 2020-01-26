@@ -82,14 +82,12 @@ function reversableSleep(duration) {
         function pause() {
             clearTimeout(timeOut);
             saveState();
-            console.log("wait is paused", totalSpent);
             window.removeEventListener("reverse", reverse);
             window.removeEventListener("pause", pause);
             window.addEventListener("resume", resume);
         }
 
         function resume() {
-            console.log("wait is resumed", totalSpent);
             start = performance.now();
             window.removeEventListener("resume", resume);
             window.addEventListener("reverse", reverse);

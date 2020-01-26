@@ -170,6 +170,7 @@ Object.defineProperties(Video.prototype, {
 Video.prototype.load = function() {
     return new Promise ((resolve, reject) => {
         this.elem = document.createElement("video");
+	this.elem.setAttribute("autoplay", true);
         this.elem.oncanplaythrough = () => {
             resolve();
             this.loaded = true;
@@ -240,6 +241,7 @@ function Audio(options) {
 Audio.prototype.load = function() {
     return new Promise ((resolve, reject) => {
         this.elem = document.createElement("audio");
+	//this.elem.setAttribute("autoplay", true);
         this.elem.oncanplaythrough = () => {
             resolve();
             this.loaded = true;

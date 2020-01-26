@@ -1,55 +1,12 @@
 @charset "utf-8";
-
 :root {
 	font-family: "Cormorant";
 	font-size: 1.5em;
 	font-weight: normal;
 }
-
-
 #load-page, main {
-	display: none;
+	display: block;
 }
-#phone-page {
-	top: 0;
-	position: absolute;
-	background-color: black;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-#text-block {
-	display: inline;
-	padding: 20px 45px;
-}
-#phone-page p {
-	color: white;
-	text-align: center;
-	line-height: auto;
-}
-
-@media (min-width: 280px) and (orientation: portrait) {
-	#phone-page p {
-		font-size: 10vw;
-	}
-	#phone-page img {
-		height: 13vw;
-	}
-
-}
-
-@media (min-width: 280px) and (orientation: landscape) {
-	#phone-page p {
-		font-size: 5vw;
-	}
-	#phone-page img {
-		height: 7vw;
-	}
-}
-
-
 body, html, main, #load-page, #container, #box {
 	margin: 0;
 	height: 100%;
@@ -62,7 +19,6 @@ body, html, main, #load-page, #container, #box {
 	-ms-user-select: none;       /* Internet Explorer/Edge */
 	user-select: none;           /* Non-prefixed version, currently supported by any browser but < IE9 */
 }
-
 a {
 	text-decoration: none;
 	color: black;
@@ -81,19 +37,10 @@ p {
 p i {
 	font-family: "Cormorant italic";
 }
-p::selection, p i::selection, p span::selection {
-	color: black;
-	background: white;
-}
-p::-moz-selection, p i::-moz-selection, p span::-moz-selection {
-	color: black;
-	background: white;
-}
 
 .opacity {
 	opacity: 0.5;
 }
-
 .fade {
 	-webkit-animation: fade 1s forwards;
 	animation: fade 1s forwards;
@@ -111,16 +58,14 @@ p::-moz-selection, p i::-moz-selection, p span::-moz-selection {
 	to {opacity: 0.5;}
 }
 
-
 #notice {
-	height: calc(100% - 150px);
-	margin: 75px 0;
+	height: calc(100% - 100px);
+	margin: 50px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
 }
-
 #notice img {
 	height: 25px;
 	-webkit-touch-callout: none;
@@ -161,18 +106,28 @@ p::-moz-selection, p i::-moz-selection, p span::-moz-selection {
 	border: none;
 	font-size: 1.25rem;
 }
+#top, #down, #esc, #fn, #f3 {
+	padding: 5px;
+}
 #top, #down {
 	width: 25px;
 	line-height: 25px;
-	padding: 5px;
 }
 #top {
 	margin: 0 10px 0 30px;
 }
+#esc {
+	margin: 0;
+}
+#fn {
+	margin-right: 10px;
+}
+#f3 {
+	margin-left: 10px;
+}
+
 #margin {
 	margin: 0 30px 0 10px;
-}
-#load {
 }
 #start {
 	color: black;
@@ -180,27 +135,8 @@ p::-moz-selection, p i::-moz-selection, p span::-moz-selection {
 	border: 2px solid black;
 	border-radius: 5px;
 	padding: 5px 15px 5px 15px;
+	margin-top: 25px;
 }
-
-#infos {
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	bottom: 45px;
-	right: 45px;
-}
-#infos a {
-	width: 45px;
-	height: 45px;
-	line-height: 45px;
-	border-radius: 50%;
-	border: 2px solid black;
-	display: flex;
-	justify-content: center;
-	font-family: "Garcia";
-	font-size: 1.5rem;
-}
-
 #white-block {
 	position: absolute;
 	top: 0;
@@ -209,7 +145,6 @@ p::-moz-selection, p i::-moz-selection, p span::-moz-selection {
 	opacity: 0.5;
 	background-color: white;
 }
-
 #box {
 	position: absolute;
 	top: 0;
@@ -222,13 +157,13 @@ p::-moz-selection, p i::-moz-selection, p span::-moz-selection {
 	border: 2px solid black;
 	border-radius: 5px;
 	display: inline;
-	padding: 20px 45px;
+	padding: 10px 25px;
 }
 #intro a {
 	position: relative;
 	float: right;
-	margin-top: -45px;
-	margin-right: -70px;
+	margin-top: -35px;
+	margin-right: -50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -241,22 +176,21 @@ p::-moz-selection, p i::-moz-selection, p span::-moz-selection {
 #cross {
 	height: 20px;
 }
-
 #intro p {
 	text-align: center;
+	font-size: 1.25rem;
+	line-height: 2rem;
 }
-
 
 #container, #container img {
 	position: absolute;
 	transform-origin: center;
 }
-
 #mediatable {
 	position: absolute;
 	margin: 0;
-	width: 75%;
-	height: 90%;
+	/* width: 50%; */
+	height: 100%;
 	pointer-events: none;
 	display: flex;
 	flex-direction: column;
@@ -264,7 +198,7 @@ p::-moz-selection, p i::-moz-selection, p span::-moz-selection {
 }
 video {
 	display: block;
-	width: 50%;
+	height: 50%;
 	-webkit-animation-name: fadeIn;
 	-webkit-animation-duration: 2s;
 	-webkit-animation-fill-mode: both;
@@ -289,183 +223,22 @@ video {
 	to {opacity: 0;}
 }
 
-#text-table {
-	position: absolute;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	pointer-events: none;
-}
-#text-content {
-	position: absolute;
-	height: 100%;
-}
-#text-content p {
-	margin-top: 50px;
-	margin-left: 50px;
-	text-align: center;
-}
-#text-content p span {
-	font-family: "Tifinagh Revue";
-	font-weight: lighter;
-}
-
-nav {
-	position: fixed;
-	right: 0;
-	display: flex;
-	flex-direction: column;
-	width: 50%;
-	height: 100%;
-	pointer-events: none;
-}
-nav .subchapter {
-	right: 0;
-	width: 100%;
-	height:100%;
-}
-nav .subchapter::before {
-	content: "";
-	position: absolute;
-	right: 20px;
-	border-top: 2px solid black;
-	width: 20px;
-}
-nav .subchapter::after {
-	content: "";
-	position: absolute;
-	right: 0;
-	width: 20px;
-	height: 100%;
-	background-color: white;
-	border-left: 2px solid black;
-}
-nav .firstsub::before {
-	border-top: none;
-}
-nav .fullfilled::after {
-	background-color: black;
-}
-nav .chap::before {
-	width: 40px;
-}
-nav p {
-	position: absolute;
-	right: 75px;
-	margin-top: -15px;
-	border-bottom: 1px solid black;
-	pointer-events: auto;
-}
-nav .chap p {
-	font-family: "Garcia";
-	font-size: 1rem;
-}
-
-#buttons-container {
-	display:flex;
-	justify-content: center;
-	align-items: center;
-}
-#actions-buttons {
-	position: absolute;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	width: 400px;
-	bottom: 25px;
-}
-#actions-buttons a img {
-	height: 25px;
-}
-
-
-@media (min-width: 600px) {
-
-	#phone-page {
-		display: none;
-	}
-
-	#load-page, main {
-		display: block;
-	}
-
-	#intro p {
-		font-size: 1.25rem;
-		line-height: 2rem;
-		}
-	#text-content p {
-		font-size: 1rem;
-		line-height: 2rem;
-	}
-	#text-table, #text-content {
-		width: calc(100% - 170px);
-	}
-	#buttons-container {
-		width: calc(100% - 170px);
-	}
-}
-
-@media (min-width: 600px) and (orientation: portrait) {
-	#intro {
-		width: 50%;
-	}
-	#mediatable {
-		width: 50%;
-	}
-	video {
-		width: 100%;
-	}
-}
-
-@media (min-width: 600px) and (orientation: landscape) {
-	#mediatable {
-		height: 75%;
-	}
-}
-
-@media (min-width: 1025px) {
-
-	#intro p, #text-content p {
-		font-size: 1.5rem;
-		line-height: 2.5rem;
-	}
-	#mediatable {
-		height: 90%;
-	}
-	#text-table, #text-content {
-		width: calc(100% - 200px);
-	}
-	#buttons-container {
-		width: calc(100% - 200px);
-	}
-}
-
 .hide {
 	display: none !important;
 }
-
 .show {
 	display: flex !important;
 }
-
 
 @font-face {
 	font-family: "Garcia";
 	src: url("../fonts/garcia.woff2");
 }
-
 @font-face {
 	font-family: "Cormorant";
 	src: url("../fonts/cormorant-medium.woff2");
 }
-
 @font-face {
 	font-family: "Cormorant italic";
 	src: url("../fonts/cormorant-medium-italic.woff2");
-}
-
-@font-face {
-	font-family: "Tifinagh Revue";
-	src: url("../fonts/tifinagh_revue1.woff2");
 }
